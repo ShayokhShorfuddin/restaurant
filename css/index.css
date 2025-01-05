@@ -270,7 +270,7 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0px;
 }
 
 abbr[title] {
@@ -11955,6 +11955,16 @@ textarea.form-control-lg {
 
 #pin-icon {
   width: 0.7rem;
+}
+
+#delivering-to-dropdown {
+  background-color: transparent;
+}
+
+#colored-status-ball {
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: #DB2C62;
 }
 
 /*# sourceMappingURL=index.css.map */

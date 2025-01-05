@@ -58,7 +58,33 @@
         <!-- profile picture -->
         <img src="./assets/images/person.png" alt="profile picture">
     </header>
-    <main></main>
+
+    <main>
+        <!-- The "Delivering to:" div -->
+        <section class="d-flex justify-content-around align-items-center py-2 mx-3 bg-ui-gray rounded-4 mt-1">
+
+            <!-- The "Delivering To:" text with location dropdown -->
+            <div class="d-flex align-items-center column-gap-1">
+                <p class="fw-medium">Delivering To: </p>
+
+                <select id="delivering-to-dropdown" class="form-select w-auto" aria-label="Select location">
+                    <option selected>Select location</option>
+                    <option value="Woodland Hills">Woodland Hills</option>
+                    <option value="Uttara">Uttara</option>
+                    <option value="Gulshan">Gulshan</option>
+                    <option value="Banani">Banani</option>
+                    <option value="Mirpur">Mirpur</option>
+                </select>
+            </div>
+
+            <!-- Ongoing orders -->
+            <div class="d-flex align-items-center column-gap-2">
+                <div id="colored-status-ball" class="rounded-circle"></div>
+                <p>Ongoing Orders</p>
+            </div>
+        </section>
+    </main>
+
     <footer></footer>
 
     <!-- Loading mini bootstrap javascript bundle -->
