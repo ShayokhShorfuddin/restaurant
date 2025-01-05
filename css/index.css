@@ -317,7 +317,7 @@ blockquote {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 small, .small {
@@ -8290,7 +8290,7 @@ textarea.form-control-lg {
 }
 
 .fw-bolder {
-  font-weight: bolder !important;
+  font-weight: 900 !important;
 }
 
 .lh-1 {
@@ -11850,9 +11850,13 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
-.profile-picture {
-  max-height: 2.5rem;
-  max-width: 2.5rem;
+#logo {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+#logo-text {
+  font-family: Lato, sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */

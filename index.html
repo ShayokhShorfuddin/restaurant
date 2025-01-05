@@ -8,22 +8,34 @@
 
     <!-- Linking custom stylesheet -->
     <link rel="stylesheet" href="css/index.css">
+
+    <!-- importing Lato font from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!-- TODO: Implement the header logo, search bar, location and profile picture-->
-    <header class="container d-flex justify-content-between align-items-center gap-5 mt-3">
+    <header class="container d-flex justify-content-between align-items-center gap-5">
         <!-- logo -->
-        <h5>Active Restaurant</h5>
+        <div class="d-flex">
+            <img class="me-2" id="logo" src="./assets/images/logo.svg" alt="logo">
+
+            <h5 id="logo-text">
+                <span class="fw-light">Active </span>
+                <span class="fw-bolder">Restaurant</span>
+            </h5>
+        </div>
 
         <!-- search bar -->
 
         <!-- location dropdown -->
 
         <!-- profile picture -->
-        <img class="profile-picture rounded-circle"
-            src="https://images.pexels.com/photos/26100579/pexels-photo-26100579/free-photo-of-modern-elegance-with-sleek-glasses.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="profile picture">
+        <img src="./assets/images/person.png" alt="profile picture">
     </header>
     <main></main>
     <footer></footer>

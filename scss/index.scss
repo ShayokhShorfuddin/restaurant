@@ -11,7 +11,11 @@
     box-sizing: border-box;
 }
 
-.profile-picture {
-    max-height: 2.5rem;
-    max-width: 2.5rem;
+#logo {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+#logo-text {
+    font-family: Lato, sans-serif;
 }
