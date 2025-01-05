@@ -16,7 +16,8 @@
     height: 1.6rem;
 }
 
-#logo-text {
+#logo-text,
+#hero-heading {
     font-family: Lato, sans-serif;
 }
 
@@ -32,4 +33,24 @@
     height: .5rem;
     width: .5rem;
     background-color: #DB2C62;
+}
+
+#hero-section {
+    min-height: 35rem;
+}
+
+#hero-texts-container {
+    max-width: 29rem;
+}
+
+#hero-heading {
+    font-size: 3.5rem;
+}
+
+#span-experience {
+    color: #FF9100;
+}
+
+#hero-subheading {
+    color: #9C9C9C;
 }
