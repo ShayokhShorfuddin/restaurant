@@ -1,0 +1,13 @@
+// The variables defined below customize the look and feel of Bootstrap. 
+
+// Removing the margin-bottom of the headings.
+$headings-margin-bottom: 0px;
+
+// Increasing the container width.
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1920px
+);

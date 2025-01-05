@@ -1,0 +1,17 @@
+// Importing the customized variables will override the default variables defined in Bootstrap.
+@import 'variables';
+
+// Importing all of Bootstrap. But since we have already imported the customized variables above, the default variables will be overridden.
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Defining the styles for the application.
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-picture {
+    max-height: 2.5rem;
+    max-width: 2.5rem;
+}
