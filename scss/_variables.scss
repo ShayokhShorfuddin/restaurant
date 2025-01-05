@@ -1,16 +1,36 @@
-// The variables defined below customize the look and feel of Bootstrap. 
+// Importing map to use map.set
+@use "sass:map";
+
+// Including functions. It's required to add new colors.
+@import "../node_modules/bootstrap/scss/functions";
+
+// The variables defined below will override the default variables defined in Bootstrap.
+
+// Removing the focus ring
+$focus-ring-width: 0px;
 
 // Removing the margin-bottom of the headings.
 $headings-margin-bottom: 0px;
 
-// Increasing the container width.
-$container-max-widths: (
-    sm: 540px,
-    md: 720px,
-    lg: 960px,
-    xl: 1140px,
-    xxl: 1920px
-);
-
 // Increasing fond weight of "bolder" to be 900
 $font-weight-bolder: 900;
+
+// Setting background color of the input group addon to transparent (white by default)
+$input-group-addon-bg: transparent;
+
+// Lowering the font size of the input text to match the UI.
+$input-font-size: .9rem;
+
+// The custom gray color, picked from the UI 
+$custom-colors: (
+    "ui-gray": #F7F7F7
+);
+
+// Importing _variables to get the predefined variables. Everything below the import uses the predefined variables.
+@import "../node_modules/bootstrap/scss/variables";
+
+// Merging the custom colors with the default theme colors.
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Increasing the xxl container width.
+$container-max-widths: map.set($container-max-widths, "xxl", 1920px);
