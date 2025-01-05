@@ -26,6 +26,9 @@ $custom-colors: (
     "ui-gray": #F7F7F7
 );
 
+// Removing form select (dropdown) border.
+$form-select-border-width: 0px;
+
 // Importing _variables to get the predefined variables. Everything below the import uses the predefined variables.
 @import "../node_modules/bootstrap/scss/variables";
 
