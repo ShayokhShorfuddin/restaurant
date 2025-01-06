@@ -54,3 +54,45 @@
 #hero-subheading {
     color: #9C9C9C;
 }
+
+.swiper {
+    max-width: 80rem;
+}
+
+// Modifying the swiper buttons.
+.swiper-button-next,
+.swiper-button-prev {
+    --swiper-navigation-size: 15px;
+    --swiper-navigation-sides-offset: 7px; // TODO: Fix later.
+
+    color: #AAAEB3;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+// If the left/right swiper button is disabled, hide it.
+.swiper-button-disabled {
+    display: none;
+}
+
+// List of colors used in the offer card background.
+$colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
+
+// Iterative over the list to generate classes
+@for $i from 1 through length($colors) {
+    .offer-card-#{$i} {
+        width: 24.5rem;
+        background-color: nth($colors, $i);
+    }
+
+    .offer-btn-#{$i} {
+        background-color: darken(nth($colors, $i), 7%);
+        width: fit-content;
+
+
+        &:hover {
+            border: 1px solid white;
+        }
+    }
+}

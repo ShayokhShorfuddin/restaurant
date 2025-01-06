@@ -11988,4 +11988,100 @@ textarea.form-control-lg {
   color: #9C9C9C;
 }
 
+.swiper {
+  max-width: 80rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-size: 15px;
+  --swiper-navigation-sides-offset: 7px;
+  color: #AAAEB3;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
+.offer-card-1 {
+  width: 24.5rem;
+  background-color: #D3736F;
+}
+
+.offer-btn-1 {
+  background-color: rgb(202.6446808511, 88.414893617, 83.6553191489);
+  width: fit-content;
+}
+.offer-btn-1:hover {
+  border: 1px solid white;
+}
+
+.offer-card-2 {
+  width: 24.5rem;
+  background-color: #CBD6D1;
+}
+
+.offer-btn-2 {
+  background-color: rgb(183.0387096774, 198.2612903226, 191.3419354839);
+  width: fit-content;
+}
+.offer-btn-2:hover {
+  border: 1px solid white;
+}
+
+.offer-card-3 {
+  width: 24.5rem;
+  background-color: #FEEB9D;
+}
+
+.offer-btn-3 {
+  background-color: rgb(253.6393939394, 227.7878787879, 121.6606060606);
+  width: fit-content;
+}
+.offer-btn-3:hover {
+  border: 1px solid white;
+}
+
+.offer-card-4 {
+  width: 24.5rem;
+  background-color: #CBD6D1;
+}
+
+.offer-btn-4 {
+  background-color: rgb(183.0387096774, 198.2612903226, 191.3419354839);
+  width: fit-content;
+}
+.offer-btn-4:hover {
+  border: 1px solid white;
+}
+
+.offer-card-5 {
+  width: 24.5rem;
+  background-color: #D3736F;
+}
+
+.offer-btn-5 {
+  background-color: rgb(202.6446808511, 88.414893617, 83.6553191489);
+  width: fit-content;
+}
+.offer-btn-5:hover {
+  border: 1px solid white;
+}
+
+.offer-card-6 {
+  width: 24.5rem;
+  background-color: #FEEB9D;
+}
+
+.offer-btn-6 {
+  background-color: rgb(253.6393939394, 227.7878787879, 121.6606060606);
+  width: fit-content;
+}
+.offer-btn-6:hover {
+  border: 1px solid white;
+}
+
 /*# sourceMappingURL=index.css.map */
