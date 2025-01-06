@@ -11995,7 +11995,7 @@ textarea.form-control-lg {
 .swiper-button-next,
 .swiper-button-prev {
   --swiper-navigation-size: 15px;
-  --swiper-navigation-sides-offset: 7px;
+  --swiper-navigation-sides-offset: -15px;
   color: #AAAEB3;
   background-color: white;
   padding: 1rem;
