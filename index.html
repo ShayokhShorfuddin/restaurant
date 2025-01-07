@@ -62,50 +62,52 @@
     </header>
 
     <main>
-        <!-- The "Delivering to:" div -->
-        <section class="d-flex justify-content-around align-items-center py-2 mx-3 bg-ui-gray rounded-4 mt-1">
+        <!-- The "Delivering to:" section -->
+        <section class="container mt-1">
+            <div class="d-flex justify-content-around align-items-center bg-ui-gray rounded-4">
+                <!-- The "Delivering To:" text with location dropdown -->
+                <div class="d-flex align-items-center column-gap-1">
+                    <p class="fw-medium">Delivering To: </p>
 
-            <!-- The "Delivering To:" text with location dropdown -->
-            <div class="d-flex align-items-center column-gap-1">
-                <p class="fw-medium">Delivering To: </p>
+                    <select id="delivering-to-dropdown" class="form-select w-auto" aria-label="Select location">
+                        <option selected>Select location</option>
+                        <option value="Woodland Hills">Woodland Hills</option>
+                        <option value="Uttara">Uttara</option>
+                        <option value="Gulshan">Gulshan</option>
+                        <option value="Banani">Banani</option>
+                        <option value="Mirpur">Mirpur</option>
+                    </select>
+                </div>
 
-                <select id="delivering-to-dropdown" class="form-select w-auto" aria-label="Select location">
-                    <option selected>Select location</option>
-                    <option value="Woodland Hills">Woodland Hills</option>
-                    <option value="Uttara">Uttara</option>
-                    <option value="Gulshan">Gulshan</option>
-                    <option value="Banani">Banani</option>
-                    <option value="Mirpur">Mirpur</option>
-                </select>
-            </div>
-
-            <!-- Ongoing orders -->
-            <div class="d-flex align-items-center column-gap-2">
-                <div id="colored-status-ball" class="rounded-circle"></div>
-                <p>Ongoing Orders</p>
+                <!-- Ongoing orders -->
+                <div class="d-flex align-items-center column-gap-2">
+                    <div id="colored-status-ball" class="rounded-circle"></div>
+                    <p>Ongoing Orders</p>
+                </div>
             </div>
         </section>
 
         <!-- The hero section -->
-        <section class="d-flex justify-content-evenly align-items-center mx-3 bg-black rounded-4 mt-4"
-            id="hero-section">
-            <!-- Hero texts -->
-            <div id="hero-texts-container">
-                <h1 class="text-white fw-bold" id="hero-heading">
-                    It's not only food,<br />
-                    We deliver an <span id="span-experience">experience</span>
-                </h1>
+        <section class="container mt-4" id="hero-section">
+            <div class="d-flex justify-content-evenly align-items-center bg-black rounded-4">
+                <!-- Hero texts -->
+                <div id="hero-texts-container">
+                    <h1 class="text-white fw-bold" id="hero-heading">
+                        It's not only food,<br />
+                        We deliver an <span id="span-experience">experience</span>
+                    </h1>
 
-                <p class="fs-5 mt-4" id="hero-subheading">Search for your location, pick and order your favorites &
-                    we'll be there in minutes.</p>
+                    <p class="fs-5 mt-4" id="hero-subheading">Search for your location, pick and order your favorites &
+                        we'll be there in minutes.</p>
+                </div>
+
+                <!-- Pizza image -->
+                <img src="./assets/images//pizza.png" alt="Pizza">
             </div>
-
-            <!-- Pizza image -->
-            <img src="./assets/images//pizza.png" alt="Pizza">
         </section>
 
         <!-- Offers section -->
-        <section class="d-flex justify-content-center mx-3 mt-5">
+        <section class="d-flex justify-content-center mx-3 mt-1">
             <div class="swiper offers-swiper">
                 <div class="swiper-wrapper">
                     <!-- Offer card 1 -->
@@ -118,7 +120,8 @@
                                 <p class="mt-2">For orders over $49.99 only.</p>
                             </div>
 
-                            <button type="button" class="offer-btn-1 btn text-white rounded-pill">View Details</button>
+                            <button type="button" class="offer-btn-1 btn text-white rounded-pill">View
+                                Details</button>
                         </div>
                     </div>
 
@@ -132,7 +135,8 @@
                                 <p class="mt-2">10% discounts on your first order.</p>
                             </div>
 
-                            <button type="button" class="offer-btn-2 btn text-black rounded-pill">View Details</button>
+                            <button type="button" class="offer-btn-2 btn text-black rounded-pill">View
+                                Details</button>
                         </div>
                     </div>
 
@@ -146,7 +150,8 @@
                                 <p class="mt-2">For drinks ordered with main course.</p>
                             </div>
 
-                            <button type="button" class="offer-btn-3 btn text-black rounded-pill">View Details</button>
+                            <button type="button" class="offer-btn-3 btn text-black rounded-pill">View
+                                Details</button>
                         </div>
                     </div>
 
@@ -160,7 +165,8 @@
                                 <p class="mt-2">10% discounts on your first order.</p>
                             </div>
 
-                            <button type="button" class="offer-btn-2 btn text-black rounded-pill">View Details</button>
+                            <button type="button" class="offer-btn-2 btn text-black rounded-pill">View
+                                Details</button>
                         </div>
                     </div>
 
@@ -174,7 +180,8 @@
                                 <p class="mt-2">For orders over $49.99 only.</p>
                             </div>
 
-                            <button type="button" class="offer-btn-1 btn text-white rounded-pill">View Details</button>
+                            <button type="button" class="offer-btn-1 btn text-white rounded-pill">View
+                                Details</button>
                         </div>
                     </div>
 
@@ -188,7 +195,8 @@
                                 <p class="mt-2">For drinks ordered with main course.</p>
                             </div>
 
-                            <button type="button" class="offer-btn-3 btn text-black rounded-pill">View Details</button>
+                            <button type="button" class="offer-btn-3 btn text-black rounded-pill">View
+                                Details</button>
                         </div>
                     </div>
                 </div>
@@ -198,6 +206,7 @@
                 <div class="swiper-button-next"></div>
         </section>
 
+        <!-- Featured restaurants section -->
         <section class="d-flex justify-content-center flex-column align-items-center mx-3 mt-5">
             <div class="d-flex align-items-center justify-content-between" id="featured-restaurants-div">
                 <h3 class="fw-bold text-black">Featured Restaurants</h3>
@@ -309,8 +318,120 @@
             </div>
         </section>
 
-        <section class="mt-5"></section>
+        <!-- Top picks section -->
+        <section class="d-flex justify-content-center flex-column align-items-center mx-3 mt-5">
+            <div class="d-flex align-items-center justify-content-between" id="featured-restaurants-div">
+                <h3 class="fw-bold text-black">Top Picks</h3>
+                <p id="view-all">View all</p>
+            </div>
 
+            <div class="swiper featured-restaurants-swiper mt-4">
+                <div class="swiper-wrapper">
+                    <!-- Food card 1 -->
+                    <div class="swiper-slide">
+                        <img src="./assets/images/meet-all-meat.png" alt="meet-all-meat">
+
+                        <h6 class="restaurant-name fw-bold mt-3">Meet all Meat</h6>
+                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+
+                        <div class="d-flex mt-2 column-gap-2">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                        </div>
+                    </div>
+
+                    <!-- Food card 2 -->
+                    <div class="swiper-slide">
+                        <img src="./assets/images/kebab-ish.png" alt="kebab-ish">
+
+                        <h6 class="restaurant-name fw-bold mt-3">Kebab Ish</h6>
+                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+
+                        <div class="d-flex mt-2 column-gap-2">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                        </div>
+                    </div>
+
+                    <!-- Food card 3 -->
+                    <div class="swiper-slide">
+                        <img src="./assets/images/pizzalecious.png" alt="Pizzalecious">
+
+                        <h6 class="restaurant-name fw-bold mt-3">Pizzalecious</h6>
+                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+
+                        <div class="d-flex mt-2 column-gap-2">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                        </div>
+                    </div>
+
+                    <!-- Food card 4 -->
+                    <div class="swiper-slide">
+                        <img src="./assets/images/chicksaw.png" alt="Chicksaw Chickens">
+
+                        <h6 class="restaurant-name fw-bold mt-3">Chicksaw Chickens</h6>
+                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+
+                        <div class="d-flex mt-2 column-gap-2">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                        </div>
+                    </div>
+
+                    <!-- Food card 5 -->
+                    <div class="swiper-slide">
+                        <img src="./assets/images/fresh-pizza.png" alt="fresh-pizza">
+
+                        <h6 class="restaurant-name fw-bold mt-3">Oven Fresh Pizza House</h6>
+                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+
+                        <div class="d-flex mt-2 column-gap-2">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                        </div>
+                    </div>
+
+                    <!-- Food card 6 -->
+                    <div class="swiper-slide">
+                        <img src="./assets/images/burger.png" alt="Burger">
+
+                        <h6 class="restaurant-name fw-bold mt-3">American Burger</h6>
+                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+
+                        <div class="d-flex mt-2 column-gap-2">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                            <img src="./assets/images/star.svg" alt="Star">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev featured-restaurants-swiper-button"></div>
+                <div class="swiper-button-next featured-restaurants-swiper-button"></div>
+            </div>
+        </section>
+
+        <!-- Extra temporary whitespace -->
+        <section class="mt-5"></section>
     </main>
 
     <footer></footer>
