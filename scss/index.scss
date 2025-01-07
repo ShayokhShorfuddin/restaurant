@@ -55,7 +55,7 @@
     color: #9C9C9C;
 }
 
-.swiper {
+.swiper-wrapper {
     max-width: 78rem;
 }
 
@@ -95,4 +95,26 @@ $colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
             border: 1px solid white;
         }
     }
+}
+
+#featured-restaurants-div {
+    width: 100%;
+    max-width: 78rem;
+}
+
+#view-all {
+    color: #FF9100;
+}
+
+.restaurant-name {
+    font-size: 17px
+}
+
+.food-items {
+    font-size: 14px;
+}
+
+.featured-restaurants-swiper-button {
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-top-offset: 30%;
 }

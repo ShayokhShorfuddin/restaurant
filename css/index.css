@@ -11988,7 +11988,7 @@ textarea.form-control-lg {
   color: #9C9C9C;
 }
 
-.swiper {
+.swiper-wrapper {
   max-width: 78rem;
 }
 
@@ -12082,6 +12082,28 @@ textarea.form-control-lg {
 }
 .offer-btn-6:hover {
   border: 1px solid white;
+}
+
+#featured-restaurants-div {
+  width: 100%;
+  max-width: 78rem;
+}
+
+#view-all {
+  color: #FF9100;
+}
+
+.restaurant-name {
+  font-size: 17px;
+}
+
+.food-items {
+  font-size: 14px;
+}
+
+.featured-restaurants-swiper-button {
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-top-offset: 30%;
 }
 
 /*# sourceMappingURL=index.css.map */
