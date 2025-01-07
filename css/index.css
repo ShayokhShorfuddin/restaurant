@@ -11968,7 +11968,8 @@ textarea.form-control-lg {
   background-color: #DB2C62;
 }
 
-#hero-section {
+#hero-section,
+#todays-menu-section {
   min-height: 35rem;
 }
 
@@ -12104,6 +12105,31 @@ textarea.form-control-lg {
 .featured-restaurants-swiper-button {
   --swiper-navigation-sides-offset: 10px;
   --swiper-navigation-top-offset: 30%;
+}
+
+#todays-menu-container {
+  background-color: #E6E3DF;
+}
+
+#todays-menu-text h1 span:first-child, #todays-menu-text .h1 span:first-child {
+  font-size: 5rem;
+  font-weight: 400;
+  color: #FF9100;
+}
+#todays-menu-text h1 span:nth-of-type(2), #todays-menu-text .h1 span:nth-of-type(2) {
+  font-size: 4rem;
+}
+#todays-menu-text h1 span:last-child, #todays-menu-text .h1 span:last-child {
+  font-size: 5rem;
+  font-weight: 400;
+  color: #FF9100;
+}
+#todays-menu-text p {
+  margin-top: 0.6rem;
+  max-width: 25rem;
+}
+#todays-menu-text .btn {
+  background-color: #FF9100;
 }
 
 /*# sourceMappingURL=index.css.map */

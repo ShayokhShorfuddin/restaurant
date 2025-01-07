@@ -25,7 +25,7 @@ $input-group-addon-bg: transparent;
 $input-font-size: .9rem;
 
 // The custom gray color, picked from the UI 
-$custom-colors: (
+$custom-bg-colors: (
     "ui-gray": #F7F7F7
 );
 
@@ -36,7 +36,7 @@ $form-select-border-width: 0px;
 @import "../node_modules/bootstrap/scss/variables";
 
 // Merging the custom colors with the default theme colors.
-$theme-colors: map-merge($theme-colors, $custom-colors);
+$theme-colors: map-merge($theme-colors, $custom-bg-colors);
 
 // Increasing the xxl container width.
 $container-max-widths: map.set($container-max-widths, "xxl", 1920px);

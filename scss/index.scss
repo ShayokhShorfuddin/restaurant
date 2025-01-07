@@ -35,7 +35,8 @@
     background-color: #DB2C62;
 }
 
-#hero-section {
+#hero-section,
+#todays-menu-section {
     min-height: 35rem;
 }
 
@@ -117,4 +118,37 @@ $colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
 .featured-restaurants-swiper-button {
     --swiper-navigation-sides-offset: 10px;
     --swiper-navigation-top-offset: 30%;
+}
+
+#todays-menu-container {
+    background-color: #E6E3DF
+}
+
+#todays-menu-text {
+    h1 {
+        span:first-child {
+            font-size: 5rem;
+            font-weight: 400;
+            color: #FF9100;
+        }
+
+        span:nth-of-type(2) {
+            font-size: 4rem;
+        }
+
+        span:last-child {
+            font-size: 5rem;
+            font-weight: 400;
+            color: #FF9100;
+        }
+    }
+
+    p {
+        margin-top: 0.6rem;
+        max-width: 25rem;
+    }
+
+    .btn {
+        background-color: #FF9100;
+    }
 }
