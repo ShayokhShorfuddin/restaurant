@@ -12110,6 +12110,19 @@ textarea.form-control-lg {
 #todays-menu-container {
   background-color: #E6E3DF;
 }
+#todays-menu-container #paint {
+  position: absolute;
+  left: -7rem;
+  bottom: 9rem;
+}
+#todays-menu-container p:last-child {
+  position: absolute;
+  left: 3.7rem;
+  bottom: 11.1rem;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
 
 #todays-menu-text h1 span:first-child, #todays-menu-text .h1 span:first-child {
   font-size: 5rem;

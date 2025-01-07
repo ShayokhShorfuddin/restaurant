@@ -121,7 +121,23 @@ $colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
 }
 
 #todays-menu-container {
-    background-color: #E6E3DF
+    background-color: #E6E3DF;
+
+    #paint {
+        position: absolute;
+        left: -7rem;
+        bottom: 9rem;
+    }
+
+    p:last-child {
+        position: absolute;
+        left: 3.7rem;
+        bottom: 11.1rem;
+        line-height: 1.5rem;
+
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
 }
 
 #todays-menu-text {
