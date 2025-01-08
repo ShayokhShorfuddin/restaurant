@@ -100,7 +100,9 @@ $colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
 
 #featured-restaurants-div,
 #top-picks-div,
-#cuisines-div {
+#cuisines-div,
+#best-selling-restaurants-div,
+#new-restaurants-div {
     width: 100%;
     max-width: 78rem;
 }
@@ -118,7 +120,9 @@ $colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
 }
 
 .featured-restaurants-swiper-button,
-.top-picks-swiper-button {
+.top-picks-swiper-button,
+.best-selling-restaurants-swiper-button,
+.new-restaurants-swiper-button {
     --swiper-navigation-sides-offset: 10px;
     --swiper-navigation-top-offset: 30%;
 }

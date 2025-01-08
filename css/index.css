@@ -12087,7 +12087,9 @@ textarea.form-control-lg {
 
 #featured-restaurants-div,
 #top-picks-div,
-#cuisines-div {
+#cuisines-div,
+#best-selling-restaurants-div,
+#new-restaurants-div {
   width: 100%;
   max-width: 78rem;
 }
@@ -12105,7 +12107,9 @@ textarea.form-control-lg {
 }
 
 .featured-restaurants-swiper-button,
-.top-picks-swiper-button {
+.top-picks-swiper-button,
+.best-selling-restaurants-swiper-button,
+.new-restaurants-swiper-button {
   --swiper-navigation-sides-offset: 10px;
   --swiper-navigation-top-offset: 30%;
 }
