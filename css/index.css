@@ -12091,7 +12091,8 @@ textarea.form-control-lg {
 #best-selling-restaurants-div,
 #new-restaurants-div,
 #fastest-delivery-div,
-#budget-restaurants-div {
+#budget-restaurants-div,
+#restaurants-at-x-div {
   width: 100%;
   max-width: 78rem;
 }
@@ -12165,6 +12166,44 @@ textarea.form-control-lg {
   flex-grow: 1;
   height: 18rem;
   background-color: #FF9100;
+}
+
+#shades-container {
+  background-color: #F7F7F7;
+}
+
+.shade-div {
+  flex-grow: 1;
+  height: 35rem;
+}
+
+.shade-div:first-child {
+  background-color: #151515;
+}
+
+.shade-div:nth-of-type(2) {
+  background-color: #C5AFA0;
+}
+
+.shade-div:last-child {
+  background-color: #5A5855;
+}
+
+#restaurants-grid {
+  display: grid;
+  width: 100%;
+  max-width: 78rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  row-gap: 3rem;
+  column-gap: 1rem;
+}
+
+#load-more-btn {
+  display: block;
+  background-color: #F7F7F7;
+  padding: 0.5rem 5rem;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=index.css.map */
