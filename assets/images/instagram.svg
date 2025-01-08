@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30.001" viewBox="0 0 30 30.001">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.843" y1="0.09" x2="0.218" y2="1.018" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#334def"/>
+      <stop offset="0.335" stop-color="#b43ac7"/>
+      <stop offset="0.69" stop-color="#f1424a"/>
+      <stop offset="1" stop-color="#edc769"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_22884" data-name="Group 22884" transform="translate(20787 -978.999)">
+    <circle id="Ellipse_861" data-name="Ellipse 861" cx="15" cy="15" r="15" transform="translate(-20787 979)" fill="#fff"/>
+    <g id="Group_2020" data-name="Group 2020" transform="translate(-20786.691 978.999)">
+      <path id="Subtraction_59" data-name="Subtraction 59" d="M4845.691-697a14.9,14.9,0,0,1-10.606-4.393A14.9,14.9,0,0,1,4830.692-712a14.905,14.905,0,0,1,4.393-10.607A14.9,14.9,0,0,1,4845.691-727a14.9,14.9,0,0,1,10.605,4.394A14.9,14.9,0,0,1,4860.691-712a14.9,14.9,0,0,1-4.394,10.607A14.9,14.9,0,0,1,4845.691-697Zm-5-24a3,3,0,0,0-3,3v11a3,3,0,0,0,3,3h11a3,3,0,0,0,3-3v-11a3,3,0,0,0-3-3Zm11,15h-11a1,1,0,0,1-1-1v-11a1,1,0,0,1,1-1h11a1,1,0,0,1,1,1v11A1,1,0,0,1,4851.691-706ZM4846-715.753a3.754,3.754,0,0,0-3.75,3.75,3.754,3.754,0,0,0,3.75,3.749,3.753,3.753,0,0,0,3.749-3.749A3.753,3.753,0,0,0,4846-715.753Zm4.7-1.247a1,1,0,0,0-1,1,1,1,0,0,0,1,1,1,1,0,0,0,1-1A1,1,0,0,0,4850.692-717Zm-4.7,6.87a1.877,1.877,0,0,1-1.875-1.874,1.877,1.877,0,0,1,1.875-1.875A1.876,1.876,0,0,1,4847.87-712,1.876,1.876,0,0,1,4846-710.13Z" transform="translate(-4831 727)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
