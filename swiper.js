@@ -60,3 +60,23 @@ const newRestaurantsSwiper = new Swiper(".new-restaurants-swiper", {
 		prevEl: ".swiper-button-prev",
 	},
 });
+
+// Swiper for fastest delivery
+const fastestDeliverySwiper = new Swiper(".fastest-delivery-swiper", {
+	slidesPerView: 4,
+	spaceBetween: 25,
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+});
+
+// Swiper for budget restaurants
+const budgetRestaurantsSwiper = new Swiper(".budget-restaurants-swiper", {
+	slidesPerView: 4,
+	spaceBetween: 25,
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+});

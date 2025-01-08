@@ -12089,7 +12089,9 @@ textarea.form-control-lg {
 #top-picks-div,
 #cuisines-div,
 #best-selling-restaurants-div,
-#new-restaurants-div {
+#new-restaurants-div,
+#fastest-delivery-div,
+#budget-restaurants-div {
   width: 100%;
   max-width: 78rem;
 }
@@ -12109,7 +12111,9 @@ textarea.form-control-lg {
 .featured-restaurants-swiper-button,
 .top-picks-swiper-button,
 .best-selling-restaurants-swiper-button,
-.new-restaurants-swiper-button {
+.new-restaurants-swiper-button,
+.fastest-delivery-swiper-button,
+.budget-restaurants-swiper-button {
   --swiper-navigation-sides-offset: 10px;
   --swiper-navigation-top-offset: 30%;
 }
@@ -12154,6 +12158,12 @@ textarea.form-control-lg {
   max-width: 25rem;
 }
 #todays-menu-text .btn {
+  background-color: #FF9100;
+}
+
+.orange-div {
+  flex-grow: 1;
+  height: 18rem;
   background-color: #FF9100;
 }
 
