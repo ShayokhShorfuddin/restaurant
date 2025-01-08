@@ -12085,7 +12085,9 @@ textarea.form-control-lg {
   border: 1px solid white;
 }
 
-#featured-restaurants-div {
+#featured-restaurants-div,
+#top-picks-div,
+#cuisines-div {
   width: 100%;
   max-width: 78rem;
 }
@@ -12102,9 +12104,15 @@ textarea.form-control-lg {
   font-size: 14px;
 }
 
-.featured-restaurants-swiper-button {
+.featured-restaurants-swiper-button,
+.top-picks-swiper-button {
   --swiper-navigation-sides-offset: 10px;
   --swiper-navigation-top-offset: 30%;
+}
+
+.cuisines-swiper-button {
+  --swiper-navigation-sides-offset: 15px;
+  --swiper-navigation-top-offset: 40%;
 }
 
 #todays-menu-container {

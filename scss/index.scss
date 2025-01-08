@@ -98,7 +98,9 @@ $colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
     }
 }
 
-#featured-restaurants-div {
+#featured-restaurants-div,
+#top-picks-div,
+#cuisines-div {
     width: 100%;
     max-width: 78rem;
 }
@@ -115,9 +117,15 @@ $colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
     font-size: 14px;
 }
 
-.featured-restaurants-swiper-button {
+.featured-restaurants-swiper-button,
+.top-picks-swiper-button {
     --swiper-navigation-sides-offset: 10px;
     --swiper-navigation-top-offset: 30%;
+}
+
+.cuisines-swiper-button {
+    --swiper-navigation-sides-offset: 15px;
+    --swiper-navigation-top-offset: 40%;
 }
 
 #todays-menu-container {
