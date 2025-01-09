@@ -240,11 +240,6 @@ hr {
     border-color: #707070;
 }
 
-#black-footer {
-    hr {
-        border-color: #707070
-    }
-}
 
 #foodland {
     max-width: 75%;
@@ -342,5 +337,22 @@ hr {
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+#mobile-apps-div {
+    width: 100%;
+    max-width: 16rem;
+}
+
+.vr {
+    background-color: #7D7D7D;
+}
+
+#payment-methods-icons {
+    height: 1.3rem;
+
+    img {
+        height: 100%;
     }
 }
