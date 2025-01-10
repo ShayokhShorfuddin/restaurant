@@ -1,0 +1,26 @@
+// Importing the customized variables will override the default variables defined in Bootstrap.
+@import 'variables';
+
+// Importing all of Bootstrap. But since we have already imported the customized variables above, the default variables will be overridden.
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Defining the styles for the application.
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+#logo-text,
+#hero-heading {
+    font-family: Lato, sans-serif;
+}
+
+#pin-icon {
+    width: .7rem;
+}

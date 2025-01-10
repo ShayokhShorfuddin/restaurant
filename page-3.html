@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Restaurant</title>
+
+    <!-- Importing Lato font from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Linking custom stylesheet -->
+    <link rel="stylesheet" href="css/page-3.css">
+</head>
+
+<body>
+    <header class="container d-flex justify-content-between align-items-center gap-5">
+        <!-- logo -->
+        <div class="d-flex column-gap-2">
+            <img id="logo" src="./assets/images/logo.svg" alt="logo">
+
+            <h5 class="text-nowrap" id="logo-text">
+                <span class="fw-light">Active </span>
+                <span class="fw-bolder">Restaurant</span>
+            </h5>
+        </div>
+
+        <!-- search bar -->
+        <form class="d-flex w-50 column-gap-5">
+            <div class="input-group">
+                <img class="input-group-text rounded-start-circle border-0 bg-ui-gray" id="search-icon"
+                    src="./assets/images/search.svg" alt="search-icon" />
+                <input type="text" class="form-control border-0 bg-ui-gray" id="search-bar"
+                    placeholder="Search Active Restaurant" aria-label="Search Active Restaurant" />
+                <img class="input-group-text rounded-end-circle border-0 bg-ui-gray" id="config-icon"
+                    src="./assets/images/config.svg" alt="config-icon" />
+            </div>
+
+            <!-- location dropdown -->
+            <div class="d-flex">
+                <img id="pin-icon" src="./assets/images/pin.svg" alt="Pin">
+                <select class="form-select w-auto" aria-label="Select location">
+                    <option selected>Select location</option>
+                    <option value="Woodland Hills">Woodland Hills</option>
+                    <option value="Uttara">Uttara</option>
+                    <option value="Gulshan">Gulshan</option>
+                    <option value="Banani">Banani</option>
+                    <option value="Mirpur">Mirpur</option>
+                </select>
+            </div>
+        </form>
+
+        <!-- profile picture -->
+        <img src="./assets/images/person.png" alt="profile picture">
+    </header>
+</body>
+
+</html>
