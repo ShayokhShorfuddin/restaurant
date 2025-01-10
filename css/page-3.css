@@ -11958,4 +11958,44 @@ textarea.form-control-lg {
   width: 0.7rem;
 }
 
+header hr {
+  margin-top: 0;
+  border-width: 2px;
+  border-color: #EBEAE9;
+}
+
+#blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.blog-card {
+  width: 17rem;
+  border: 0;
+  background-color: #F5F4F2;
+}
+
+.hashtag {
+  color: #939AA3;
+}
+
+.read-full-blog {
+  display: block;
+  cursor: pointer;
+  color: #1D88B7;
+  margin-top: 1rem;
+  width: fit-content;
+}
+.read-full-blog:hover {
+  text-decoration: underline;
+}
+
+aside {
+  width: 100%;
+  max-width: 15rem;
+}
+
 /*# sourceMappingURL=page-3.css.map */

@@ -18,45 +18,309 @@
 </head>
 
 <body>
-    <header class="container d-flex justify-content-between align-items-center gap-5">
-        <!-- logo -->
-        <div class="d-flex column-gap-2">
-            <img id="logo" src="./assets/images/logo.svg" alt="logo">
+    <header>
+        <div class="container d-flex justify-content-between align-items-center gap-5">
+            <!-- logo -->
+            <div class="d-flex column-gap-2">
+                <img id="logo" src="./assets/images/logo.svg" alt="logo">
 
-            <h5 class="text-nowrap" id="logo-text">
-                <span class="fw-light">Active </span>
-                <span class="fw-bolder">Restaurant</span>
-            </h5>
+                <h5 class="text-nowrap" id="logo-text">
+                    <span class="fw-light">Active </span>
+                    <span class="fw-bolder">Restaurant</span>
+                </h5>
+            </div>
+
+            <!-- Search bar -->
+            <form class="d-flex w-50 column-gap-5">
+                <div class="input-group">
+                    <img class="input-group-text rounded-start-circle border-0 bg-ui-gray" id="search-icon"
+                        src="./assets/images/search.svg" alt="search-icon" />
+                    <input type="text" class="form-control border-0 bg-ui-gray" id="search-bar"
+                        placeholder="Search Active Restaurant" aria-label="Search Active Restaurant" />
+                    <img class="input-group-text rounded-end-circle border-0 bg-ui-gray" id="config-icon"
+                        src="./assets/images/config.svg" alt="config-icon" />
+                </div>
+
+                <!-- location dropdown -->
+                <div class="d-flex">
+                    <img id="pin-icon" src="./assets/images/pin.svg" alt="Pin">
+                    <select class="form-select w-auto" aria-label="Select location">
+                        <option selected>Select location</option>
+                        <option value="Woodland Hills">Woodland Hills</option>
+                        <option value="Uttara">Uttara</option>
+                        <option value="Gulshan">Gulshan</option>
+                        <option value="Banani">Banani</option>
+                        <option value="Mirpur">Mirpur</option>
+                    </select>
+                </div>
+            </form>
+
+            <!-- profile picture -->
+            <img src="./assets/images/person.png" alt="profile picture">
+        </div>
+        <hr>
+    </header>
+
+    <!-- Main content. Contains blog grid and the aside content-->
+    <main class="d-flex justify-content-center align-items-start column-gap-5 mt-4">
+        <!-- Blog -->
+        <div>
+            <h3 class="fw-bold text-black">All Blogs</h3>
+
+            <!-- Blogs grid -->
+            <div id="blogs-grid">
+                <!-- Blog card 1 -->
+                <div class="blog-card card rounded-4">
+                    <img src="./assets/images/healthy-food.png" class="card-img-top" alt="Healthy Food">
+
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h6 class="card-text">Food is an important part of balanced diet.</h6>
+
+                        <div class="d-flex flex-column mt-3">
+                            <!-- Hashtags -->
+                            <small class="hashtag">Health, Medicine</small>
+                            <!-- Date -->
+                            <small class="fw-medium">12 June, 2021</small>
+                        </div>
+
+                        <small class="read-full-blog fw-medium">
+                            Read Full Blog
+                        </small>
+                    </div>
+                </div>
+                <!-- Blog card 2 -->
+                <div class="blog-card card rounded-4">
+                    <img src="./assets/images/steak.png" class="card-img-top" alt="Steak">
+
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h6 class="card-text">Sous Vide Beef Tenderloin with Port Wine and Garlic.</h6>
+
+                        <div class="d-flex flex-column mt-3">
+                            <!-- Hashtags -->
+                            <small class="hashtag">Foods, Recipe</small>
+                            <!-- Date -->
+                            <small class="fw-medium">15 July, 2021</small>
+                        </div>
+
+                        <small class="read-full-blog fw-medium">
+                            Read Full Blog
+                        </small>
+                    </div>
+                </div>
+                <!-- Blog card 3 -->
+                <div class="blog-card card rounded-4">
+                    <img src="./assets/images/dining.png" class="card-img-top" alt="Dining">
+
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h6 class="card-text">17 Hottest Restaurants in Los Angeles. Where to eat right now.</h6>
+
+                        <div class="d-flex flex-column mt-3">
+                            <!-- Hashtags -->
+                            <small class="hashtag">News, Restaurants</small>
+                            <!-- Date -->
+                            <small class="fw-medium">21 July, 2021</small>
+                        </div>
+
+                        <small class="read-full-blog fw-medium">
+                            Read Full Blog
+                        </small>
+                    </div>
+                </div>
+                <!-- Blog card 4 -->
+                <div class="blog-card card rounded-4">
+                    <img src="./assets/images/woman-with-computer.png" class="card-img-top" alt="Woman with computer">
+
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h6 class="card-text">Here's how to clean your kitchen.</h6>
+
+                        <div class="d-flex flex-column mt-3">
+                            <!-- Hashtags -->
+                            <small class="hashtag">Foods, Recipe</small>
+                            <!-- Date -->
+                            <small class="fw-medium">12 June, 2021</small>
+                        </div>
+
+                        <small class="read-full-blog fw-medium">
+                            Read Full Blog
+                        </small>
+                    </div>
+                </div>
+                <!-- Blog card 5 -->
+                <div class="blog-card card rounded-4">
+                    <img src="./assets/images/healthy-food.png" class="card-img-top" alt="Healthy Food">
+
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h6 class="card-text">Food is an important part of balanced diet.</h6>
+
+                        <div class="d-flex flex-column mt-3">
+                            <!-- Hashtags -->
+                            <small class="hashtag">Health, Medicine</small>
+                            <!-- Date -->
+                            <small class="fw-medium">12 June, 2021</small>
+                        </div>
+
+                        <small class="read-full-blog fw-medium">
+                            Read Full Blog
+                        </small>
+                    </div>
+                </div>
+                <!-- Blog card 6 -->
+                <div class="blog-card card rounded-4">
+                    <img src="./assets/images/steak.png" class="card-img-top" alt="Steak">
+
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h6 class="card-text">Sous Vide Beef Tenderloin with Port Wine and Garlic.</h6>
+
+                        <div class="d-flex flex-column mt-3">
+                            <!-- Hashtags -->
+                            <small class="hashtag">Foods, Recipe</small>
+                            <!-- Date -->
+                            <small class="fw-medium">15 July, 2021</small>
+                        </div>
+
+                        <small class="read-full-blog fw-medium">
+                            Read Full Blog
+                        </small>
+                    </div>
+                </div>
+                <!-- Blog card 7 -->
+                <div class="blog-card card rounded-4">
+                    <img src="./assets/images/healthy-food.png" class="card-img-top" alt="Healthy Food">
+
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h6 class="card-text">Food is an important part of balanced diet.</h6>
+
+                        <div class="d-flex flex-column mt-3">
+                            <!-- Hashtags -->
+                            <small class="hashtag">Health, Medicine</small>
+                            <!-- Date -->
+                            <small class="fw-medium">12 June, 2021</small>
+                        </div>
+
+                        <small class="read-full-blog fw-medium">
+                            Read Full Blog
+                        </small>
+                    </div>
+                </div>
+                <!-- Blog card 8 -->
+                <div class="blog-card card rounded-4">
+                    <img src="./assets/images/steak.png" class="card-img-top" alt="Steak">
+
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h6 class="card-text">Sous Vide Beef Tenderloin with Port Wine and Garlic.</h6>
+
+                        <div class="d-flex flex-column mt-3">
+                            <!-- Hashtags -->
+                            <small class="hashtag">Foods, Recipe</small>
+                            <!-- Date -->
+                            <small class="fw-medium">15 July, 2021</small>
+                        </div>
+
+                        <small class="read-full-blog fw-medium">
+                            Read Full Blog
+                        </small>
+                    </div>
+                </div>
+                <!-- Blog card 9 -->
+                <div class="blog-card card rounded-4">
+                    <img src="./assets/images/dining.png" class="card-img-top" alt="Dining">
+
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h6 class="card-text">17 Hottest Restaurants in Los Angeles. Where to eat right now.</h6>
+
+                        <div class="d-flex flex-column mt-3">
+                            <!-- Hashtags -->
+                            <small class="hashtag">News, Restaurants</small>
+                            <!-- Date -->
+                            <small class="fw-medium">21 July, 2021</small>
+                        </div>
+
+                        <small class="read-full-blog fw-medium">
+                            Read Full Blog
+                        </small>
+                    </div>
+                </div>
+                <!-- Blog card 10 -->
+                <div class="blog-card card rounded-4">
+                    <img src="./assets/images/woman-with-computer.png" class="card-img-top" alt="Woman with computer">
+
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h6 class="card-text">Here's how to clean your kitchen.</h6>
+
+                        <div class="d-flex flex-column mt-3">
+                            <!-- Hashtags -->
+                            <small class="hashtag">Foods, Recipe</small>
+                            <!-- Date -->
+                            <small class="fw-medium">12 June, 2021</small>
+                        </div>
+
+                        <small class="read-full-blog fw-medium">
+                            Read Full Blog
+                        </small>
+                    </div>
+                </div>
+                <!-- Blog card 11 -->
+                <div class="blog-card card rounded-4">
+                    <img src="./assets/images/healthy-food.png" class="card-img-top" alt="Healthy Food">
+
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h6 class="card-text">Food is an important part of balanced diet.</h6>
+
+                        <div class="d-flex flex-column mt-3">
+                            <!-- Hashtags -->
+                            <small class="hashtag">Health, Medicine</small>
+                            <!-- Date -->
+                            <small class="fw-medium">12 June, 2021</small>
+                        </div>
+
+                        <small class="read-full-blog fw-medium">
+                            Read Full Blog
+                        </small>
+                    </div>
+                </div>
+                <!-- Blog card 12 -->
+                <div class="blog-card card rounded-4">
+                    <img src="./assets/images/steak.png" class="card-img-top" alt="Steak">
+
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h6 class="card-text">Sous Vide Beef Tenderloin with Port Wine and Garlic.</h6>
+
+                        <div class="d-flex flex-column mt-3">
+                            <!-- Hashtags -->
+                            <small class="hashtag">Foods, Recipe</small>
+                            <!-- Date -->
+                            <small class="fw-medium">15 July, 2021</small>
+                        </div>
+
+                        <small class="read-full-blog fw-medium">
+                            Read Full Blog
+                        </small>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- search bar -->
-        <form class="d-flex w-50 column-gap-5">
+        <!-- Sidebar -->
+        <aside>
             <div class="input-group">
-                <img class="input-group-text rounded-start-circle border-0 bg-ui-gray" id="search-icon"
+                <input type="text" class="form-control border-0 bg-ui-gray rounded-start-pill" id="search-bar"
+                    placeholder="Search" aria-label="Search" />
+                <img class="input-group-text rounded-end-circle border-0 bg-ui-gray" id="search-icon"
                     src="./assets/images/search.svg" alt="search-icon" />
-                <input type="text" class="form-control border-0 bg-ui-gray" id="search-bar"
-                    placeholder="Search Active Restaurant" aria-label="Search Active Restaurant" />
-                <img class="input-group-text rounded-end-circle border-0 bg-ui-gray" id="config-icon"
-                    src="./assets/images/config.svg" alt="config-icon" />
             </div>
-
-            <!-- location dropdown -->
-            <div class="d-flex">
-                <img id="pin-icon" src="./assets/images/pin.svg" alt="Pin">
-                <select class="form-select w-auto" aria-label="Select location">
-                    <option selected>Select location</option>
-                    <option value="Woodland Hills">Woodland Hills</option>
-                    <option value="Uttara">Uttara</option>
-                    <option value="Gulshan">Gulshan</option>
-                    <option value="Banani">Banani</option>
-                    <option value="Mirpur">Mirpur</option>
-                </select>
-            </div>
-        </form>
-
-        <!-- profile picture -->
-        <img src="./assets/images/person.png" alt="profile picture">
-    </header>
+        </aside>
 </body>
 
 </html>
