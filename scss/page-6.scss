@@ -70,10 +70,18 @@
     }
 }
 
-#make-money-container {
+#make-money-container,
+#how-it-works-container {
     max-width: fit-content;
 }
 
-.make-money-card {
+.make-money-card,
+.how-it-works-card {
     max-width: 23rem;
+}
+
+.how-it-works-card {
+    img {
+        width: 3rem;
+    }
 }
