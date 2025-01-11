@@ -1,0 +1,79 @@
+// Importing the customized variables will override the default variables defined in Bootstrap.
+@import 'variables';
+
+// Importing all of Bootstrap. But since we have already imported the customized variables above, the default variables will be overridden.
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Defining the styles for the application.
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+#logo-text {
+    font-family: Lato, sans-serif;
+}
+
+#logo-and-opportunities-container {
+    column-gap: 5rem;
+}
+
+#opportunities h6 {
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+#hero-container {
+    height: 38rem;
+    position: relative;
+
+    background-image: url("../assets/images/delivery-girl.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+#hero-texts {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    max-width: 30rem;
+    z-index: 2;
+
+    h1 {
+        font-size: 3.5rem;
+        font-family: Lato, sans-serif;
+    }
+
+    button {
+        background-color: #FF9100;
+    }
+}
+
+#make-money-container {
+    max-width: fit-content;
+}
+
+.make-money-card {
+    max-width: 23rem;
+}
