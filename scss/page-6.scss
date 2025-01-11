@@ -71,7 +71,8 @@
 }
 
 #make-money-container,
-#how-it-works-container {
+#how-it-works-container,
+#cta-container {
     max-width: fit-content;
 }
 
@@ -84,4 +85,15 @@
     img {
         width: 3rem;
     }
+}
+
+
+#cta-container {
+    height: 25rem;
+    background-color: #FBF5EC;
+}
+
+#cta-btn {
+    background-color: #FF9100;
+    width: fit-content;
 }
