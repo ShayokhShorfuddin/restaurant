@@ -11995,7 +11995,38 @@ header hr {
 
 aside {
   width: 100%;
-  max-width: 15rem;
+  max-width: 16rem;
+}
+
+#category-buttons button:first-of-type {
+  color: white;
+  background-color: #FF9100;
+}
+#category-buttons button:not(:first-of-type) {
+  color: black;
+  background-color: rgba(255, 145, 0, 0.1);
+}
+
+#social-media-icons {
+  height: 1.6rem;
+}
+#social-media-icons img {
+  cursor: pointer;
+}
+
+.recent-post img {
+  height: fit-content;
+  width: fit-content;
+  object-fit: cover;
+}
+.recent-post div small:last-child, .recent-post div .small:last-child {
+  cursor: pointer;
+  color: #1D88B7;
+  font-size: 0.7rem;
+  width: fit-content;
+}
+.recent-post div small:last-child:hover, .recent-post div .small:last-child:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=page-3.css.map */
