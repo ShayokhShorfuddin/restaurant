@@ -7850,9 +7850,10 @@ ul.social.colored [class*="linkedin"] {
 
 
 
-// Custom SCSS writen by Shayokh
+///////////// Custom SCSS writen by Shayokh /////////////
 
-// Lato font for logo text
+////// Scss for page 1 //////
+
 #logo-text {
 	font-family: Lato, sans-serif;
 }
@@ -8055,6 +8056,96 @@ $colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
 	padding: .5rem 5rem;
 	margin: 0 auto;
 }
+
+
+///// Scss for page 2 /////
+
+header hr {
+	margin-top: 0;
+	border-width: 2px;
+	border-color: #EBEAE9;
+}
+
+#blogs-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 1rem;
+	margin-top: 1rem;
+}
+
+.blog-card {
+	width: 17rem;
+	border: 0;
+	background-color: #F5F4F2;
+}
+
+.hashtag {
+	color: #939AA3;
+}
+
+.read-full-blog {
+	display: block;
+	cursor: pointer;
+	color: #1D88B7;
+	margin-top: 1rem;
+
+	width: fit-content;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+aside {
+	width: 100%;
+	max-width: 16rem;
+}
+
+#category-buttons {
+	button:first-of-type {
+		color: white;
+		background-color: #FF9100;
+	}
+
+	button:not(:first-of-type) {
+		color: black;
+		background-color: rgba($color: #FF9100, $alpha: 0.1);
+	}
+}
+
+#social-media-icons {
+	height: 1.6rem;
+
+	img {
+		cursor: pointer;
+	}
+}
+
+
+.recent-post {
+	img {
+		height: fit-content;
+		width: fit-content;
+		object-fit: cover;
+	}
+
+	div {
+		small:last-child {
+			cursor: pointer;
+			color: #1D88B7;
+			font-size: .7rem;
+			width: fit-content;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+
+///// Footer for all pages //////
 
 footer {
 	background-color: #F7F7F7;
