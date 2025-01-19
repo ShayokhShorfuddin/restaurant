@@ -17,14 +17,14 @@
         rel="stylesheet">
 
     <!-- Linking custom stylesheet -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/aiz-core.css">
 </head>
 
 <body>
     <header class="container d-flex justify-content-between align-items-center gap-5">
         <!-- logo -->
-        <div class="d-flex column-gap-2">
-            <img id="logo" src="./assets/images/logo.svg" alt="logo">
+        <div class="aiz-topbar-logo-wrap d-flex column-gap-2">
+            <img src="./assets/images/logo.svg" alt="logo">
 
             <h5 class="text-nowrap" id="logo-text">
                 <span class="fw-light">Active </span>
@@ -37,15 +37,18 @@
             <div class="input-group">
                 <img class="input-group-text rounded-start-circle border-0 bg-ui-gray" id="search-icon"
                     src="./assets/images/search.svg" alt="search-icon" />
+
                 <input type="text" class="form-control border-0 bg-ui-gray" id="search-bar"
                     placeholder="Search Active Restaurant" aria-label="Search Active Restaurant" />
+
                 <img class="input-group-text rounded-end-circle border-0 bg-ui-gray" id="config-icon"
                     src="./assets/images/config.svg" alt="config-icon" />
             </div>
 
             <!-- location dropdown -->
-            <div class="d-flex">
-                <img id="pin-icon" src="./assets/images/pin.svg" alt="Pin">
+            <div class="d-flex align-items-center">
+                <img class="size-15px" src="./assets/images/pin.svg" alt="Pin">
+
                 <select class="form-select w-auto" aria-label="Select location">
                     <option selected>Select location</option>
                     <option value="Woodland Hills">Woodland Hills</option>
@@ -219,8 +222,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/fresh-pizza.png" alt="fresh-pizza">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Oven Fresh Pizza House</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Oven Fresh Pizza House</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -235,8 +238,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/burger.png" alt="Burger">
 
-                        <h6 class="restaurant-name fw-bold mt-3">American Burger</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">American Burger</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -251,8 +254,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/kebab.png" alt="Kebab">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Turkish Kebab Mania</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Turkish Kebab Mania</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -267,8 +270,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/beef.png" alt="Beef">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Real Beef</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Real Beef</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -283,8 +286,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/fresh-pizza.png" alt="fresh-pizza">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Oven Fresh Pizza House</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Oven Fresh Pizza House</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -299,8 +302,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/burger.png" alt="Burger">
 
-                        <h6 class="restaurant-name fw-bold mt-3">American Burger</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">American Burger</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -331,8 +334,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/meet-all-meat.png" alt="meet-all-meat">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Meet all Meat</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Meet all Meat</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -347,8 +350,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/kebab-ish.png" alt="kebab-ish">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Kebab Ish</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Kebab Ish</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -363,8 +366,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/pizzalecious.png" alt="Pizzalecious">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Pizzalecious</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Pizzalecious</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -379,8 +382,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/chicksaw.png" alt="Chicksaw Chickens">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Chicksaw Chickens</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Chicksaw Chickens</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -395,8 +398,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/fresh-pizza.png" alt="fresh-pizza">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Oven Fresh Pizza House</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Oven Fresh Pizza House</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -411,8 +414,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/burger.png" alt="Burger">
 
-                        <h6 class="restaurant-name fw-bold mt-3">American Burger</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">American Burger</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -534,8 +537,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/fresh-pizza.png" alt="fresh-pizza">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Oven Fresh Pizza House</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Oven Fresh Pizza House</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -550,8 +553,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/burger.png" alt="Burger">
 
-                        <h6 class="restaurant-name fw-bold mt-3">American Burger</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">American Burger</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -566,8 +569,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/kebab.png" alt="Kebab">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Turkish Kebab Mania</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Turkish Kebab Mania</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -582,8 +585,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/beef.png" alt="Beef">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Real Beef</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Real Beef</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -598,8 +601,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/fresh-pizza.png" alt="fresh-pizza">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Oven Fresh Pizza House</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Oven Fresh Pizza House</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -614,8 +617,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/burger.png" alt="Burger">
 
-                        <h6 class="restaurant-name fw-bold mt-3">American Burger</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">American Burger</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -646,8 +649,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/meet-all-meat.png" alt="meet-all-meat">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Meet all Meat</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Meet all Meat</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -662,8 +665,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/kebab-ish.png" alt="kebab-ish">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Kebab Ish</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Kebab Ish</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -678,8 +681,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/pizzalecious.png" alt="Pizzalecious">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Pizzalecious</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Pizzalecious</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -694,8 +697,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/chicksaw.png" alt="Chicksaw Chickens">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Chicksaw Chickens</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Chicksaw Chickens</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -710,8 +713,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/fresh-pizza.png" alt="fresh-pizza">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Oven Fresh Pizza House</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Oven Fresh Pizza House</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -726,8 +729,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/burger.png" alt="Burger">
 
-                        <h6 class="restaurant-name fw-bold mt-3">American Burger</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">American Burger</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -769,8 +772,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/fresh-pizza.png" alt="fresh-pizza">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Oven Fresh Pizza House</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Oven Fresh Pizza House</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -785,8 +788,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/burger.png" alt="Burger">
 
-                        <h6 class="restaurant-name fw-bold mt-3">American Burger</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">American Burger</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -801,8 +804,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/kebab.png" alt="Kebab">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Turkish Kebab Mania</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Turkish Kebab Mania</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -817,8 +820,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/beef.png" alt="Beef">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Real Beef</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Real Beef</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -833,8 +836,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/fresh-pizza.png" alt="fresh-pizza">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Oven Fresh Pizza House</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Oven Fresh Pizza House</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -849,8 +852,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/burger.png" alt="Burger">
 
-                        <h6 class="restaurant-name fw-bold mt-3">American Burger</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">American Burger</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -881,8 +884,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/meet-all-meat.png" alt="meet-all-meat">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Meet all Meat</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Meet all Meat</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -897,8 +900,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/kebab-ish.png" alt="kebab-ish">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Kebab Ish</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Kebab Ish</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -913,8 +916,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/pizzalecious.png" alt="Pizzalecious">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Pizzalecious</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Pizzalecious</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -929,8 +932,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/chicksaw.png" alt="Chicksaw Chickens">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Chicksaw Chickens</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Chicksaw Chickens</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -945,8 +948,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/fresh-pizza.png" alt="fresh-pizza">
 
-                        <h6 class="restaurant-name fw-bold mt-3">Oven Fresh Pizza House</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">Oven Fresh Pizza House</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -961,8 +964,8 @@
                     <div class="swiper-slide">
                         <img src="./assets/images/burger.png" alt="Burger">
 
-                        <h6 class="restaurant-name fw-bold mt-3">American Burger</h6>
-                        <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                        <h6 class="fs-15 fw-bold mt-3">American Burger</h6>
+                        <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                         <div class="d-flex mt-2 column-gap-2">
                             <img src="./assets/images/star.svg" alt="Star">
@@ -1004,8 +1007,8 @@
                 <div>
                     <img src="./assets/images/fresh-pizza.png" alt="fresh-pizza">
 
-                    <h6 class="restaurant-name fw-bold mt-3">Oven Fresh Pizza House</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">Oven Fresh Pizza House</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1020,8 +1023,8 @@
                 <div>
                     <img src="./assets/images/burger.png" alt="Burger">
 
-                    <h6 class="restaurant-name fw-bold mt-3">American Burger</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">American Burger</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1036,8 +1039,8 @@
                 <div>
                     <img src="./assets/images/kebab.png" alt="Kebab">
 
-                    <h6 class="restaurant-name fw-bold mt-3">Turkish Kebab Mania</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">Turkish Kebab Mania</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1052,8 +1055,8 @@
                 <div>
                     <img src="./assets/images/beef.png" alt="Beef">
 
-                    <h6 class="restaurant-name fw-bold mt-3">Real Beef</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">Real Beef</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1068,8 +1071,8 @@
                 <div>
                     <img src="./assets/images/meet-all-meat.png" alt="meet-all-meat">
 
-                    <h6 class="restaurant-name fw-bold mt-3">Meet all Meat</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">Meet all Meat</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1084,8 +1087,8 @@
                 <div>
                     <img src="./assets/images/kebab-ish.png" alt="kebab-ish">
 
-                    <h6 class="restaurant-name fw-bold mt-3">Kebab Ish</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">Kebab Ish</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1100,8 +1103,8 @@
                 <div>
                     <img src="./assets/images/pizzalecious.png" alt="Pizzalecious">
 
-                    <h6 class="restaurant-name fw-bold mt-3">Pizzalecious</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">Pizzalecious</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1116,8 +1119,8 @@
                 <div>
                     <img src="./assets/images/chicksaw.png" alt="Chicksaw Chickens">
 
-                    <h6 class="restaurant-name fw-bold mt-3">Chicksaw Chickens</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">Chicksaw Chickens</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1132,8 +1135,8 @@
                 <div>
                     <img src="./assets/images/fresh-pizza.png" alt="fresh-pizza">
 
-                    <h6 class="restaurant-name fw-bold mt-3">Oven Fresh Pizza House</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">Oven Fresh Pizza House</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1148,8 +1151,8 @@
                 <div>
                     <img src="./assets/images/burger.png" alt="Burger">
 
-                    <h6 class="restaurant-name fw-bold mt-3">American Burger</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">American Burger</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1164,8 +1167,8 @@
                 <div>
                     <img src="./assets/images/kebab.png" alt="Kebab">
 
-                    <h6 class="restaurant-name fw-bold mt-3">Turkish Kebab Mania</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">Turkish Kebab Mania</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1180,8 +1183,8 @@
                 <div>
                     <img src="./assets/images/beef.png" alt="Beef">
 
-                    <h6 class="restaurant-name fw-bold mt-3">Real Beef</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">Real Beef</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1196,8 +1199,8 @@
                 <div>
                     <img src="./assets/images/meet-all-meat.png" alt="meet-all-meat">
 
-                    <h6 class="restaurant-name fw-bold mt-3">Meet all Meat</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">Meet all Meat</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1212,8 +1215,8 @@
                 <div>
                     <img src="./assets/images/kebab-ish.png" alt="kebab-ish">
 
-                    <h6 class="restaurant-name fw-bold mt-3">Kebab Ish</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">Kebab Ish</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1228,8 +1231,8 @@
                 <div>
                     <img src="./assets/images/pizzalecious.png" alt="Pizzalecious">
 
-                    <h6 class="restaurant-name fw-bold mt-3">Pizzalecious</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">Pizzalecious</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1244,8 +1247,8 @@
                 <div>
                     <img src="./assets/images/chicksaw.png" alt="Chicksaw Chickens">
 
-                    <h6 class="restaurant-name fw-bold mt-3">Chicksaw Chickens</h6>
-                    <p class="food-items text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
+                    <h6 class="fs-15 fw-bold mt-3">Chicksaw Chickens</h6>
+                    <p class="fs-14 text-body-secondary mt-1">Pizza, Pasta, Italian, Lasa….</p>
 
                     <div class="d-flex mt-2 column-gap-2">
                         <img src="./assets/images/star.svg" alt="Star">
@@ -1561,7 +1564,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Swiper.js script -->
-    <script type="module" src="swiper.js"></script>
+    <script type="module" src="./js/swiper.js"></script>
 
 </body>
 
