@@ -8018,7 +8018,7 @@ $colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
 }
 
 #shades-container {
-	background-color: #F7F7F7;
+	background-color: var(--ui-gray);
 }
 
 .shade-div {
@@ -8052,13 +8052,13 @@ $colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
 
 #load-more-btn {
 	display: block;
-	background-color: #F7F7F7;
+	background-color: var(--ui-gray);
 	padding: .5rem 5rem;
 	margin: 0 auto;
 }
 
 
-///// Scss for page 2 /////
+///// Scss for page 3 /////
 
 header hr {
 	margin-top: 0;
@@ -8110,7 +8110,7 @@ aside {
 
 	button:not(:first-of-type) {
 		color: black;
-		background-color: rgba($color: var(--ui-orange), $alpha: 0.1);
+		background-color: rgba(255, 145, 0, 0.1)
 	}
 }
 
@@ -8145,6 +8145,84 @@ aside {
 }
 
 
+
+///// Scss for page 5 //////
+// Hero container background for page 5 (chef cooking)
+.hero-container--chef {
+	background-image: url("../assets/images/chef.png");
+
+	#hero-texts {
+		position: absolute;
+		top: 50%;
+		left: 30%;
+		transform: translate(-50%, -50%);
+		max-width: 43rem;
+		z-index: 2;
+
+		h1 {
+			font-size: 3.5rem;
+			font-family: Lato, sans-serif;
+		}
+
+		button {
+			background-color: var(--ui-orange);
+		}
+	}
+}
+
+#why-active-restaurant-container {
+	max-width: fit-content;
+}
+
+.active-restaurant-card {
+	max-width: 23rem;
+}
+
+#your-business-is-on-texts {
+	top: 50%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	max-width: 48rem;
+
+	h1 {
+		font-size: 2.5rem;
+		font-family: Lato, sans-serif;
+	}
+}
+
+#how-foodland-works-for-restaurant-container {
+	max-width: fit-content;
+}
+
+.how-foodland-works-for-restaurant-card {
+	background-color: var(--ui-gray);
+
+	img {
+		height: 7rem;
+		width: 7rem;
+	}
+
+	small {
+		max-width: 17rem;
+		text-align: center;
+	}
+}
+
+.how-foodland-works-for-restaurant-card-number {
+	width: 2.5rem;
+	height: 2.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--ui-orange);
+
+	p {
+		font-size: 1rem;
+	}
+
+}
+
+
 ///// Scss for page 6 //////
 #logo-and-opportunities-container {
 	column-gap: 5rem;
@@ -8158,47 +8236,42 @@ aside {
 	}
 }
 
-#hero-container {
-	height: 38rem;
-	position: relative;
 
+// Hero container background for page 6 (delivery girl)
+.hero-container--delivery-girl {
 	background-image: url("../assets/images/delivery-girl.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: top right;
-}
 
-#overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
-	z-index: 1;
-}
-
-#hero-texts {
-	position: absolute;
-	top: 50%;
-	left: 30%;
-	transform: translate(-50%, -50%);
-	max-width: 30rem;
-	z-index: 2;
-
-	h1 {
-		font-size: 3.5rem;
-		font-family: Lato, sans-serif;
+	#overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: 1;
 	}
 
-	button {
-		background-color: var(--ui-orange);
+	#hero-text {
+		position: absolute;
+		top: 50%;
+		left: 30%;
+		transform: translate(-50%, -50%);
+		max-width: 40rem;
+		z-index: 2;
+
+		h1 {
+			font-size: 3.5rem;
+			font-family: Lato, sans-serif;
+		}
+
+		button {
+			background-color: var(--ui-orange);
+		}
 	}
 }
 
 #make-money-container,
-#how-it-works-container,
-#cta-container {
+#how-it-works-container {
 	max-width: fit-content;
 }
 
@@ -8214,8 +8287,19 @@ aside {
 }
 
 
+///// Shared styles /////
+// These styles are used in multiple pages with slight variations
+.hero-container {
+	height: 38rem;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
 #cta-container {
 	height: 25rem;
+	max-width: fit-content;
 	background-color: #FBF5EC;
 }
 
@@ -8226,9 +8310,8 @@ aside {
 
 
 ///// Footer for all pages //////
-
 footer {
-	background-color: #F7F7F7;
+	background-color: var(--ui-gray);
 }
 
 hr {

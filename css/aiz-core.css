@@ -19466,7 +19466,7 @@ ul.social.colored [class*=linkedin] {
 }
 
 #shades-container {
-  background-color: #F7F7F7;
+  background-color: var(--ui-gray);
 }
 
 .shade-div {
@@ -19498,7 +19498,7 @@ ul.social.colored [class*=linkedin] {
 
 #load-more-btn {
   display: block;
-  background-color: #F7F7F7;
+  background-color: var(--ui-gray);
   padding: 0.5rem 5rem;
   margin: 0 auto;
 }
@@ -19549,7 +19549,7 @@ aside {
 }
 #category-buttons button:not(:first-of-type) {
   color: black;
-  background-color: rgba(var(--ui-orange), 0.1);
+  background-color: rgba(255, 145, 0, 0.1);
 }
 
 #social-media-icons {
@@ -19574,6 +19574,72 @@ aside {
   text-decoration: underline;
 }
 
+.hero-container--chef {
+  background-image: url("../assets/images/chef.png");
+}
+.hero-container--chef #hero-texts {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  max-width: 43rem;
+  z-index: 2;
+}
+.hero-container--chef #hero-texts h1, .hero-container--chef #hero-texts .h1 {
+  font-size: 3.5rem;
+  font-family: Lato, sans-serif;
+}
+.hero-container--chef #hero-texts button {
+  background-color: var(--ui-orange);
+}
+
+#why-active-restaurant-container {
+  max-width: fit-content;
+}
+
+.active-restaurant-card {
+  max-width: 23rem;
+}
+
+#your-business-is-on-texts {
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  max-width: 48rem;
+}
+#your-business-is-on-texts h1, #your-business-is-on-texts .h1 {
+  font-size: 2.5rem;
+  font-family: Lato, sans-serif;
+}
+
+#how-foodland-works-for-restaurant-container {
+  max-width: fit-content;
+}
+
+.how-foodland-works-for-restaurant-card {
+  background-color: var(--ui-gray);
+}
+.how-foodland-works-for-restaurant-card img {
+  height: 7rem;
+  width: 7rem;
+}
+.how-foodland-works-for-restaurant-card small, .how-foodland-works-for-restaurant-card .small {
+  max-width: 17rem;
+  text-align: center;
+}
+
+.how-foodland-works-for-restaurant-card-number {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ui-orange);
+}
+.how-foodland-works-for-restaurant-card-number p {
+  font-size: 1rem;
+}
+
 #logo-and-opportunities-container {
   column-gap: 5rem;
 }
@@ -19585,16 +19651,10 @@ aside {
   text-decoration: underline;
 }
 
-#hero-container {
-  height: 38rem;
-  position: relative;
+.hero-container--delivery-girl {
   background-image: url("../assets/images/delivery-girl.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top right;
 }
-
-#overlay {
+.hero-container--delivery-girl #overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -19603,26 +19663,24 @@ aside {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
-
-#hero-texts {
+.hero-container--delivery-girl #hero-text {
   position: absolute;
   top: 50%;
   left: 30%;
   transform: translate(-50%, -50%);
-  max-width: 30rem;
+  max-width: 40rem;
   z-index: 2;
 }
-#hero-texts h1, #hero-texts .h1 {
+.hero-container--delivery-girl #hero-text h1, .hero-container--delivery-girl #hero-text .h1 {
   font-size: 3.5rem;
   font-family: Lato, sans-serif;
 }
-#hero-texts button {
+.hero-container--delivery-girl #hero-text button {
   background-color: var(--ui-orange);
 }
 
 #make-money-container,
-#how-it-works-container,
-#cta-container {
+#how-it-works-container {
   max-width: fit-content;
 }
 
@@ -19635,8 +19693,17 @@ aside {
   width: 3rem;
 }
 
+.hero-container {
+  height: 38rem;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
 #cta-container {
   height: 25rem;
+  max-width: fit-content;
   background-color: #FBF5EC;
 }
 
@@ -19646,7 +19713,7 @@ aside {
 }
 
 footer {
-  background-color: #F7F7F7;
+  background-color: var(--ui-gray);
 }
 
 hr {
