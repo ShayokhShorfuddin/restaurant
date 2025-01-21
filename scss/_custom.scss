@@ -593,9 +593,23 @@ aside {
 }
 
 
+///// Scss for page 4 /////
+
+#page4-blog-container {
+    width: min-content;
+}
+
+#page4-aside {
+    width: fit-content;
+}
+
+#comments {
+    width: fit-content;
+}
+
 
 ///// Scss for page 5 //////
-/// 
+
 #why-active-restaurant-container {
     max-width: fit-content;
 }

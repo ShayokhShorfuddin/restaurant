@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Restaurant</title>
+
+    <!-- Importing Lato font from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Linking custom stylesheet -->
+    <link rel="stylesheet" href="css/aiz-core.css">
+</head>
+
+<body>
+    <header>
+        <div class="container d-flex justify-content-between align-items-center gap-5">
+            <!-- logo -->
+            <div class="aiz-topbar-logo-wrap d-flex column-gap-2">
+                <img src="./assets/images/logo.svg" alt="logo">
+
+                <h5 class="text-nowrap" id="logo-text">
+                    <span class="fw-light">Active </span>
+                    <span class="fw-bolder">Restaurant</span>
+                </h5>
+            </div>
+
+            <!-- Search bar -->
+            <form class="d-flex w-50 column-gap-5">
+                <div class="input-group">
+                    <img class="input-group-text rounded-start-circle border-0 bg-ui-gray"
+                        src="./assets/images/search.svg" alt="search-icon" />
+
+                    <input type="text" class="form-control border-0 bg-ui-gray" id="search-bar"
+                        placeholder="Search Active Restaurant" aria-label="Search Active Restaurant" />
+
+                    <img class="input-group-text rounded-end-circle border-0 bg-ui-gray"
+                        src="./assets/images/config.svg" alt="config-icon" />
+                </div>
+
+                <!-- location dropdown -->
+                <div class="d-flex align-items-center">
+                    <img class="size-15px" src="./assets/images/pin.svg" alt="Pin">
+
+                    <select class="form-select w-auto" aria-label="Select location">
+                        <option selected>Select location</option>
+                        <option value="Woodland Hills">Woodland Hills</option>
+                        <option value="Uttara">Uttara</option>
+                        <option value="Gulshan">Gulshan</option>
+                        <option value="Banani">Banani</option>
+                        <option value="Mirpur">Mirpur</option>
+                    </select>
+                </div>
+            </form>
+
+            <!-- profile picture -->
+            <img src="./assets/images/person.png" alt="Profile picture">
+        </div>
+
+        <hr class="mt-1">
+    </header>
+
+    <!-- Main content. Blog and the aside content-->
+    <main class="d-flex flex-column">
+        <div class="d-flex justify-content-center align-items-start column-gap-5 mt-4">
+            <!-- Blog -->
+            <div id="page4-blog-container">
+                <h3 class="fw-bold text-black">Food is an important part of balanced diet.</h3>
+
+                <!-- Details and share icon -->
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div class="d-flex flex-column">
+                        <!-- Hashtags -->
+                        <small class="hashtag mt-1">Health, Medicine</small>
+                        <!-- Date -->
+                        <small class="fw-medium">12 June, 2021</small>
+                    </div>
+
+                    <img src="./assets/images/share.svg" alt="Share icon">
+                </div>
+
+                <img class="mt-4" src="./assets/images/ketogenic-big.png" alt="Ketogenic diet">
+
+                <small class="d-block mt-4">
+                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born
+                    and I will give
+                    you a complete account of the system, and expound the actual teachings of the great explorer of the
+                    truth, the
+                    master-builder of human happiness.
+                    <br>
+                    <br>
+                    No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who
+                    do
+                    not know how to
+                    pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there
+                    anyone
+                    who loves or
+                    pursues or desires to obtain pain of itself, because it is pain, but because occasionally
+                    circumstances
+                    occur in which
+                    toil and pain can procure him some great pleasure. To take a trivial example, which of us ever
+                    undertakes laborious
+                    physical exercise, except to obtain some advantage from it?
+                    <br>
+                    <br>
+                    But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+                    consequences, or one
+                    who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous
+                    indignation and
+                    dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded
+                    by
+                    desire, that they
+                    cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who
+                    fail
+                    in their duty
+                    through weakness of will, which is the same as saying through shrinking from toil and pain.
+                    <br>
+                    <br>
+                    Idea of denouncing pleasure and praising pain was born and I will give you a complete account of the
+                    system, and expound
+                    the actual teachings of the great explorer of the truth, the master-builder of human happiness. No
+                    one
+                    rejects,
+                    dislikes, or avoids pleasure itself.
+                </small>
+
+                <img id="comments" src="./assets/images/comments.png" alt="Comment section">
+            </div>
+
+            <!-- Sidebar -->
+            <aside id="page4-aside">
+                <!-- Other Posts -->
+                <h5 class="fw-bold text-black pt-5">Other Posts</h5>
+
+                <!-- Other Post 1 -->
+                <div class="other-post d-flex flex-column mt-3 w-160px">
+                    <img class src=" ./assets/images/steak-big.png" alt="Big stake">
+
+                    <div class="d-flex flex-column mt-2">
+                        <small class="fw-bold">Sous Vide Beef Tenderloin with Port Wine</small>
+                        <!-- Hashtags -->
+                        <small class="hashtag mt-1">Health, Medicine</small>
+                        <!-- Date -->
+                        <small class="fw-medium">12 June, 2021</small>
+                    </div>
+                </div>
+
+                <!-- Other Post 2 -->
+                <div class="other-post d-flex flex-column mt-4 w-160px">
+                    <img src="./assets/images/woman-cooking-big.png" alt="Women cooking big">
+
+
+                    <div class="d-flex flex-column mt-2">
+                        <small class="fw-bold">Here's how to clean your kitchen</small>
+                        <!-- Hashtags -->
+                        <small class="hashtag mt-1">Health, Medicine</small>
+                        <!-- Date -->
+                        <small class="fw-medium">12 June, 2021</small>
+                    </div>
+                </div>
+
+                <!-- Other Post 3 -->
+                <div class="other-post d-flex flex-column mt-4 w-160px">
+                    <img src="./assets/images/flour-big.png" alt="Big flour">
+
+
+                    <div class="d-flex flex-column mt-2">
+                        <small class="fw-bold">All About Baking!!!</small>
+                        <!-- Hashtags -->
+                        <small class="hashtag mt-1">Health, Medicine</small>
+                        <!-- Date -->
+                        <small class="fw-medium">12 June, 2021</small>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Extra whitespace -->
+    <section class="mt-5"></section>
+
+</body>
+
+</html>

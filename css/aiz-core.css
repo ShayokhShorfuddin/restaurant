@@ -19817,6 +19817,18 @@ aside {
   text-decoration: underline;
 }
 
+#page4-blog-container {
+  width: min-content;
+}
+
+#page4-aside {
+  width: fit-content;
+}
+
+#comments {
+  width: fit-content;
+}
+
 #why-active-restaurant-container {
   max-width: fit-content;
 }
