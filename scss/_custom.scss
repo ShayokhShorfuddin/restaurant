@@ -1,0 +1,680 @@
+///////////// Custom SCSS written by Shayokh /////////////
+
+///// Shared styles /////
+// These styles are used in multiple pages with slight variations
+@mixin hero-container {
+    height: 38rem;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.chef-hero-container {
+    @include hero-container;
+    background-image: url("../assets/images/chef.png");
+
+    .chef-hero-texts-container {
+        top: 50%;
+        left: 30%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        max-width: 43rem;
+        z-index: 2;
+
+        h1 {
+            font-size: 3.5rem;
+            font-family: Lato, sans-serif;
+        }
+
+        button {
+            background-color: var(--ui-orange);
+        }
+    }
+}
+
+
+.delivery-girl-hero-container {
+    @include hero-container;
+    background-image: url("../assets/images/delivery-girl.png");
+
+    .container-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
+
+    .delivery-girl-hero-texts-container {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        max-width: 40rem;
+        z-index: 2;
+
+        h1 {
+            font-size: 3.5rem;
+            font-family: Lato, sans-serif;
+        }
+
+        button {
+            background-color: var(--ui-orange);
+        }
+
+    }
+}
+
+#shades-container {
+    background-color: var(--ui-gray);
+}
+
+.shade-div {
+    flex-grow: 1;
+    height: 35rem;
+}
+
+.shade-div:first-child {
+    background-color: #151515;
+}
+
+.shade-div:nth-of-type(2) {
+    background-color: #C5AFA0;
+}
+
+.shade-div:last-child {
+    background-color: #5A5855;
+}
+
+.blog-card-body {
+    padding: 1rem;
+}
+
+.blog-card {
+    border: 0;
+    width: 17rem;
+    background-color: #F5F4F2;
+}
+
+#todays-menu-container {
+    background-color: #E6E3DF;
+
+    #paint {
+        position: absolute;
+        left: -7rem;
+        bottom: 9rem;
+    }
+
+    p:last-child {
+        position: absolute;
+        left: 3.7rem;
+        bottom: 11.1rem;
+        line-height: 1.5rem;
+
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}
+
+#todays-menu-text {
+    h1 {
+        span:first-child {
+            font-size: 5rem;
+            font-weight: 400;
+            color: var(--ui-orange);
+        }
+
+        span:nth-of-type(2) {
+            font-size: 4rem;
+        }
+
+        span:last-child {
+            font-size: 5rem;
+            font-weight: 400;
+            color: var(--ui-orange);
+        }
+    }
+
+    p {
+        margin-top: 0.6rem;
+        max-width: 25rem;
+    }
+
+    .btn {
+        background-color: var(--ui-orange);
+    }
+}
+
+#load-more-btn {
+    display: block;
+    background-color: var(--ui-gray);
+    padding: .5rem 5rem;
+    margin: 0 auto;
+}
+
+#cta-container {
+    height: 25rem;
+    max-width: fit-content;
+    background-color: #FBF5EC;
+}
+
+#cta-btn {
+    background-color: var(--ui-orange);
+    width: fit-content;
+}
+
+
+///// Footer for all pages //////
+footer {
+    background-color: var(--ui-gray);
+}
+
+hr {
+    border-color: #707070;
+}
+
+
+#foodland {
+    max-width: 75%;
+
+    small {
+        color: #7D7D7D;
+    }
+}
+
+#popular-cuisines {
+    max-width: 75%;
+}
+
+#popular-cuisines-grid {
+    display: grid;
+    width: 100%;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+
+    row-gap: .6rem;
+
+    small {
+        color: var(--ui-orange);
+        cursor: pointer;
+        width: fit-content;
+
+        &:hover {
+            text-decoration: underline
+        }
+    }
+}
+
+#delivery-locations {
+    max-width: 75%;
+}
+
+#delivery-locations-grid {
+    display: grid;
+    width: 100%;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+
+    row-gap: 2.5rem;
+    column-gap: 2rem;
+
+    div {
+        flex-grow: 1;
+    }
+
+    small:nth-of-type(2) {
+        color: #7D7D7D;
+    }
+}
+
+#email-input {
+    color: gray;
+    border-color: #323232;
+    background-color: transparent;
+
+    &::placeholder {
+        color: gray;
+    }
+}
+
+#email-form {
+    button {
+        background-color: var(--ui-orange);
+    }
+}
+
+#contacts {
+    width: 100%;
+    max-width: 17rem;
+}
+
+.contact-box {
+    p {
+        color: gray;
+        line-height: 1rem;
+    }
+
+    .footer-icon {
+        height: 1.1rem;
+        width: 1.1rem;
+    }
+}
+
+#quick-links {
+    small:not(:first-child) {
+        width: fit-content;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+#mobile-apps-div {
+    width: 100%;
+    max-width: 16rem;
+}
+
+.vr {
+    background-color: #7D7D7D;
+}
+
+#payment-methods-icons {
+    height: 1.3rem;
+
+    img {
+        height: 100%;
+    }
+}
+
+
+
+////// Scss for page 1 //////
+
+#logo-text {
+    font-family: Lato, sans-serif;
+}
+
+#delivering-to-dropdown {
+    background-color: transparent;
+}
+
+#colored-status-ball {
+    height: .5rem;
+    width: .5rem;
+    background-color: #DB2C62;
+}
+
+#index-hero-section,
+#todays-menu-section {
+    min-height: 35rem;
+}
+
+#index-hero-texts-container {
+    max-width: 30rem;
+}
+
+#hero-heading {
+    font-size: 3.5rem;
+}
+
+#span-experience {
+    color: var(--ui-orange);
+}
+
+#hero-subheading {
+    color: #9C9C9C;
+}
+
+.swiper-wrapper {
+    max-width: 78rem;
+}
+
+// Modifying the swiper buttons.
+.swiper-button-next,
+.swiper-button-prev {
+    --swiper-navigation-size: 15px;
+    --swiper-navigation-sides-offset: 7px;
+
+    color: #AAAEB3;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+// If the left/right swiper button is disabled, hide it.
+.swiper-button-disabled {
+    display: none;
+}
+
+// List of colors used in the offer card background.
+$colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
+
+// Iterative over the list to generate classes
+@for $i from 1 through length($colors) {
+    .offer-card-#{$i} {
+        width: 24.5rem;
+        background-color: nth($colors, $i);
+    }
+
+    .offer-btn-#{$i} {
+        background-color: darken(nth($colors, $i), 7%);
+        width: fit-content;
+
+
+        &:hover {
+            border: 1px solid white;
+        }
+    }
+}
+
+#featured-restaurants-div,
+#top-picks-div,
+#cuisines-div,
+#best-selling-restaurants-div,
+#new-restaurants-div,
+#fastest-delivery-div,
+#budget-restaurants-div,
+#restaurants-at-x-div {
+    width: 100%;
+    max-width: 78rem;
+}
+
+#view-all {
+    color: var(--ui-orange);
+}
+
+.featured-restaurants-swiper-button,
+.top-picks-swiper-button,
+.best-selling-restaurants-swiper-button,
+.new-restaurants-swiper-button,
+.fastest-delivery-swiper-button,
+.budget-restaurants-swiper-button {
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-top-offset: 30%;
+}
+
+.cuisines-swiper-button {
+    --swiper-navigation-sides-offset: 15px;
+    --swiper-navigation-top-offset: 40%;
+}
+
+
+
+.orange-div {
+    flex-grow: 1;
+    height: 18rem;
+    background-color: var(--ui-orange);
+}
+
+
+#restaurants-grid {
+    display: grid;
+    width: 100%;
+    max-width: 78rem;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+
+    row-gap: 3rem;
+    column-gap: 1rem;
+}
+
+
+
+///// Scss for page 2 /////
+
+#page2-hero-section {
+    min-height: 30rem;
+}
+
+#page2-hero-texts-container {
+    max-width: 30rem;
+}
+
+.page2-hero-section-input-group {
+
+    input,
+    .input-group-text {
+        background-color: rgba(247, 247, 247, 0.1);
+    }
+
+    input:focus {
+        background-color: rgba(247, 247, 247, 0.1);
+        color: gainsboro;
+    }
+}
+
+#zones-we-deliver-to-div,
+#blogs-div {
+    width: 100%;
+    max-width: 78rem;
+}
+
+.testimonial-swiper {
+    max-width: 60rem;
+}
+
+.zone-swiper-button {
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-top-offset: 48%;
+}
+
+.blogs-swiper-button {
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-top-offset: 42%;
+}
+
+.swiper-wrapper {
+    p {
+        bottom: 5%;
+        left: 8%;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--ui-orange);
+}
+
+#testimonial-section-texts {
+    h1 {
+        color: var(--ui-orange);
+    }
+}
+
+.testimonial-card {
+    background-color: rgba(255, 145, 0, 0.1);
+    min-height: 15rem;
+
+    small {
+        max-width: 18rem;
+    }
+
+    .quote-symbol {
+        width: 3.2rem;
+
+        top: 0%;
+        right: 10%;
+    }
+
+
+    // To prevent accidental text selection when attempting to swipe.
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+///// Scss for page 3 /////
+
+header hr {
+    margin-top: 0;
+    border-width: 2px;
+    border-color: #EBEAE9;
+}
+
+#blogs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+.hashtag {
+    color: #939AA3;
+}
+
+.read-full-blog {
+    display: block;
+    cursor: pointer;
+    color: #1D88B7;
+    margin-top: 1rem;
+
+    width: fit-content;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+aside {
+    width: 100%;
+    max-width: 16rem;
+}
+
+#category-buttons {
+    button:first-of-type {
+        color: white;
+        background-color: var(--ui-orange);
+    }
+
+    button:not(:first-of-type) {
+        color: black;
+        background-color: rgba(255, 145, 0, 0.1)
+    }
+}
+
+#social-media-icons {
+    height: 1.6rem;
+
+    img {
+        cursor: pointer;
+    }
+}
+
+
+.recent-post {
+    img {
+        height: fit-content;
+        width: fit-content;
+        object-fit: cover;
+    }
+
+    div {
+        small:last-child {
+            cursor: pointer;
+            color: #1D88B7;
+            font-size: .7rem;
+            width: fit-content;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+
+///// Scss for page 5 //////
+/// 
+#why-active-restaurant-container {
+    max-width: fit-content;
+}
+
+.active-restaurant-card {
+    max-width: 23rem;
+}
+
+#your-business-is-on-texts {
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    max-width: 48rem;
+
+    h1 {
+        font-size: 2.5rem;
+        font-family: Lato, sans-serif;
+    }
+}
+
+#how-foodland-works-for-restaurant-container {
+    max-width: fit-content;
+}
+
+.how-foodland-works-for-restaurant-card {
+    background-color: var(--ui-gray);
+
+    img {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    small {
+        max-width: 17rem;
+        text-align: center;
+    }
+}
+
+.how-foodland-works-for-restaurant-card-number {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ui-orange);
+
+    p {
+        font-size: 1rem;
+    }
+
+}
+
+
+///// Scss for page 6 //////
+#logo-and-opportunities-container {
+    column-gap: 5rem;
+}
+
+#opportunities h6 {
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+#make-money-container,
+#how-it-works-container {
+    max-width: fit-content;
+}
+
+.make-money-card,
+.how-it-works-card {
+    max-width: 23rem;
+}
+
+.how-it-works-card {
+    img {
+        width: 3rem;
+    }
+}

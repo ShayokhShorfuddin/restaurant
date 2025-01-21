@@ -80,3 +80,32 @@ const budgetRestaurantsSwiper = new Swiper(".budget-restaurants-swiper", {
 		prevEl: ".swiper-button-prev",
 	},
 });
+
+// Swiper for zones
+const zoneSwiper = new Swiper(".zones-swiper", {
+	slidesPerView: 4,
+	spaceBetween: 25,
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+});
+
+// Swiper for blogs
+const blogsSwiper = new Swiper(".blogs-swiper", {
+	slidesPerView: 4,
+	spaceBetween: 25,
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+});
+
+// Swiper for testimonials
+const testimonialSwiper = new Swiper(".testimonial-swiper", {
+	slidesPerView: 2,
+	spaceBetween: 25,
+	pagination: {
+		el: ".swiper-pagination",
+	},
+});
