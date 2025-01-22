@@ -19700,8 +19700,30 @@ hr {
   max-width: 78rem;
 }
 
-#view-all {
+.view-all-text-button {
   color: var(--ui-orange);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+.view-all-text-button::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: -0.5px;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+  transform-origin: right;
+  background-color: var(--ui-orange);
+}
+.view-all-text-button:hover {
+  color: var(--ui-orange);
+}
+.view-all-text-button:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .featured-restaurants-swiper-button,

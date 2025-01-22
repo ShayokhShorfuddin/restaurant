@@ -1,7 +1,15 @@
+import Swiper from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 // Swiper for offers
 const offersSwiper = new Swiper(".offers-swiper", {
 	slidesPerView: 3,
 	spaceBetween: 25,
+	modules: [Navigation],
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
@@ -12,6 +20,7 @@ const offersSwiper = new Swiper(".offers-swiper", {
 const featuredRestaurantSwiper = new Swiper(".featured-restaurants-swiper", {
 	slidesPerView: 4,
 	spaceBetween: 25,
+	modules: [Navigation],
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
@@ -22,6 +31,7 @@ const featuredRestaurantSwiper = new Swiper(".featured-restaurants-swiper", {
 const topPicksSwiper = new Swiper(".top-picks-swiper", {
 	slidesPerView: 4,
 	spaceBetween: 25,
+	modules: [Navigation],
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
@@ -32,6 +42,7 @@ const topPicksSwiper = new Swiper(".top-picks-swiper", {
 const cuisinesSwiper = new Swiper(".cuisines-swiper", {
 	slidesPerView: 7,
 	spaceBetween: 5,
+	modules: [Navigation],
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
@@ -44,6 +55,7 @@ const bestSellingRestaurantsSwiper = new Swiper(
 	{
 		slidesPerView: 4,
 		spaceBetween: 25,
+		modules: [Navigation],
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
@@ -55,6 +67,7 @@ const bestSellingRestaurantsSwiper = new Swiper(
 const newRestaurantsSwiper = new Swiper(".new-restaurants-swiper", {
 	slidesPerView: 4,
 	spaceBetween: 25,
+	modules: [Navigation],
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
@@ -65,6 +78,7 @@ const newRestaurantsSwiper = new Swiper(".new-restaurants-swiper", {
 const fastestDeliverySwiper = new Swiper(".fastest-delivery-swiper", {
 	slidesPerView: 4,
 	spaceBetween: 25,
+	modules: [Navigation],
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
@@ -75,6 +89,7 @@ const fastestDeliverySwiper = new Swiper(".fastest-delivery-swiper", {
 const budgetRestaurantsSwiper = new Swiper(".budget-restaurants-swiper", {
 	slidesPerView: 4,
 	spaceBetween: 25,
+	modules: [Navigation],
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
@@ -85,6 +100,7 @@ const budgetRestaurantsSwiper = new Swiper(".budget-restaurants-swiper", {
 const zoneSwiper = new Swiper(".zones-swiper", {
 	slidesPerView: 4,
 	spaceBetween: 25,
+	modules: [Navigation],
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
@@ -95,6 +111,7 @@ const zoneSwiper = new Swiper(".zones-swiper", {
 const blogsSwiper = new Swiper(".blogs-swiper", {
 	slidesPerView: 4,
 	spaceBetween: 25,
+	modules: [Navigation],
 	navigation: {
 		nextEl: ".swiper-button-next",
 		prevEl: ".swiper-button-prev",
@@ -105,7 +122,10 @@ const blogsSwiper = new Swiper(".blogs-swiper", {
 const testimonialSwiper = new Swiper(".testimonial-swiper", {
 	slidesPerView: 2,
 	spaceBetween: 25,
+	modules: [Pagination],
 	pagination: {
 		el: ".swiper-pagination",
 	},
 });
+
+// TODO: Push to myRepo. Then submit to swiper github issue

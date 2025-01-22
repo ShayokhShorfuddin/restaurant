@@ -425,8 +425,35 @@ $colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
     max-width: 78rem;
 }
 
-#view-all {
+.view-all-text-button {
     color: var(--ui-orange);
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+        content: "";
+        position: absolute;
+
+        height: 1px;
+        width: 100%;
+
+        left: 0;
+        bottom: -0.5px;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out;
+        transform-origin: right;
+        background-color: var(--ui-orange);
+    }
+
+    &:hover {
+        color: var(--ui-orange);
+
+        &::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    }
 }
 
 .featured-restaurants-swiper-button,

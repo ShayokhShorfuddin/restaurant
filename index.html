@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Active Restaurant</title>
 
-    <!-- Importing swiper.js css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <!-- Importing Lato font from google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -213,7 +210,7 @@
         <section class="d-flex justify-content-center flex-column align-items-center mt-5">
             <div class="d-flex align-items-center justify-content-between" id="featured-restaurants-div">
                 <h3 class="fw-bold text-black">Featured Restaurants</h3>
-                <p id="view-all">View all</p>
+                <a href="#" class="view-all-text-button">View all</a>
             </div>
 
             <div class="swiper featured-restaurants-swiper mt-4">
@@ -337,7 +334,7 @@
         <section class="d-flex justify-content-center flex-column align-items-center mt-5">
             <div class="d-flex align-items-center justify-content-between" id="top-picks-div">
                 <h3 class="fw-bold text-black">Top Picks</h3>
-                <p id="view-all">View all</p>
+                <a href="#" class="view-all-text-button">View all</a>
             </div>
 
             <div class="swiper top-picks-swiper mt-4">
@@ -483,7 +480,7 @@
         <section class="d-flex justify-content-center flex-column align-items-center mt-5">
             <div class="d-flex align-items-center justify-content-between" id="cuisines-div">
                 <h3 class="fw-bold text-black">Cuisines</h3>
-                <p id="view-all">View all</p>
+                <a href="#" class="view-all-text-button">View all</a>
             </div>
 
             <div class="swiper cuisines-swiper mt-4">
@@ -579,7 +576,7 @@
         <section class="d-flex justify-content-center flex-column align-items-center mt-5">
             <div class="d-flex align-items-center justify-content-between" id="best-selling-restaurants-div">
                 <h3 class="fw-bold text-black">Best Selling Restaurants</h3>
-                <p id="view-all">View all</p>
+                <a href="#" class="view-all-text-button">View all</a>
             </div>
 
             <div class="swiper best-selling-restaurants-swiper mt-4">
@@ -703,7 +700,7 @@
         <section class="d-flex justify-content-center flex-column align-items-center mt-5">
             <div class="d-flex align-items-center justify-content-between" id="new-restaurants-div">
                 <h3 class="fw-bold text-black">New Restaurants</h3>
-                <p id="view-all">View all</p>
+                <a href="#" class="view-all-text-button">View all</a>
             </div>
 
             <div class="swiper new-restaurants-swiper mt-4">
@@ -838,7 +835,7 @@
         <section class="d-flex justify-content-center flex-column align-items-center mt-5">
             <div class="d-flex align-items-center justify-content-between" id="fastest-delivery-div">
                 <h3 class="fw-bold text-black">Fastest Delivery</h3>
-                <p id="view-all">View all</p>
+                <a href="#" class="view-all-text-button">View all</a>
             </div>
 
             <div class="swiper fastest-delivery-swiper mt-4">
@@ -962,7 +959,7 @@
         <section class="d-flex justify-content-center flex-column align-items-center mt-5">
             <div class="d-flex align-items-center justify-content-between" id="budget-restaurants-div">
                 <h3 class="fw-bold text-black">Budget Restaurants</h3>
-                <p id="view-all">View all</p>
+                <a href="#" class="view-all-text-button">View all</a>
             </div>
 
             <div class="swiper budget-restaurants-swiper mt-4">
@@ -1097,7 +1094,7 @@
         <section class="d-flex justify-content-center flex-column align-items-center mt-5">
             <div class="d-flex align-items-center justify-content-between" id="restaurants-at-x-div">
                 <h3 class="fw-bold text-black">Restaurants at Woodland Hills</h3>
-                <p id="view-all">View all</p>
+                <a href="#" class="view-all-text-button">View all</a>
             </div>
 
             <!-- Grid display for all restaurants -->
@@ -1692,9 +1689,6 @@
     <!-- Loading mini bootstrap javascript bundle -->
     <script type="module" src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Swiper.js bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <!-- Swiper.js script -->
     <script type="module" src="./js/swiper.js"></script>
 
@@ -1705,13 +1699,13 @@
 <!-- TODO: 
  
 // Anmations on these this
-    View all (https://www.youtube.com/watch?v=G1uDmIaOnsc&list=WL&index=1&t=12s)
+    ✅ View all (https://www.youtube.com/watch?v=G1uDmIaOnsc&list=WL&index=1&t=12s)
     Image hover (Mostly done, continue after load more button has been implemented)
     The individual food cards can have glowing borders on hover 
     Oven fresh Pizza House being orange
     Load more using jquery
 
-They don't use CDN, so install Swiper.js locally
+They don't use CDN, so install Swiper.js and the Lato google font locally
 Mobile UI using common sense
 
 Top header carousel (automatic + swipable)
