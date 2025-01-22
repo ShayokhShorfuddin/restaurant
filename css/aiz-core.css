@@ -19259,6 +19259,55 @@ ul.social.colored [class*=linkedin] {
   line-height: 30px;
 }
 
+.featured-restaurants-swiper-img-holder,
+.top-picks-swiper-img-holder,
+.best-selling-restaurants-swiper-img-holder,
+.new-restaurants-swiper-img-holder,
+.fastest-delivery-swiper-img-holder,
+.budget-restaurants-swiper-img-holder,
+.restaurants-at-woodland-hills-swiper-img-holder {
+  overflow: hidden;
+  height: 10rem;
+}
+.featured-restaurants-swiper-img-holder img,
+.top-picks-swiper-img-holder img,
+.best-selling-restaurants-swiper-img-holder img,
+.new-restaurants-swiper-img-holder img,
+.fastest-delivery-swiper-img-holder img,
+.budget-restaurants-swiper-img-holder img,
+.restaurants-at-woodland-hills-swiper-img-holder img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  transition: all 0.3s ease-in-out;
+}
+.featured-restaurants-swiper-img-holder img:hover,
+.top-picks-swiper-img-holder img:hover,
+.best-selling-restaurants-swiper-img-holder img:hover,
+.new-restaurants-swiper-img-holder img:hover,
+.fastest-delivery-swiper-img-holder img:hover,
+.budget-restaurants-swiper-img-holder img:hover,
+.restaurants-at-woodland-hills-swiper-img-holder img:hover {
+  transform: scale(1.06);
+}
+
+.cuisines-swiper-img-holder {
+  overflow: hidden;
+  height: 10rem;
+}
+.cuisines-swiper-img-holder img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  transition: all 0.3s ease-in-out;
+}
+.cuisines-swiper-img-holder img:hover {
+  transform: scale(1.06);
+}
+.cuisines-swiper-img-holder img {
+  object-fit: contain;
+}
+
 .chef-hero-container {
   height: 38rem;
   position: relative;
