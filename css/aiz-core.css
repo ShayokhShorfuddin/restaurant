@@ -19259,6 +19259,30 @@ ul.social.colored [class*=linkedin] {
   line-height: 30px;
 }
 
+@font-face {
+  font-family: Lato;
+  src: url("../assets/fonts/Lato-Regular.ttf") format("truetype");
+}
+.glow-on-hover {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.elevate-on-hover {
+  transition: transform 0.3s ease;
+}
+
+.elevate-on-hover:hover {
+  transform: translateY(-10px);
+}
+
+img[alt=Star] {
+  transition: transform 0.3s ease;
+}
+
+img[alt=Star]:hover {
+  transform: scale(1.5);
+}
+
 .featured-restaurants-swiper-img-holder,
 .top-picks-swiper-img-holder,
 .best-selling-restaurants-swiper-img-holder,
@@ -19732,8 +19756,8 @@ hr {
 .new-restaurants-swiper-button,
 .fastest-delivery-swiper-button,
 .budget-restaurants-swiper-button {
-  --swiper-navigation-sides-offset: 10px;
-  --swiper-navigation-top-offset: 30%;
+  --swiper-navigation-sides-offset: 15px;
+  --swiper-navigation-top-offset: 35%;
 }
 
 .cuisines-swiper-button {

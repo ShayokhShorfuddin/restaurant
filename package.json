@@ -1,6 +1,16 @@
 {
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
 	"dependencies": {
 		"bootstrap": "^5.3.3",
+		"fast-average-color": "^9.4.0",
 		"swiper": "^11.2.1"
+	},
+	"devDependencies": {
+		"vite": "^6.0.11"
 	}
 }

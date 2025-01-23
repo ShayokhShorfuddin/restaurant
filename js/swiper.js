@@ -5,6 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import "../css/aiz-core.css"
+
 // Swiper for offers
 const offersSwiper = new Swiper(".offers-swiper", {
 	slidesPerView: 3,
@@ -127,5 +129,3 @@ const testimonialSwiper = new Swiper(".testimonial-swiper", {
 		el: ".swiper-pagination",
 	},
 });
-
-// TODO: Push to myRepo. Then submit to swiper github issue

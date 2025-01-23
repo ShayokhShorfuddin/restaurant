@@ -3,6 +3,31 @@
 ///// Shared styles /////
 // These styles are used in multiple pages with slight variations
 
+@font-face {
+    font-family: Lato;
+    src: url("../assets/fonts/Lato-Regular.ttf") format("truetype");
+}
+
+.glow-on-hover {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.elevate-on-hover {
+    transition: transform 0.3s ease;
+}
+
+.elevate-on-hover:hover {
+    transform: translateY(-10px);
+}
+
+img[alt="Star"] {
+    transition: transform 0.3s ease;
+}
+
+img[alt="Star"]:hover {
+    transform: scale(1.5);
+}
+
 @mixin swiper-img-holder {
     overflow: hidden;
 
@@ -462,8 +487,8 @@ $colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
 .new-restaurants-swiper-button,
 .fastest-delivery-swiper-button,
 .budget-restaurants-swiper-button {
-    --swiper-navigation-sides-offset: 10px;
-    --swiper-navigation-top-offset: 30%;
+    --swiper-navigation-sides-offset: 15px;
+    --swiper-navigation-top-offset: 35%;
 }
 
 .cuisines-swiper-button {
