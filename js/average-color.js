@@ -6,8 +6,6 @@ const fac = new FastAverageColor();
 // Select all divs with the class "glow-on-hover"
 const imageContainers = document.querySelectorAll('.glow-on-hover');
 
-console.log(imageContainers);
-
 // Process each image container
 for (const container of imageContainers) {
     const img = container.querySelector('img');
