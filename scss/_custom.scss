@@ -8,6 +8,16 @@
     src: url("../assets/fonts/Lato-Regular.ttf") format("truetype");
 }
 
+.highlight-on-hover {
+    h6 {
+        transition: color 0.3s ease;
+    }
+
+    &:hover h6 {
+        color: var(--ui-orange);
+    }
+}
+
 .glow-on-hover {
     transition: box-shadow 0.3s ease-in-out;
 }
@@ -21,7 +31,7 @@
 }
 
 img[alt="Star"] {
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
 img[alt="Star"]:hover {
@@ -670,6 +680,14 @@ aside {
     }
 
     div {
+        small:first-child {
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: var(--ui-orange);
+            }
+        }
+
         small:last-child {
             cursor: pointer;
             color: #1D88B7;
@@ -696,6 +714,16 @@ aside {
 
 #comments {
     width: fit-content;
+}
+
+.other-post div {
+    small:first-of-type {
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: var(--ui-orange);
+        }
+    }
 }
 
 

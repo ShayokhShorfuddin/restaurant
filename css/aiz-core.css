@@ -19263,6 +19263,13 @@ ul.social.colored [class*=linkedin] {
   font-family: Lato;
   src: url("../assets/fonts/Lato-Regular.ttf") format("truetype");
 }
+.highlight-on-hover h6, .highlight-on-hover .h6 {
+  transition: color 0.3s ease;
+}
+.highlight-on-hover:hover h6, .highlight-on-hover:hover .h6 {
+  color: var(--ui-orange);
+}
+
 .glow-on-hover {
   transition: box-shadow 0.3s ease-in-out;
 }
@@ -19276,7 +19283,7 @@ ul.social.colored [class*=linkedin] {
 }
 
 img[alt=Star] {
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 img[alt=Star]:hover {
@@ -19902,6 +19909,12 @@ aside {
   width: fit-content;
   object-fit: cover;
 }
+.recent-post div small:first-child, .recent-post div .small:first-child {
+  transition: all 0.3s ease;
+}
+.recent-post div small:first-child:hover, .recent-post div .small:first-child:hover {
+  color: var(--ui-orange);
+}
 .recent-post div small:last-child, .recent-post div .small:last-child {
   cursor: pointer;
   color: #1D88B7;
@@ -19922,6 +19935,13 @@ aside {
 
 #comments {
   width: fit-content;
+}
+
+.other-post div small:first-of-type, .other-post div .small:first-of-type {
+  transition: all 0.3s ease;
+}
+.other-post div small:first-of-type:hover, .other-post div .small:first-of-type:hover {
+  color: var(--ui-orange);
 }
 
 #why-active-restaurant-container {
