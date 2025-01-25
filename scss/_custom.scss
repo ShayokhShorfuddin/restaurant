@@ -809,3 +809,101 @@ aside {
         width: 3rem;
     }
 }
+
+///// Scss for page 9 //////
+#restaurant-info-banner {
+    height: min-content;
+    position: relative;
+
+    img:first-of-type {
+        height: 100%;
+        width: 100%;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        height: 100%;
+        width: 100%;
+
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .info {
+        .restaurant-logo {
+            border: 1px solid #D1D1D1;
+        }
+    }
+
+    .money-and-foods {
+        &>small:first-child {
+            color: var(--ui-orange);
+        }
+
+        &>small:last-child {
+            color: gray;
+        }
+    }
+
+    img[alt="Star"] {
+        transform: none;
+        max-height: 1rem;
+    }
+
+    .reviews-and-about-restaurant {
+        a {
+            text-decoration: none;
+            font-size: .8rem;
+            color: var(--ui-orange);
+        }
+
+        .vr {
+            width: 2px;
+            background-color: orangered;
+        }
+    }
+
+
+    .divider {
+        height: 4rem;
+        width: 1px;
+        background-color: gray;
+    }
+
+    .right-side {
+        column-gap: 8rem;
+
+        img[alt="Clipboard"] {
+            height: 1.1rem;
+            cursor: pointer;
+        }
+
+        h3 {
+            color: var(--ui-orange);
+        }
+    }
+
+    .swiper.restaurant-info-swiper {
+        height: 10rem;
+
+        position: absolute;
+        z-index: 1;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            --swiper-navigation-size: 15px;
+            --swiper-navigation-sides-offset: 8px;
+            --swiper-navigation-top-offset: 45%;
+            color: var(--ui-orange);
+        }
+
+        .swiper-wrapper {
+            max-width: 60rem;
+        }
+    }
+}

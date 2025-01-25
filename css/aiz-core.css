@@ -20014,4 +20014,76 @@ aside {
   width: 3rem;
 }
 
+#restaurant-info-banner {
+  height: min-content;
+  position: relative;
+}
+#restaurant-info-banner img:first-of-type {
+  height: 100%;
+  width: 100%;
+}
+#restaurant-info-banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#restaurant-info-banner .info .restaurant-logo {
+  border: 1px solid #D1D1D1;
+}
+#restaurant-info-banner .money-and-foods > small:first-child, #restaurant-info-banner .money-and-foods > .small:first-child {
+  color: var(--ui-orange);
+}
+#restaurant-info-banner .money-and-foods > small:last-child, #restaurant-info-banner .money-and-foods > .small:last-child {
+  color: gray;
+}
+#restaurant-info-banner img[alt=Star] {
+  transform: none;
+  max-height: 1rem;
+}
+#restaurant-info-banner .reviews-and-about-restaurant a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: var(--ui-orange);
+}
+#restaurant-info-banner .reviews-and-about-restaurant .vr {
+  width: 2px;
+  background-color: orangered;
+}
+#restaurant-info-banner .divider {
+  height: 4rem;
+  width: 1px;
+  background-color: gray;
+}
+#restaurant-info-banner .right-side {
+  column-gap: 8rem;
+}
+#restaurant-info-banner .right-side img[alt=Clipboard] {
+  height: 1.1rem;
+  cursor: pointer;
+}
+#restaurant-info-banner .right-side h3, #restaurant-info-banner .right-side .h3 {
+  color: var(--ui-orange);
+}
+#restaurant-info-banner .swiper.restaurant-info-swiper {
+  height: 10rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#restaurant-info-banner .swiper.restaurant-info-swiper .swiper-button-next,
+#restaurant-info-banner .swiper.restaurant-info-swiper .swiper-button-prev {
+  --swiper-navigation-size: 15px;
+  --swiper-navigation-sides-offset: 8px;
+  --swiper-navigation-top-offset: 45%;
+  color: var(--ui-orange);
+}
+#restaurant-info-banner .swiper.restaurant-info-swiper .swiper-wrapper {
+  max-width: 60rem;
+}
+
 /*# sourceMappingURL=aiz-core.css.map */

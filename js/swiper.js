@@ -129,3 +129,14 @@ const testimonialSwiper = new Swiper(".testimonial-swiper", {
 		el: ".swiper-pagination",
 	},
 });
+
+// Swiper for restaurants info
+const restaurantsInfoSwiper = new Swiper(".restaurant-info-swiper", {
+	slidesPerView: 1,
+	spaceBetween: 20,
+	modules: [Navigation],
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+})
