@@ -1001,3 +1001,162 @@ aside {
         color: var(--ui-orange);
     }
 }
+
+///// Scss for page 10 //////
+#login-form-1 {
+    width: 100%;
+    max-width: 50rem;
+
+    .left-side {
+        width: 50%;
+        background-color: var(--ui-orange);
+    }
+
+    .right-side {
+        border: 1px solid var(--ui-orange);
+
+        a:hover {
+            color: var(--ui-orange);
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .form-check-label {
+            font-weight: 400;
+        }
+
+        .social-login-icons img {
+            cursor: pointer;
+        }
+
+
+        .form-check-input:checked {
+            background-color: var(--ui-orange);
+        }
+
+        input,
+        .dropdown-toggle {
+            border: 0;
+            background-color: #F5F4F2;
+        }
+
+        .create-account-btn {
+            background-color: var(--ui-orange);
+        }
+
+    }
+}
+
+#login-form-2 {
+    width: 100%;
+    max-width: 50rem;
+
+    .left-side {
+        width: 50%;
+        background-color: var(--ui-orange);
+    }
+
+    .right-side {
+        width: 50%;
+        border: 1px solid var(--ui-orange);
+
+        a:hover {
+            color: var(--ui-orange);
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .form-check-label {
+            font-weight: 400;
+        }
+
+        .social-login-icons img {
+            cursor: pointer;
+        }
+
+
+        .form-check-input:checked {
+            background-color: var(--ui-orange);
+        }
+
+        input,
+        .dropdown-toggle {
+            border: 0;
+            background-color: #F5F4F2;
+        }
+
+        .login-btn {
+            background-color: var(--ui-orange);
+        }
+
+    }
+}
+
+#login-form-3 {
+    width: 100%;
+    max-width: 50rem;
+
+    .left-side {
+        width: 50%;
+        background-color: #00B7EB;
+    }
+
+    .right-side {
+        width: 50%;
+        border: 1px solid #00B7EB;
+
+        a:hover {
+            color: var(--ui-orange);
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .form-check-label {
+            font-weight: 400;
+        }
+
+        .social-login-icons img {
+            cursor: pointer;
+        }
+
+
+        .form-check-input:checked {
+            background-color: var(--ui-orange);
+        }
+
+        input,
+        .dropdown-toggle {
+            border: 0;
+            background-color: #F5F4F2;
+        }
+
+        .login-btn {
+            background-color: #00B7EB;
+        }
+
+    }
+}

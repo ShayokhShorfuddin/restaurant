@@ -20167,4 +20167,126 @@ aside {
   color: var(--ui-orange);
 }
 
+#login-form-1 {
+  width: 100%;
+  max-width: 50rem;
+}
+#login-form-1 .left-side {
+  width: 50%;
+  background-color: var(--ui-orange);
+}
+#login-form-1 .right-side {
+  border: 1px solid var(--ui-orange);
+}
+#login-form-1 .right-side a:hover {
+  color: var(--ui-orange);
+}
+#login-form-1 .right-side label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#login-form-1 .right-side label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#login-form-1 .right-side .form-check-label {
+  font-weight: 400;
+}
+#login-form-1 .right-side .social-login-icons img {
+  cursor: pointer;
+}
+#login-form-1 .right-side .form-check-input:checked {
+  background-color: var(--ui-orange);
+}
+#login-form-1 .right-side input,
+#login-form-1 .right-side .dropdown-toggle {
+  border: 0;
+  background-color: #F5F4F2;
+}
+#login-form-1 .right-side .create-account-btn {
+  background-color: var(--ui-orange);
+}
+
+#login-form-2 {
+  width: 100%;
+  max-width: 50rem;
+}
+#login-form-2 .left-side {
+  width: 50%;
+  background-color: var(--ui-orange);
+}
+#login-form-2 .right-side {
+  width: 50%;
+  border: 1px solid var(--ui-orange);
+}
+#login-form-2 .right-side a:hover {
+  color: var(--ui-orange);
+}
+#login-form-2 .right-side label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#login-form-2 .right-side label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#login-form-2 .right-side .form-check-label {
+  font-weight: 400;
+}
+#login-form-2 .right-side .social-login-icons img {
+  cursor: pointer;
+}
+#login-form-2 .right-side .form-check-input:checked {
+  background-color: var(--ui-orange);
+}
+#login-form-2 .right-side input,
+#login-form-2 .right-side .dropdown-toggle {
+  border: 0;
+  background-color: #F5F4F2;
+}
+#login-form-2 .right-side .login-btn {
+  background-color: var(--ui-orange);
+}
+
+#login-form-3 {
+  width: 100%;
+  max-width: 50rem;
+}
+#login-form-3 .left-side {
+  width: 50%;
+  background-color: #00B7EB;
+}
+#login-form-3 .right-side {
+  width: 50%;
+  border: 1px solid #00B7EB;
+}
+#login-form-3 .right-side a:hover {
+  color: var(--ui-orange);
+}
+#login-form-3 .right-side label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#login-form-3 .right-side label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#login-form-3 .right-side .form-check-label {
+  font-weight: 400;
+}
+#login-form-3 .right-side .social-login-icons img {
+  cursor: pointer;
+}
+#login-form-3 .right-side .form-check-input:checked {
+  background-color: var(--ui-orange);
+}
+#login-form-3 .right-side input,
+#login-form-3 .right-side .dropdown-toggle {
+  border: 0;
+  background-color: #F5F4F2;
+}
+#login-form-3 .right-side .login-btn {
+  background-color: #00B7EB;
+}
+
 /*# sourceMappingURL=aiz-core.css.map */
