@@ -20086,4 +20086,85 @@ aside {
   max-width: 60rem;
 }
 
+.tabs-container {
+  background-color: var(--ui-orange);
+}
+
+.tabs-section-swiper {
+  max-width: fit-content;
+  text-align: center;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.tabs-section-swiper a {
+  color: white;
+  text-decoration: none;
+}
+.tabs-section-swiper a:hover {
+  color: white;
+}
+.tabs-section-swiper .swiper-button-next,
+.tabs-section-swiper .swiper-button-prev {
+  --swiper-navigation-size: 20px;
+  --swiper-navigation-sides-offset: -10px;
+  --swiper-navigation-top-offset: 40%;
+  color: white;
+  background-color: transparent;
+}
+
+.tab-grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.menu-card {
+  position: relative;
+  transition: box-shadow 0.3s ease;
+  background-color: var(--ui-gray);
+}
+.menu-card .menu-overlay {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.menu-card .menu-overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-description {
+  max-width: 17rem;
+}
+.menu-description small, .menu-description .small {
+  color: #737980;
+}
+
+.menu-prices small:last-of-type, .menu-prices .small:last-of-type {
+  color: var(--ui-orange);
+}
+
+.price-chip {
+  right: 5px;
+  top: 5px;
+  background-color: var(--ui-orange);
+}
+
+#fixed-card {
+  position: fixed;
+  right: 0;
+  background-color: var(--ui-orange);
+}
+#fixed-card p {
+  color: var(--ui-orange);
+}
+
 /*# sourceMappingURL=aiz-core.css.map */

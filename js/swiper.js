@@ -140,3 +140,13 @@ const restaurantsInfoSwiper = new Swiper(".restaurant-info-swiper", {
 		prevEl: ".swiper-button-prev",
 	},
 })
+
+// Swiper for tabs
+const tabsSwiper = new Swiper(".tabs-section-swiper", {
+	slidesPerView: 11,
+	modules: [Navigation],
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+})
