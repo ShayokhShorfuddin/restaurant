@@ -1191,3 +1191,35 @@ aside {
         background-color: var(--ui-orange);
     }
 }
+
+
+///// Scss for order details page //////
+.order-container {
+    width: 100%;
+    max-width: 50rem;
+
+    &>div:first-of-type {
+        width: 100%;
+        border: 1px solid #D1D1D1;
+    }
+
+    #stats {
+
+        &>div:first-child div,
+        &>div:nth-child(2) div {
+            background-color: #31C7A5;
+        }
+
+        &>div:nth-child(3) div {
+            background-color: #E23656;
+        }
+
+        &>div:last-child div {
+            background-color: #D1D1D1;
+        }
+    }
+
+    #order-code {
+        color: var(--ui-orange);
+    }
+}

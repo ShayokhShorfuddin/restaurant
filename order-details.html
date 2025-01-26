@@ -11,122 +11,300 @@
 </head>
 
 <body>
-    <header class="container d-flex justify-content-between align-items-center gap-5">
-        <!-- logo -->
-        <div class="aiz-topbar-logo-wrap d-flex column-gap-2">
-            <img src="./assets/images/logo.svg" alt="logo">
+    <header class="container">
+        <div class="d-flex justify-content-between align-items-center gap-5">
+            <!-- logo -->
+            <div class="aiz-topbar-logo-wrap d-flex column-gap-2">
+                <img src="./assets/images/logo.svg" alt="logo">
 
-            <h5 class="text-nowrap" id="logo-text">
-                <span class="fw-light">Active </span>
-                <span class="fw-bolder">Restaurant</span>
-            </h5>
+                <h5 class="text-nowrap" id="logo-text">
+                    <span class="fw-light">Active </span>
+                    <span class="fw-bolder">Restaurant</span>
+                </h5>
+            </div>
+
+            <!-- Search bar -->
+            <form class="d-flex w-50 column-gap-5">
+                <div class="input-group">
+                    <img class="input-group-text rounded-start-circle border-0 bg-ui-gray"
+                        src="./assets/images/search.svg" alt="search-icon" />
+
+                    <input type="text" class="form-control border-0 bg-ui-gray" id="search-bar"
+                        placeholder="Search Active Restaurant" aria-label="Search Active Restaurant" />
+
+                    <img class="input-group-text rounded-end-circle border-0 bg-ui-gray"
+                        src="./assets/images/config.svg" alt="config-icon" />
+                </div>
+
+                <!-- location dropdown -->
+                <div class="d-flex align-items-center">
+                    <img class="size-15px" src="./assets/images/pin.svg" alt="Pin">
+
+                    <select class="form-select w-auto" aria-label="Select location">
+                        <option selected>Select location</option>
+                        <option value="Woodland Hills">Woodland Hills</option>
+                        <option value="Uttara">Uttara</option>
+                        <option value="Gulshan">Gulshan</option>
+                        <option value="Banani">Banani</option>
+                        <option value="Mirpur">Mirpur</option>
+                    </select>
+                </div>
+            </form>
+
+            <!-- profile picture -->
+            <img src="./assets/images/person.png" alt="Profile picture">
         </div>
 
-        <!-- Search bar -->
-        <form class="d-flex w-50 column-gap-5">
-            <div class="input-group">
-                <img class="input-group-text rounded-start-circle border-0 bg-ui-gray" src="./assets/images/search.svg"
-                    alt="search-icon" />
-
-                <input type="text" class="form-control border-0 bg-ui-gray" id="search-bar"
-                    placeholder="Search Active Restaurant" aria-label="Search Active Restaurant" />
-
-                <img class="input-group-text rounded-end-circle border-0 bg-ui-gray" src="./assets/images/config.svg"
-                    alt="config-icon" />
-            </div>
-
-            <!-- location dropdown -->
-            <div class="d-flex align-items-center">
-                <img class="size-15px" src="./assets/images/pin.svg" alt="Pin">
-
-                <select class="form-select w-auto" aria-label="Select location">
-                    <option selected>Select location</option>
-                    <option value="Woodland Hills">Woodland Hills</option>
-                    <option value="Uttara">Uttara</option>
-                    <option value="Gulshan">Gulshan</option>
-                    <option value="Banani">Banani</option>
-                    <option value="Mirpur">Mirpur</option>
-                </select>
-            </div>
-        </form>
-
-        <!-- profile picture -->
-        <img src="./assets/images/person.png" alt="Profile picture">
+        <hr />
     </header>
 
-    <main class="d-flex flex-column align-items-center mt-5 container">
-        <div class="d-flex flex-column align-items-start details-container">
-            <h2 class="fw-bold">Profile</h2>
+    <main class="d-flex justify-content-center mt-5 container">
+        <div class="d-flex flex-column align-items-start order-container">
+            <h2 class="fw-bold">Your Order is Active</h2>
 
-            <!-- Contact details -->
-            <div class="mt-4 p-3 rounded-4" id="contact-container">
-                <h5>Contact details</h5>
+            <!-- Order details -->
+            <div class="mt-4 p-4 rounded-4">
+                <h6>Delivery status</h6>
 
-                <form class="mt-3">
-                    <!-- Full name -->
-                    <div class="mb-3">
-                        <label for="inputFullName" class="form-label">Full name</label>
-                        <input type="email" class="form-control" id="inputFullName" placeholder="Christina Ashens">
+                <!-- Stats -->
+                <div class="d-flex justify-content-between column-gap-4 mt-3" id="stats">
+                    <!-- Order Confirmed div-->
+                    <div class="d-flex flex-column align-items-start w-100">
+                        <!-- Bar -->
+                        <div class="h-5px w-100 rounded-1"></div>
+                        <!-- Text -->
+                        <small class="mt-2">Order Confirmed</small>
                     </div>
 
-                    <!-- Email -->
-                    <div class="mb-3">
-                        <label for="inputEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail"
-                            placeholder="chris.ashens.1996@hotmail.com">
+                    <!-- Processing div-->
+                    <div class="d-flex flex-column align-items-start w-100">
+                        <!-- Bar -->
+                        <div class="h-5px w-100 rounded-1"></div>
+                        <!-- Text -->
+                        <small class="mt-2">Processing</small>
                     </div>
 
-                    <!-- Phone number -->
-                    <div class="mb-3">
-                        <label for="inputPhoneNumber" class="form-label">Phone number</label>
-                        <input type="number" class="form-control" id="inputPhoneNumber" placeholder=" +01 112 352 566">
+                    <!-- On Delivery div-->
+                    <div class="d-flex flex-column align-items-start w-100">
+                        <!-- Bar -->
+                        <div class="h-5px w-100 rounded-1"></div>
+                        <!-- Text -->
+                        <small class="mt-2">On Delivery</small>
                     </div>
-                </form>
 
-                <button type="submit" class="update-btn btn w-25 text-white fw-bold mt-3 float-end">Update</button>
-            </div>
+                    <!-- Delivered div-->
+                    <div class="d-flex flex-column align-items-start w-100">
+                        <!-- Bar -->
+                        <div class="h-5px w-100 rounded-1"></div>
+                        <!-- Text -->
+                        <small class="mt-2">Delivered</small>
+                    </div>
+                </div>
 
-            <!-- Profile picture -->
-            <div class="d-flex flex-column mt-5 p-3 rounded-4" id="profile-picture-container">
-                <h5>Profile picture</h5>
+                <hr class="mt-5" />
 
-                <img class="size-150px align-self-center mt-4" src="./assets/images/christina.png" alt="Christina">
+                <h4 class="fw-bold mt-2">Order Details</h4>
 
-                <div class="d-flex column-gap-2 mt-5">
-                    <input type="file" name="file" aria-label="Upload image" placeholder="Select image"
-                        class="form-control" />
+                <!-- Order information (date, name, address etc) -->
+                <div class="d-flex flex-column row-gap-3 mt-3">
+                    <div class="d-flex justify-content-between">
+                        <small>
+                            Order Code :
+                        </small>
 
-                    <button class="update-btn btn w-25 text-white fw-bold">Update</button>
+                        <small class="fw-bold" id="order-code">
+                            20210302-13430657
+                        </small>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <small>
+                            Order From :
+                        </small>
+
+                        <small class="fw-bold">
+                            Oven Fresh Pizza House
+                        </small>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <small>
+                            Order Date :
+                        </small>
+
+                        <small class="fw-bold">
+                            02-03-2021 13:43 PM
+                        </small>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <small>
+                            Name :
+                        </small>
+
+                        <small class="fw-bold">
+                            Christina Ashens
+                        </small>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <small>
+                            Phone :
+                        </small>
+
+                        <small class="fw-bold">
+                            513-777-6534
+                        </small>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <small>
+                            Delivery Address :
+                        </small>
+
+                        <small class="fw-bold">
+                            3971 Peaceful Lane, Lakewood,
+                            Ohio, 44107, USA
+                        </small>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <small>
+                            Total Order Amount :
+                        </small>
+
+                        <small class="fw-bold">
+                            $1,676.00
+                        </small>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <small>
+                            Payment Method :
+                        </small>
+
+                        <small class="fw-bold">
+                            PayPal
+                        </small>
+                    </div>
+                </div>
+
+                <hr class="mt-4" />
+
+                <!-- Order items -->
+                <div class="d-flex flex-column row-gap-5 mt-3">
+                    <!-- Item 1 -->
+                    <div class="d-flex align-items-start">
+                        <div class="d-flex me-auto">
+                            <!-- Quantity -->
+                            <h5 class="fw-bold me-5">1x</h5>
+
+                            <!-- Item details -->
+                            <div class="d-flex flex-column row-gap-2">
+                                <p>Cream Cheese Pizza</p>
+
+                                <p class="fw-bold">18 inch</p>
+
+                                <small>1x Extra Cheese, 1x Marinara Sauce</small>
+                            </div>
+                        </div>
+
+                        <h5 class="fw-bold">$99.50</h5>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="d-flex align-items-start">
+                        <div class="d-flex me-auto">
+                            <!-- Quantity -->
+                            <h5 class="fw-bold me-5">1x</h5>
+
+                            <!-- Item details -->
+                            <div class="d-flex flex-column row-gap-2">
+                                <p>Cream Cheese Pizza</p>
+
+                                <p class="fw-bold">18 inch</p>
+
+                                <small>1x Extra Cheese, 1x Marinara Sauce</small>
+                            </div>
+                        </div>
+
+                        <h5 class="fw-bold">$99.50</h5>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="d-flex align-items-start">
+                        <div class="d-flex me-auto">
+                            <!-- Quantity -->
+                            <h5 class="fw-bold me-5">1x</h5>
+
+                            <!-- Item details -->
+                            <div class="d-flex flex-column row-gap-2">
+                                <p>Cream Cheese Pizza</p>
+
+                                <p class="fw-bold">18 inch</p>
+
+                                <small>1x Extra Cheese, 1x Marinara Sauce</small>
+                            </div>
+                        </div>
+
+                        <h5 class="fw-bold">$99.50</h5>
+                    </div>
+                </div>
+
+                <hr class="mt-4" />
+
+                <div class="d-flex flex-column row-gap-3 mt-4">
+                    <div class="d-flex justify-content-between">
+                        <small>
+                            Subtotal
+                        </small>
+
+                        <small>
+                            $34.97
+                        </small>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <small>
+                            Taxes & Charges
+                        </small>
+
+                        <small>
+                            $5.25
+                        </small>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <small>
+                            Delivery
+                        </small>
+
+                        <small>
+                            $2.00
+                        </small>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <small>
+                            Discount
+                        </small>
+
+                        <small>
+                            $1.75
+                        </small>
+                    </div>
+
+                    <div class="d-flex justify-content-between fw-bold">
+                        <small>
+                            Total
+                        </small>
+
+                        <h6>
+                            $40.50
+                        </h6>
+                    </div>
                 </div>
             </div>
-
-            <!-- Reset password -->
-            <div class="mt-5 p-3 rounded-4" id="reset-password-container">
-                <h5>Reset password</h5>
-
-                <form class="mt-3">
-                    <!-- Current password -->
-                    <div class="mb-3">
-                        <label for="inputCurrentPassword" class="form-label">Current password</label>
-                        <input type="password" class="form-control" id="inputCurrentPassword">
-                    </div>
-
-                    <!-- New password -->
-                    <div class="mb-3">
-                        <label for="inputNewPassword" class="form-label">New password</label>
-                        <input type="password" class="form-control" id="inputNewPassword">
-                    </div>
-
-                    <!-- Confirm new password -->
-                    <div class="mb-3">
-                        <label for="inputConfirmPassword" class="form-label">Confirm new password</label>
-                        <input type="password" class="form-control" id="inputConfirmPassword">
-                    </div>
-                </form>
-
-                <button type="submit" class="update-btn btn w-25 text-white fw-bold mt-3 float-end">Update</button>
-            </div>
-        </div>
     </main>
 
     <!-- Footer section -->
@@ -135,29 +313,35 @@
         <div class="pt-5 mx-auto" id="foodland">
             <h6 class="fw-bold">Order food from the best restaurants with Foodland</h6>
 
-            <small class="d-block mt-3">But I must explain to you how all this mistaken idea of denouncing pleasure
+            <small class="d-block mt-3">But I must explain to you how all this mistaken idea of denouncing
+                pleasure
                 and
                 praising pain was
                 born and I will give
-                you a complete account of the system, and expound the actual teachings of the great explorer of the
+                you a complete account of the system, and expound the actual teachings of the great explorer of
+                the
                 truth, the
-                master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it
+                master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because
+                it
                 is pleasure, but
                 because those who do not know how to pursue pleasure rationally encounter consequences that are
                 extremely painful. Nor
-                again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain,
+                again is there anyone who loves or pursues or desires to obtain pain of itself, because it is
+                pain,
                 but because
                 occasionally circumstances occur in which toil and pain can procure him some great pleasure.
 
                 <br><br>
 
-                To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
+                To take a trivial example, which of us ever undertakes laborious physical exercise, except to
+                obtain
                 some advantage from
                 it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no
                 annoying consequences, or
                 one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with
                 righteous indignation and
-                dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded
+                dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so
+                blinded
                 by desire, that they
                 cannot foresee the pain and trouble.
             </small>
@@ -206,16 +390,19 @@
                 <div>
                     <small class="d-block fw-bold">Food Delivery In New York</small>
                     <small class="d-block mt-2">
-                        54 Below, Bickford's, BurritoVille, Golden Krust Caribbean Bakery & Grill, Grotta Azzurra,
+                        54 Below, Bickford's, BurritoVille, Golden Krust Caribbean Bakery & Grill, Grotta
+                        Azzurra,
                         The Halal Guys, El
-                        Internacional, Jahn's Jing Fong, Joe's Shanghai, Kennedy Fried Chicken, Lucciola (Italian
+                        Internacional, Jahn's Jing Fong, Joe's Shanghai, Kennedy Fried Chicken, Lucciola
+                        (Italian
                         restaurant)
                     </small>
                 </div>
                 <div>
                     <small class="d-block fw-bold">Food Delivery In Los Angeles</small>
                     <small class="d-block mt-2">
-                        Korilla BBQ, Max and Mina's, The Meatball Shop, Mo Gridder's, Munson Diner, Old Homestead
+                        Korilla BBQ, Max and Mina's, The Meatball Shop, Mo Gridder's, Munson Diner, Old
+                        Homestead
                         Steakhouse, Piccolo Café,
                         T.G.I. Friday's.
                     </small>
@@ -223,7 +410,8 @@
                 <div>
                     <small class="d-block fw-bold">Food Delivery In New Jersey</small>
                     <small class="d-block mt-2">
-                        Bickford's, BurritoVille, Golden Krust Caribbean Bakery & Grill, Grotta Azzurra, The Halal Guys,
+                        Bickford's, BurritoVille, Golden Krust Caribbean Bakery & Grill, Grotta Azzurra, The
+                        Halal Guys,
                         El Internacional,
                         Jahn's Jing Fong, Joe's Shanghai, Kennedy Fried Chicken, Lucciola
                     </small>
@@ -239,7 +427,8 @@
                 <div>
                     <small class="d-block fw-bold">Food Delivery In California</small>
                     <small class="d-block mt-2">
-                        Munson Diner, Korilla BBQ, Max and Mina's, The Meatball Shop, Mo Gridder's, Old Homestead
+                        Munson Diner, Korilla BBQ, Max and Mina's, The Meatball Shop, Mo Gridder's, Old
+                        Homestead
                         Steakhouse, Piccolo Café,
                         T.G.I. Friday's.
                     </small>
@@ -318,7 +507,8 @@
                                 <img class="footer-icon" src="./assets/images/pin-white.svg" alt="Pin">
                                 <div>
                                     <p>Address</p>
-                                    <small class="d-block text-white mt-1">4604 Canis Heights Drive, Los Angeles,
+                                    <small class="d-block text-white mt-1">4604 Canis Heights Drive, Los
+                                        Angeles,
                                         California, 90007</small>
                                 </div>
                             </div>
@@ -394,7 +584,8 @@
                             <small class="d-block text-white">Refund Policy</small>
                         </div>
 
-                        <small class="d-block text-light-emphasis mt-2">© ActiveITzone 2021 | Trademarks and brands
+                        <small class="d-block text-light-emphasis mt-2">© ActiveITzone 2021 | Trademarks and
+                            brands
                             are
                             the
                             property
@@ -420,9 +611,6 @@
         <!-- Extra whitespace -->
         <section class="mt-5"></section>
     </footer>
-
-    <!-- Loading mini bootstrap javascript bundle -->
-    <script type="module" src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

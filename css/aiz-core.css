@@ -20313,4 +20313,25 @@ aside {
   background-color: var(--ui-orange);
 }
 
+.order-container {
+  width: 100%;
+  max-width: 50rem;
+}
+.order-container > div:first-of-type {
+  width: 100%;
+  border: 1px solid #D1D1D1;
+}
+.order-container #stats > div:first-child div, .order-container #stats > div:nth-child(2) div {
+  background-color: #31C7A5;
+}
+.order-container #stats > div:nth-child(3) div {
+  background-color: #E23656;
+}
+.order-container #stats > div:last-child div {
+  background-color: #D1D1D1;
+}
+.order-container #order-code {
+  color: var(--ui-orange);
+}
+
 /*# sourceMappingURL=aiz-core.css.map */
