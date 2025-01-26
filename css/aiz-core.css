@@ -20289,4 +20289,39 @@ aside {
   background-color: #00B7EB;
 }
 
+.details-container {
+  width: 100%;
+  max-width: 50rem;
+}
+
+#contact-container {
+  width: 100%;
+  border: 1px solid #D1D1D1;
+}
+#contact-container form label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#contact-container form label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#contact-container form input {
+  border: 0;
+  background-color: #F5F4F2;
+}
+#contact-container .update-btn {
+  background-color: var(--ui-orange);
+}
+
+#profile-picture-container,
+#reset-password-container {
+  width: 100%;
+  border: 1px solid #D1D1D1;
+}
+#profile-picture-container .update-btn,
+#reset-password-container .update-btn {
+  background-color: var(--ui-orange);
+}
+
 /*# sourceMappingURL=aiz-core.css.map */

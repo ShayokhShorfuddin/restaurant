@@ -1160,3 +1160,46 @@ aside {
 
     }
 }
+
+///// Scss for profile page //////
+.details-container {
+    width: 100%;
+    max-width: 50rem;
+}
+
+#contact-container {
+    width: 100%;
+    border: 1px solid #D1D1D1;
+
+    form {
+        label {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        input {
+            border: 0;
+            background-color: #F5F4F2;
+        }
+
+    }
+
+    .update-btn {
+        background-color: var(--ui-orange);
+    }
+}
+
+#profile-picture-container,
+#reset-password-container {
+    width: 100%;
+    border: 1px solid #D1D1D1;
+
+    .update-btn {
+        background-color: var(--ui-orange);
+    }
+}
