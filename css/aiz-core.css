@@ -20185,10 +20185,6 @@ aside {
   font-size: 0.9rem;
   font-weight: 500;
 }
-#login-form-1 .right-side label {
-  font-size: 0.9rem;
-  font-weight: 500;
-}
 #login-form-1 .right-side .form-check-label {
   font-weight: 400;
 }
@@ -20221,10 +20217,6 @@ aside {
 }
 #login-form-2 .right-side a:hover {
   color: var(--ui-orange);
-}
-#login-form-2 .right-side label {
-  font-size: 0.9rem;
-  font-weight: 500;
 }
 #login-form-2 .right-side label {
   font-size: 0.9rem;
@@ -20267,10 +20259,6 @@ aside {
   font-size: 0.9rem;
   font-weight: 500;
 }
-#login-form-3 .right-side label {
-  font-size: 0.9rem;
-  font-weight: 500;
-}
 #login-form-3 .right-side .form-check-label {
   font-weight: 400;
 }
@@ -20302,10 +20290,6 @@ aside {
   font-size: 0.9rem;
   font-weight: 500;
 }
-#contact-container form label {
-  font-size: 0.9rem;
-  font-weight: 500;
-}
 #contact-container form input {
   border: 0;
   background-color: #F5F4F2;
@@ -20318,6 +20302,11 @@ aside {
 #reset-password-container {
   width: 100%;
   border: 1px solid #D1D1D1;
+}
+#profile-picture-container form label,
+#reset-password-container form label {
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 #profile-picture-container .update-btn,
 #reset-password-container .update-btn {

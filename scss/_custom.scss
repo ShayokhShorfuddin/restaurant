@@ -1024,10 +1024,6 @@ aside {
             font-weight: 500;
         }
 
-        label {
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
 
         .form-check-label {
             font-weight: 400;
@@ -1070,11 +1066,6 @@ aside {
 
         a:hover {
             color: var(--ui-orange);
-        }
-
-        label {
-            font-size: 0.9rem;
-            font-weight: 500;
         }
 
         label {
@@ -1130,11 +1121,6 @@ aside {
             font-weight: 500;
         }
 
-        label {
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
         .form-check-label {
             font-weight: 400;
         }
@@ -1177,11 +1163,6 @@ aside {
             font-weight: 500;
         }
 
-        label {
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
         input {
             border: 0;
             background-color: #F5F4F2;
@@ -1198,6 +1179,13 @@ aside {
 #reset-password-container {
     width: 100%;
     border: 1px solid #D1D1D1;
+
+    form {
+        label {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+    }
 
     .update-btn {
         background-color: var(--ui-orange);
