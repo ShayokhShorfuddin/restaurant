@@ -1,13 +1,17 @@
 {
+	"homepage": "https://shayokh.is-a.dev/restaurant/",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
 		"bootstrap": "^5.3.3",
 		"fast-average-color": "^9.4.0",
+		"gh-pages": "^6.3.0",
 		"swiper": "^11.2.1"
 	},
 	"devDependencies": {
