@@ -1223,3 +1223,87 @@ aside {
         color: var(--ui-orange);
     }
 }
+
+
+///// Scss for my orders page //////
+.my-and-past-orders-container {
+    width: 100%;
+    max-width: 50rem;
+}
+
+.my-orders-container {
+    width: 100%;
+
+    .order-card {
+        width: 100%;
+        max-width: 100%;
+        border: 1px solid var(--ui-orange);
+
+        #order-code {
+            color: var(--ui-orange);
+        }
+
+        .order-card-price {
+            color: var(--ui-orange);
+        }
+
+        .view-details-button {
+            background-color: #FAFAFA;
+            border: 1px solid #EEEEEE;
+        }
+
+        #stats {
+
+            &>div:first-child div,
+            &>div:nth-child(2) div {
+                background-color: #31C7A5;
+            }
+
+            &>div:nth-child(3) div {
+                background-color: #E23656;
+            }
+
+            &>div:last-child div {
+                background-color: #D1D1D1;
+            }
+        }
+    }
+}
+
+.past-orders-container {
+    width: 100%;
+
+    &>div:first-of-type {
+        border: 1px solid #D1D1D1;
+
+        #order-code {
+            color: var(--ui-orange);
+        }
+
+        .order-card-price {
+            color: var(--ui-orange);
+        }
+
+        .view-details-button {
+            background-color: #FAFAFA;
+            border: 1px solid #EEEEEE;
+        }
+
+        .delivery-status-container {
+            h6 {
+                color: var(--ui-orange)
+            }
+        }
+
+        &>p:last-of-type {
+            text-align: end;
+            color: var(--ui-orange);
+        }
+    }
+
+
+    /* Dotted border */
+    hr.dotted {
+        border-top: 3px dotted #bbb;
+    }
+}

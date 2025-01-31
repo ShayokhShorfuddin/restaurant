@@ -18,6 +18,7 @@ export default defineConfig({
                 "page-10": resolve(__dirname, "page-10.html"),
                 "profile-page": resolve(__dirname, "profile-page.html"),
                 "order-details": resolve(__dirname, "order-details.html"),
+                "my-orders": resolve(__dirname, "my-orders.html"),
             },
         },
     },

@@ -20334,4 +20334,65 @@ aside {
   color: var(--ui-orange);
 }
 
+.my-and-past-orders-container {
+  width: 100%;
+  max-width: 50rem;
+}
+
+.my-orders-container {
+  width: 100%;
+}
+.my-orders-container .order-card {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid var(--ui-orange);
+}
+.my-orders-container .order-card #order-code {
+  color: var(--ui-orange);
+}
+.my-orders-container .order-card .order-card-price {
+  color: var(--ui-orange);
+}
+.my-orders-container .order-card .view-details-button {
+  background-color: #FAFAFA;
+  border: 1px solid #EEEEEE;
+}
+.my-orders-container .order-card #stats > div:first-child div, .my-orders-container .order-card #stats > div:nth-child(2) div {
+  background-color: #31C7A5;
+}
+.my-orders-container .order-card #stats > div:nth-child(3) div {
+  background-color: #E23656;
+}
+.my-orders-container .order-card #stats > div:last-child div {
+  background-color: #D1D1D1;
+}
+
+.past-orders-container {
+  width: 100%;
+  /* Dotted border */
+}
+.past-orders-container > div:first-of-type {
+  border: 1px solid #D1D1D1;
+}
+.past-orders-container > div:first-of-type #order-code {
+  color: var(--ui-orange);
+}
+.past-orders-container > div:first-of-type .order-card-price {
+  color: var(--ui-orange);
+}
+.past-orders-container > div:first-of-type .view-details-button {
+  background-color: #FAFAFA;
+  border: 1px solid #EEEEEE;
+}
+.past-orders-container > div:first-of-type .delivery-status-container h6, .past-orders-container > div:first-of-type .delivery-status-container .h6 {
+  color: var(--ui-orange);
+}
+.past-orders-container > div:first-of-type > p:last-of-type {
+  text-align: end;
+  color: var(--ui-orange);
+}
+.past-orders-container hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
 /*# sourceMappingURL=aiz-core.css.map */
