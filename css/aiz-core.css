@@ -20317,7 +20317,7 @@ aside {
   width: 100%;
   max-width: 50rem;
 }
-.order-container > div:first-of-type {
+.order-container > div:first-of-type, .order-container > div:nth-of-type(2) {
   width: 100%;
   border: 1px solid #D1D1D1;
 }
@@ -20392,7 +20392,90 @@ aside {
   color: var(--ui-orange);
 }
 .past-orders-container hr.dotted {
-  border-top: 3px dotted #bbb;
+  border-top: 3px dashed #bbb;
+}
+
+.checkout-container {
+  width: 100%;
+  max-width: 50rem;
+}
+.checkout-container > div:first-of-type, .checkout-container > div:nth-of-type(2), .checkout-container > div:nth-of-type(3) {
+  width: 100%;
+  border: 1px solid #D1D1D1;
+}
+.checkout-container .payment-options {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.checkout-container .payment-option {
+  background-color: #F7F7F7;
+  border: 1px solid transparent;
+}
+.checkout-container .payment-option:hover {
+  cursor: pointer;
+}
+.checkout-container .payment-option.selected {
+  border: 2px solid var(--ui-orange);
+}
+.checkout-container .terms-checkbox-label:hover a {
+  color: var(--ui-orange);
+}
+.checkout-container .checkout-button {
+  background-color: var(--ui-orange);
+  border: 0;
+}
+
+.form-check-label {
+  font-weight: 400;
+}
+
+.form-check-input:hover {
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: var(--ui-orange);
+}
+
+.location-card {
+  border: 1px solid #d1d1d1;
+}
+.location-card.active {
+  border: 2px solid var(--ui-orange);
+}
+.location-card > div:first-of-type {
+  width: 100%;
+  max-width: 20rem;
+}
+.location-card button {
+  border: 0;
+  background-color: var(--ui-orange);
+}
+.location-card button:hover {
+  background-color: var(--ui-orange);
+}
+
+.add-new-address-btn {
+  border: 2px dashed #D1D1D1;
+  background-color: #F7F7F7;
+}
+.add-new-address-btn h6, .add-new-address-btn .h6 {
+  color: var(--ui-orange);
+}
+.add-new-address-btn:hover {
+  border: 2px dashed #D1D1D1;
+}
+
+#additional-note-textarea {
+  background-color: #F7F7F7;
+}
+
+.apply-code-section > div:first-of-type input {
+  background-color: #EBEAE9;
+}
+.apply-code-section > div:first-of-type button {
+  background-color: black;
 }
 
 /*# sourceMappingURL=aiz-core.css.map */

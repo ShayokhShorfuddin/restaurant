@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Restaurant</title>
+
+    <!-- Linking custom stylesheet -->
+    <link rel="stylesheet" href="css/aiz-core.css">
+</head>
+
+<body>
+    <header class="container">
+        <div class="d-flex justify-content-between align-items-center gap-5">
+            <!-- logo -->
+            <div class="aiz-topbar-logo-wrap d-flex column-gap-2">
+                <img src="./assets/images/logo.svg" alt="logo">
+
+                <h5 class="text-nowrap" id="logo-text">
+                    <span class="fw-light">Active </span>
+                    <span class="fw-bolder">Restaurant</span>
+                </h5>
+            </div>
+
+            <!-- Search bar -->
+            <form class="d-flex w-50 column-gap-5">
+                <div class="input-group">
+                    <img class="input-group-text rounded-start-circle border-0 bg-ui-gray"
+                        src="./assets/images/search.svg" alt="search-icon" />
+
+                    <input type="text" class="form-control border-0 bg-ui-gray" id="search-bar"
+                        placeholder="Search Active Restaurant" aria-label="Search Active Restaurant" />
+
+                    <img class="input-group-text rounded-end-circle border-0 bg-ui-gray"
+                        src="./assets/images/config.svg" alt="config-icon" />
+                </div>
+
+                <!-- location dropdown -->
+                <div class="d-flex align-items-center">
+                    <img class="size-15px" src="./assets/images/pin.svg" alt="Pin">
+
+                    <select class="form-select w-auto" aria-label="Select location">
+                        <option selected>Select location</option>
+                        <option value="Woodland Hills">Woodland Hills</option>
+                        <option value="Uttara">Uttara</option>
+                        <option value="Gulshan">Gulshan</option>
+                        <option value="Banani">Banani</option>
+                        <option value="Mirpur">Mirpur</option>
+                    </select>
+                </div>
+            </form>
+
+            <!-- profile picture -->
+            <img src="./assets/images/person.png" alt="Profile picture">
+        </div>
+
+        <hr />
+    </header>
+
+    <main class="d-flex justify-content-center mt-5 container">
+        <div class="d-flex flex-column align-items-start checkout-container">
+            <h2 class="fw-bold">Checkout</h2>
+
+            <!-- Checkout details -->
+            <div class="d-flex flex-column row-gap-3 mt-4 p-4 rounded-4">
+                <div class="d-flex flex-column row-gap-3">
+                    <h6>Delivery Address</h6>
+
+                    <!-- Location 1 -->
+                    <div class="d-flex justify-content-between align-items-center p-4 location-card rounded-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                3971 Peaceful Lane, Lakewood, Ohio, 44107
+                                740-210-2795, USA
+                            </label>
+                        </div>
+
+                        <button type="button" class="btn btn-secondary btn-sm fw-bold rounded-3">Change</button>
+                    </div>
+
+                    <!-- Location 2 -->
+                    <div class="d-flex justify-content-between align-items-center p-4 location-card rounded-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                3032 Round Table Drive, West Chester, Ohio, 45069
+                                513-777-6534, USA
+                            </label>
+                        </div>
+
+                        <button type="button" class="btn btn-secondary btn-sm fw-bold rounded-3">Change</button>
+                    </div>
+
+                    <button type="button" class="btn add-new-address-btn p-3">
+                        <div class="d-flex justify-content-center align-items-center column-gap-2">
+                            <img src="./assets/images/orange-plus-icon.svg" alt="Orange plus icon">
+                            <h6>Add New Address</h6>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="form-check mt-1">
+                    <input type="checkbox" class="form-check-input" id="request-cutlary-checkbox">
+
+                    <label class="form-check-label" for="request-cutlary-checkbox">Request Cutlary
+                    </label>
+                </div>
+
+
+                <div class="d-flex flex-column row-gap-3 mt-3">
+                    <h6>Additional Notes</h6>
+
+                    <div class="mb-3">
+                        <textarea class="form-control" id="additional-note-textarea"
+                            placeholder="e.g. No mayo"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order summery -->
+            <div class="d-flex flex-column mt-4 p-4 rounded-4">
+                <h6>Order Summery</h6>
+
+                <div class="d-flex flex-column row-gap-2 mt-3">
+                    <div class="d-flex justify-content-between">
+                        <p>Subtotal</p>
+                        <p>$34.97</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p>Taxes & Charges</p>
+                        <p>$5.25</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p>Delivery</p>
+                        <p>$2.00</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p>Discount</p>
+                        <p>$1.75</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <h6 class="fw-bold">Total</h6>
+                        <h6 class="fw-bold">$40.50</h6>
+                    </div>
+                </div>
+
+                <hr class="mt-3" />
+
+                <div class="d-flex justify-content-between align-items-center mt-2 apply-code-section">
+                    <h6 class="text-secondary">Have a code?</h6>
+
+                    <div class="d-flex column-gap-2">
+                        <!-- Code input box -->
+                        <input type="text" class="form-control" id="inputCode">
+
+                        <button type="button" class="btn btn-sm text-light fw-bold px-4 rounded-3">Apply</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Payment options -->
+            <div class="d-flex flex-column mt-4 p-4 rounded-4">
+                <h6>Payment Options</h6>
+
+                <div class="payment-options mt-3">
+                    <div class="d-flex align-items-center column-gap-4 p-2 rounded-4 payment-option">
+                        <img src="./assets/images/paypal-logo.png" alt="Paypal logo">
+                        <h6>Paypal</h6>
+                    </div>
+
+                    <div class="d-flex align-items-center column-gap-4 p-2 rounded-4 payment-option">
+                        <img src="./assets/images/stripe-logo.png" alt="Stripe logo">
+                        <h6>Stripe</h6>
+                    </div>
+
+                    <div class="d-flex align-items-center column-gap-4 p-2 rounded-4 payment-option">
+                        <img src="./assets/images/sslcommerz-logo.png" alt="SSLCommerz logo">
+                        <h6>SSLCommerz</h6>
+                    </div>
+
+                    <div class="d-flex align-items-center column-gap-4 p-2 rounded-4 payment-option">
+                        <img src="./assets/images/paytm-logo.png" alt="Paytm logo">
+                        <h6>Paytm</h6>
+                    </div>
+
+                    <div class="d-flex align-items-center column-gap-4 p-2 rounded-4 payment-option">
+                        <img src="./assets/images/paystack-logo.png" alt="Paystack logo">
+                        <h6>Paystack</h6>
+                    </div>
+
+                    <div class="d-flex align-items-center column-gap-4 p-2 rounded-4 payment-option">
+                        <img src="./assets/images/voguepay-logo.png" alt="Voguepay logo">
+                        <h6>Vougepay</h6>
+                    </div>
+
+                    <div class="d-flex align-items-center column-gap-4 p-2 rounded-4 payment-option">
+                        <img src="./assets/images/iyzico-logo.png" alt="Iyzico logo">
+                        <h6>Iyzico</h6>
+                    </div>
+
+                    <div class="d-flex align-items-center column-gap-4 p-2 rounded-4 payment-option">
+                        <img src="./assets/images/payfast-logo.png" alt="Payfast logo">
+                        <h6>PayFast</h6>
+                    </div>
+
+                    <div class="d-flex align-items-center column-gap-4 p-2 rounded-4 payment-option">
+                        <img src="./assets/images/instamojo-logo.png" alt="Instamojo logo">
+                        <h6>Instamojo</h6>
+                    </div>
+
+                    <div class="d-flex align-items-center column-gap-4 p-2 rounded-4 payment-option">
+                        <img src="./assets/images/flutterwave-logo.png" alt="Flutterwave logo">
+                        <h6>Flutterwave</h6>
+                    </div>
+
+                    <div class="d-flex align-items-center column-gap-4 p-2 rounded-4 payment-option">
+                        <img src="./assets/images/mopesa-logo.png" alt="Mopesa logo">
+                        <h6>Mopesa</h6>
+                    </div>
+
+                    <div class="d-flex align-items-center column-gap-4 p-2 rounded-4 payment-option">
+                        <img src="./assets/images/Nagad-logo.png" alt="Nagad logo">
+                        <h6>Nagad</h6>
+                    </div>
+
+                    <div class="d-flex align-items-center column-gap-4 p-2 rounded-4 payment-option">
+                        <img src="./assets/images/wallet.png" alt="Wallet logo">
+                        <h6>Wallet</h6>
+                    </div>
+
+                    <div class="d-flex align-items-center column-gap-4 p-2 rounded-4 payment-option">
+                        <img src="./assets/images/cash-on-delivery.png" alt="Cash on Delivery logo">
+                        <h6>Cash on Delivery</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terms and conditions -->
+            <div class="mt-4">
+                <input type="checkbox" class="form-check-input" id="terms-checkbox">
+
+                <label class="form-check-label terms-checkbox-label" for="terms-checkbox">By signing up you agree to our
+                    <span>
+                        <a href="#">
+                            terms and
+                            conditions
+                        </a>
+                    </span>
+                </label>
+            </div>
+
+            <!-- Checkout button -->
+            <button type="button" class="btn btn-primary btn-lg mt-4 fw-bold w-100 checkout-button">Checkout
+                $1,656.00</button>
+        </div>
+
+    </main>
+
+    <!-- Footer section -->
+    <footer class="container mt-5">
+        <!-- Foodland -->
+        <div class="pt-5 mx-auto" id="foodland">
+            <h6 class="fw-bold">Order food from the best restaurants with Foodland</h6>
+
+            <small class="d-block mt-3">But I must explain to you how all this mistaken idea of denouncing
+                pleasure
+                and
+                praising pain was
+                born and I will give
+                you a complete account of the system, and expound the actual teachings of the great explorer
+                of
+                the
+                truth, the
+                master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+                because
+                it
+                is pleasure, but
+                because those who do not know how to pursue pleasure rationally encounter consequences that
+                are
+                extremely painful. Nor
+                again is there anyone who loves or pursues or desires to obtain pain of itself, because it
+                is
+                pain,
+                but because
+                occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+
+                <br><br>
+
+                To take a trivial example, which of us ever undertakes laborious physical exercise, except
+                to
+                obtain
+                some advantage from
+                it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has
+                no
+                annoying consequences, or
+                one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce
+                with
+                righteous indignation and
+                dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so
+                blinded
+                by desire, that they
+                cannot foresee the pain and trouble.
+            </small>
+
+            <hr class="mt-4">
+        </div>
+
+        <!-- Popular Cuisines -->
+        <div class="pt-3 mx-auto" id="popular-cuisines">
+            <h6 class="fw-bold">Popular Cuisines</h6>
+
+            <div class="mt-3" id="popular-cuisines-grid">
+                <small>Popular Cuisines</small>
+                <small>Dessert</small>
+                <small>Japanese</small>
+                <small>Turkish</small>
+
+                <small>American</small>
+                <small>Fast food</small>
+                <small>Korean</small>
+                <small>Seafood</small>
+
+                <small>Bakery & Cake</small>
+                <small>Healthy food</small>
+                <small>Mexican</small>
+                <small>Thai</small>
+
+                <small>Burger</small>
+                <small>Indian</small>
+                <small>Middle Eastern</small>
+                <small>Vegetarian</small>
+
+                <small>Chinese</small>
+                <small>Italian</small>
+                <small>Pizza</small>
+                <small>Western</small>
+            </div>
+
+            <hr class="mt-4">
+        </div>
+
+        <!-- Delivery Locations -->
+        <div class="pt-3 mx-auto" id="delivery-locations">
+            <h6 class="fw-bold">Popular Cuisines</h6>
+            <div class="mt-3" id="delivery-locations-grid">
+                <div>
+                    <small class="d-block fw-bold">Food Delivery In New York</small>
+                    <small class="d-block mt-2">
+                        54 Below, Bickford's, BurritoVille, Golden Krust Caribbean Bakery & Grill, Grotta
+                        Azzurra,
+                        The Halal Guys, El
+                        Internacional, Jahn's Jing Fong, Joe's Shanghai, Kennedy Fried Chicken, Lucciola
+                        (Italian
+                        restaurant)
+                    </small>
+                </div>
+                <div>
+                    <small class="d-block fw-bold">Food Delivery In Los Angeles</small>
+                    <small class="d-block mt-2">
+                        Korilla BBQ, Max and Mina's, The Meatball Shop, Mo Gridder's, Munson Diner, Old
+                        Homestead
+                        Steakhouse, Piccolo Café,
+                        T.G.I. Friday's.
+                    </small>
+                </div>
+                <div>
+                    <small class="d-block fw-bold">Food Delivery In New Jersey</small>
+                    <small class="d-block mt-2">
+                        Bickford's, BurritoVille, Golden Krust Caribbean Bakery & Grill, Grotta Azzurra, The
+                        Halal Guys,
+                        El Internacional,
+                        Jahn's Jing Fong, Joe's Shanghai, Kennedy Fried Chicken, Lucciola
+                    </small>
+                </div>
+                <div>
+                    <small class="d-block fw-bold">Food Delivery In North Carolina</small>
+                    <small class="d-block mt-2">
+                        BurritoVille, Golden Krust Caribbean Bakery & Grill, Grotta Azzurra, The Halal Guys,
+                        El
+                        Internacional, Jahn's Jing Fong,
+                        Joe's Shanghai, Kennedy Fried Chicken, Lucciola (Italian restaurant)
+                    </small>
+                </div>
+                <div>
+                    <small class="d-block fw-bold">Food Delivery In California</small>
+                    <small class="d-block mt-2">
+                        Munson Diner, Korilla BBQ, Max and Mina's, The Meatball Shop, Mo Gridder's, Old
+                        Homestead
+                        Steakhouse, Piccolo Café,
+                        T.G.I. Friday's.
+                    </small>
+                </div>
+                <div>
+                    <small class="d-block fw-bold">Food Delivery In Pennsylvania</small>
+                    <small class="d-block mt-2">
+                        BurritoVille, Golden Krust Caribbean Bakery & Grill, Grotta Azzurra, The Halal Guys,
+                        El
+                        Internacional, Jahn's Jing Fong,
+                        Joe's Shanghai, Kennedy Fried Chicken, Lucciola
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Black footer -->
+        <div class="bg-black rounded-4 mt-5" id="black-footer">
+            <div class="mx-auto w-75">
+                <!-- Logo and social media icons -->
+                <div class="d-flex justify-content-between align-items-center pt-5">
+                    <!-- logo -->
+                    <div class="d-flex column-gap-2">
+                        <img id="logo" src="./assets/images/logo.svg" alt="logo">
+
+                        <h5 class="text-nowrap" id="logo-text">
+                            <span class="fw-light text-light">Active </span>
+                            <span class="fw-bolder text-white">Restaurant</span>
+                        </h5>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center column-gap-3">
+                        <img src="./assets/images/facebook.svg" alt="facebook">
+                        <img src="./assets/images/twitter.svg" alt="twitter">
+                        <img src="./assets/images/instagram.svg" alt="instagram">
+                        <img src="./assets/images/youtube.svg" alt="youtube">
+                        <img src="./assets/images/pinterest.svg" alt="pinterest">
+                        <img src="./assets/images/whatsapp.svg" alt="whatsapp">
+                    </div>
+                </div>
+
+                <hr class="mt-4">
+
+                <div class="d-flex justify-content-between">
+                    <!-- Offers, Contacts, Quick links -->
+                    <div class="d-flex column-gap-5">
+                        <!-- Offers -->
+                        <div>
+                            <small class=" d-block fw-bold text-light">Get your special offers, Coupons &
+                                More...</small>
+
+                            <form id="email-form">
+                                <div class="mt-3">
+                                    <input type="email" class="form-control" id="email-input"
+                                        placeholder="Enter your email.">
+                                </div>
+
+                                <button type="submit" class="btn mt-3 px-4">
+                                    <p class="fw-bold">Subscribe</p>
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Contacts -->
+                        <div id="contacts">
+                            <small class="d-block fw-bold text-light">Contacts</small>
+
+                            <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
+                                <img class="footer-icon" src="./assets/images/globe.svg" alt="Globe">
+                                <div>
+                                    <p>Website</p>
+                                    <small class="d-block text-white mt-1">www.foodzone.com</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
+                                <img class="footer-icon" src="./assets/images/pin-white.svg" alt="Pin">
+                                <div>
+                                    <p>Address</p>
+                                    <small class="d-block text-white mt-1">4604 Canis Heights Drive, Los
+                                        Angeles,
+                                        California, 90007</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
+                                <img class="footer-icon" src="./assets/images/call.svg" alt="Call">
+                                <div>
+                                    <p>Phone</p>
+                                    <small class="d-block text-white mt-1">213-747-6463</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
+                                <img class="footer-icon" src="./assets/images/mail.svg" alt="Mail">
+                                <div>
+                                    <p>Mail</p>
+                                    <small class="d-block text-white mt-1">info@foodland.com</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick links -->
+                        <div id="quick-links">
+                            <small class="d-block fw-bold text-light">Quick Links</small>
+
+                            <small class="d-block text-white mt-4">Home</small>
+                            <small class="d-block text-white mt-2">All Restaurants</small>
+                            <small class="d-block text-white mt-2">Featured Restaurants</small>
+                            <small class="d-block text-white mt-2">Blogs</small>
+                            <small class="d-block text-white mt-2">Breakfast</small>
+                            <small class="d-block text-white mt-2">Lunch</small>
+                            <small class="d-block text-white mt-2">Dinner</small>
+                            <small class="d-block text-white mt-2">Fastfood</small>
+                        </div>
+                    </div>
+
+
+                    <!-- Mobile apps -->
+                    <div class="d-flex flex-column align-items-start" id="mobile-apps-div">
+                        <small class="d-block fw-bold text-light">Mobile Apps</small>
+
+                        <img src="./assets/images/google-play.png" alt="Google Play" class="mt-4">
+                        <img src="./assets/images/app-store.png" alt="App Store" class="mt-2">
+
+                        <hr class="d-block w-100 mt-4">
+
+                        <div class="d-flex column-gap-3">
+                            <img src="./assets/images/fork-knife.svg" alt="Fork">
+                            <small class="d-block text-white">Want to join your kitchen with our
+                                service?</small>
+                        </div>
+
+                        <hr class="d-block w-100 mt-3">
+
+                        <div class="d-flex column-gap-3">
+                            <img src="./assets/images/delivery-man.svg" alt="Fork">
+                            <small class="d-block text-white">Want to work with us as a
+                                delivery boy!</small>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mt-4">
+
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                    <!-- Terms & Conditions | Privacy Policy | Refund Policy -->
+                    <div>
+                        <div class="d-flex column-gap-3">
+                            <small class="d-block text-white">Terms & Conditions</small>
+                            <div class="vr"></div>
+                            <small class="d-block text-white">Privacy Policy</small>
+                            <div class="vr"></div>
+                            <small class="d-block text-white">Refund Policy</small>
+                        </div>
+
+                        <small class="d-block text-light-emphasis mt-2">© ActiveITzone 2021 | Trademarks and
+                            brands
+                            are
+                            the
+                            property
+                            of
+                            their respective owners.</small>
+                    </div>
+
+                    <div class="d-flex column-gap-3" id="payment-methods-icons">
+                        <img src="./assets/images/visa.svg" alt="Visa">
+                        <img src="./assets/images/mastercard.svg" alt="Mastercard">
+                        <img src="./assets/images/paypal.svg" alt="Paypal">
+                        <img src="./assets/images/stripe.svg" alt="Stripe">
+                        <img src="./assets/images/maestro.svg" alt="Maestro">
+                        <img src="./assets/images/american-express.svg" alt="American Express">
+                        <img src="./assets/images/discover-network.svg" alt="Discover Network">
+                    </div>
+                </div>
+
+                <div class="pt-5"></div>
+            </div>
+        </div>
+
+        <!-- Extra whitespace -->
+        <section class="mt-5"></section>
+    </footer>
+
+    <!-- Loading Jquery -->
+    <script type="module" src="./js/jquery-min.js"></script>
+    <script type="module" src="./js/location-checkbox.js"></script>
+    <script type="module" src="./js/payment-options.js"></script>
+</body>
+
+</html>

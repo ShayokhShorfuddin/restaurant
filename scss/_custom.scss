@@ -1198,7 +1198,8 @@ aside {
     width: 100%;
     max-width: 50rem;
 
-    &>div:first-of-type {
+    &>div:first-of-type,
+    &>div:nth-of-type(2) {
         width: 100%;
         border: 1px solid #D1D1D1;
     }
@@ -1304,6 +1305,115 @@ aside {
 
     /* Dotted border */
     hr.dotted {
-        border-top: 3px dotted #bbb;
+        border-top: 3px dashed #bbb;
+    }
+}
+
+///// Scss for checkout page //////
+
+.checkout-container {
+    width: 100%;
+    max-width: 50rem;
+
+    &>div:first-of-type,
+    &>div:nth-of-type(2),
+    &>div:nth-of-type(3) {
+        width: 100%;
+        border: 1px solid #D1D1D1;
+    }
+
+    .payment-options {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .payment-option {
+        background-color: #F7F7F7;
+        border: 1px solid transparent;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.selected {
+            border: 2px solid var(--ui-orange);
+        }
+    }
+
+    .terms-checkbox-label:hover {
+        a {
+            color: var(--ui-orange);
+        }
+    }
+
+    .checkout-button {
+        background-color: var(--ui-orange);
+        border: 0;
+    }
+}
+
+
+.form-check-label {
+    font-weight: 400;
+}
+
+.form-check-input:hover {
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: var(--ui-orange);
+}
+
+.location-card {
+    border: 1px solid #d1d1d1;
+
+    &.active {
+        border: 2px solid var(--ui-orange);
+    }
+
+    &>div:first-of-type {
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    button {
+        border: 0;
+        background-color: var(--ui-orange);
+
+        &:hover {
+            background-color: var(--ui-orange);
+        }
+    }
+
+}
+
+.add-new-address-btn {
+    border: 2px dashed #D1D1D1;
+    background-color: #F7F7F7;
+
+    h6 {
+        color: var(--ui-orange);
+    }
+
+    &:hover {
+        border: 2px dashed #D1D1D1;
+    }
+}
+
+#additional-note-textarea {
+    background-color: #F7F7F7;
+}
+
+.apply-code-section {
+    &>div:first-of-type {
+        input {
+            background-color: #EBEAE9;
+        }
+
+        button {
+            background-color: black;
+        }
     }
 }
