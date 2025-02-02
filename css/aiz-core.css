@@ -20611,6 +20611,9 @@ aside {
 #submitReviewModal #deliveryComment {
   background-color: #F5F4F2;
 }
+#submitReviewModal .modal-footer > button:last-of-type {
+  background-color: var(--ui-orange);
+}
 
 #restaurantDetailsModal .modal-header hr {
   border: 1px solid var(--ui-orange);

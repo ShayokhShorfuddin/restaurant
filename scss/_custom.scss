@@ -1608,6 +1608,12 @@ aside {
     #deliveryComment {
         background-color: #F5F4F2;
     }
+
+    .modal-footer {
+        &>button:last-of-type {
+            background-color: var(--ui-orange);
+        }
+    }
 }
 
 #restaurantDetailsModal {
