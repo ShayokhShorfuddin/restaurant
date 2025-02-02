@@ -58,13 +58,34 @@
         <hr />
     </header>
 
-    <main class="d-flex justify-content-center mt-5 container">
+    <main class="d-flex justify-content-center column-gap-3 mt-5 container">
         <!--------- Buttons ---------->
 
         <!-- Food Details -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#foodDetailsModal">
             Food Details
         </button>
+
+        <!-- Zone Selection Popup -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#zoneSelectionModal">
+            Zone Selection
+        </button>
+
+        <!-- Reviews Popup -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reviewsModal">
+            Reviews
+        </button>
+
+        <!-- Submit Review Popup -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#submitReviewModal">
+            Submit Review
+        </button>
+
+        <!-- Restaurant Details Popup -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#restaurantDetailsModal">
+            Restaurant Details
+        </button>
+
 
         <!--------- Modals ---------->
 
@@ -255,7 +276,401 @@
                 </div>
             </div>
         </div>
+
+        <!-- Zone Selection Modal -->
+        <div class="modal fade" id="zoneSelectionModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content border-0 rounded-4 overflow-hidden">
+                    <div class="modal-header border-0 p-0">
+                        <button type="button" class="btn modal-close-button rounded-pill p-0" data-bs-dismiss="modal"
+                            aria-label="Close">X</button>
+
+                        <img class="w-100" src="./assets/images/city.png" alt="City">
+                    </div>
+
+                    <div class="modal-body p-4 pt-0">
+                        <div class="d-flex flex-column row-gap-3">
+                            <img class="size-70px" src="./assets/images/location-pin.svg" alt="Location Pin">
+
+                            <h5 class="fw-bold">Please select a zone</h5>
+
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded-start-2 border" id="search-bar"
+                                    placeholder="Enter your address / select from dropdown"
+                                    aria-label="Enter your address / select from dropdown" />
+
+                                <img class="input-group-text rounded-end-2 border"
+                                    src="./assets/images/location-orange.svg" alt="location-icon" />
+                            </div>
+
+                            <button data-bs-toggle="modal" data-bs-target="#mapModal"
+                                class="btn fw-bold select-from-map-button p-1">Select from map</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- Map Modal -->
+        <div class="modal fade" id="mapModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content border-0 rounded-4 overflow-hidden">
+                    <div class="modal-header border-0 p-3">
+                        <button data-bs-toggle="modal" data-bs-target="#zoneSelectionModal" class="btn">
+                            <div class="d-flex column-gap-2">
+                                <img src="./assets/images/arrow-left.svg" alt="Arrow Left" />
+                                <p>Go Back</p>
+                            </div>
+                        </button>
+
+                        <button type="button" class="btn modal-close-button rounded-pill p-0" data-bs-dismiss="modal"
+                            aria-label="Close">X</button>
+                    </div>
+
+                    <div class="modal-body p-4 pt-0">
+                        <img class="w-100" src="./assets/images/map.png" alt="Map">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reviews Modal -->
+        <div class="modal fade" id="reviewsModal" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content border-0 rounded-4 overflow-hidden">
+                    <div class="modal-header">
+                        <button type="button" class="btn modal-close-button rounded-pill p-0" data-bs-dismiss="modal"
+                            aria-label="Close">X</button>
+
+                        <div class="d-flex flex-column row-gap-2 flex-grow-1">
+                            <h3 class="fw-bold">Oven Fresh Pizza House</h3>
+
+                            <p class="text-secondary">180 N Redington St, Hanford, CA 93230, USA</p>
+
+                            <!-- Ratings -->
+                            <div class="d-flex justify-content-between align-items-center mt-3 mb-1">
+                                <div class="d-flex align-items-center column-gap-3">
+                                    <p class="text-secondary lh-1"><span class="fs-2 text-black">4.50</span><span
+                                            class="fs-4">/5</span></p>
+
+                                    <div class="d-flex column-gap-2 stars">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star-gray.svg" alt="Star gray">
+                                    </div>
+
+                                    <small class="text-secondary">105 Ratings</small>
+                                </div>
+
+                                <div class="d-flex column-gap-3">
+                                    <div class="d-flex column-gap-2">
+                                        <img src="./assets/images/sort.svg" alt="Sort">
+                                        <p class="text-secondary">Sort :</p>
+                                    </div>
+
+                                    <p>Relevance</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-body p-3 mt-1">
+                        <div class="d-flex flex-column row-gap-4">
+                            <div class="d-flex column-gap-3">
+                                <img class="size-50px" src="./assets/images/Saltanat-Juresbek.png"
+                                    alt="Saltanat Juresbek">
+
+                                <div class="d-flex flex-column row-gap-1">
+                                    <h6>Saltanat Juresbek</h6>
+
+                                    <p class="text-secondary">05.04.2021</p>
+
+                                    <div class="d-flex column-gap-2 stars">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star-gray.svg" alt="Star gray">
+                                    </div>
+
+                                    <p class="mt-2">But I must explain to you how all this mistaken idea
+                                        of denouncing pleasure and
+                                        praising pain was born and I will give
+                                        you a complete account of the system, and expound the actual teachings of the
+                                        great explorer of the truth, the
+                                        master-builder of human happiness. No one rejects, dislikes, or avoids pleasure
+                                        itself, because it is pleasure, but
+                                        because those who do not know how to pursue .</p>
+                                </div>
+                            </div>
+
+
+                            <div class="d-flex column-gap-3">
+                                <img class="size-50px" src="./assets/images/Camelia-Arches.png" alt="Camelia Arches">
+
+                                <div class="d-flex flex-column row-gap-1">
+                                    <h6>Saltanat Juresbek</h6>
+
+                                    <p class="text-secondary">05.04.2021</p>
+
+                                    <div class="d-flex column-gap-2 stars">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star-gray.svg" alt="Star gray">
+                                    </div>
+
+                                    <p class="mt-2">This mistaken idea of denouncing pleasure and praising pain was born
+                                        and I will give you a complete account of the
+                                        system, and expound the actual teachings of the great explorer of the truth, the
+                                        master-builder of human happiness.</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex column-gap-3">
+                                <img class="size-50px" src="./assets/images/Natalia.png" alt="Natalia">
+
+                                <div class="d-flex flex-column row-gap-1">
+                                    <h6>Natalia</h6>
+
+                                    <p class="text-secondary">05.04.2021</p>
+
+                                    <div class="d-flex column-gap-2 stars">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star-gray.svg" alt="Star gray">
+                                    </div>
+
+                                    <p class="mt-2">This mistaken idea of denouncing pleasure and praising pain was born
+                                        and I will give you a complete account of the
+                                        system.</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex column-gap-3">
+                                <img class="size-50px" src="./assets/images/Ramenlof.png" alt="Ramenlof">
+
+                                <div class="d-flex flex-column row-gap-1">
+                                    <h6>Ramenlof</h6>
+
+                                    <p class="text-secondary">05.04.2021</p>
+
+                                    <div class="d-flex column-gap-2 stars">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star-gray.svg" alt="Star gray">
+                                    </div>
+
+                                    <p class="mt-2">This mistaken idea of denouncing pleasure and praising pain.</p>
+                                </div>
+                            </div>
+
+                            <a href="#" class="see-more-anchor text-end">See more</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Review form modal -->
+        <div class="modal fade" id="submitReviewModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content border-0 rounded-4 overflow-hidden">
+                    <div class="modal-body p-4 mt-1">
+                        <button type="button" class="btn modal-close-button rounded-pill p-0" data-bs-dismiss="modal"
+                            aria-label="Close">X</button>
+
+                        <h4 class="fw-bold order-no">Order #20210302-13430657</h4>
+
+                        <div class="d-flex flex-column mt-3">
+                            <h5 class="fw-bold">How was your food?</h5>
+                            <hr>
+                            <div class="d-flex flex-column row-gap-4">
+                                <div class="d-flex flex-column row-gap-2">
+                                    <p>Rating</p>
+                                    <!-- Clickable stars for food rating -->
+                                    <div class="d-flex column-gap-2 clickable-stars food-rating" aria-label="Rating">
+                                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="15.239"
+                                            viewBox="0 0 16 15.239" role="img" aria-labelledby="star1">
+                                            <title id="star1">Star Rating 1</title>
+                                            <path
+                                                d="M-54.987,56.259c-.569.405-4.222-2.165-4.921-2.17s-4.393,2.505-4.956,2.091.76-4.673.549-5.338-3.747-3.392-3.526-4.054,4.691-.723,5.261-1.129,2.077-4.6,2.777-4.6,2.139,4.226,2.7,4.64,5.031.548,5.242,1.213-3.369,3.335-3.591,4S-54.418,55.854-54.987,56.259Z"
+                                                transform="translate(67.851 -41.064)" />
+                                        </svg>
+                                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="15.239"
+                                            viewBox="0 0 16 15.239" role="img" aria-labelledby="star2">
+                                            <title id="star2">Star Rating 2</title>
+                                            <path
+                                                d="M-54.987,56.259c-.569.405-4.222-2.165-4.921-2.17s-4.393,2.505-4.956,2.091.76-4.673.549-5.338-3.747-3.392-3.526-4.054,4.691-.723,5.261-1.129,2.077-4.6,2.777-4.6,2.139,4.226,2.7,4.64,5.031.548,5.242,1.213-3.369,3.335-3.591,4S-54.418,55.854-54.987,56.259Z"
+                                                transform="translate(67.851 -41.064)" />
+                                        </svg>
+                                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="15.239"
+                                            viewBox="0 0 16 15.239" role="img" aria-labelledby="star3">
+                                            <title id="star3">Star Rating 3</title>
+                                            <path
+                                                d="M-54.987,56.259c-.569.405-4.222-2.165-4.921-2.17s-4.393,2.505-4.956,2.091.76-4.673.549-5.338-3.747-3.392-3.526-4.054,4.691-.723,5.261-1.129,2.077-4.6,2.777-4.6,2.139,4.226,2.7,4.64,5.031.548,5.242,1.213-3.369,3.335-3.591,4S-54.418,55.854-54.987,56.259Z"
+                                                transform="translate(67.851 -41.064)" />
+                                        </svg>
+                                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="15.239"
+                                            viewBox="0 0 16 15.239" role="img" aria-labelledby="star4">
+                                            <title id="star4">Star Rating 4</title>
+                                            <path
+                                                d="M-54.987,56.259c-.569.405-4.222-2.165-4.921-2.17s-4.393,2.505-4.956,2.091.76-4.673.549-5.338-3.747-3.392-3.526-4.054,4.691-.723,5.261-1.129,2.077-4.6,2.777-4.6,2.139,4.226,2.7,4.64,5.031.548,5.242,1.213-3.369,3.335-3.591,4S-54.418,55.854-54.987,56.259Z"
+                                                transform="translate(67.851 -41.064)" />
+                                        </svg>
+                                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="15.239"
+                                            viewBox="0 0 16 15.239" role="img" aria-labelledby="star5">
+                                            <title id="star5">Star Rating 5</title>
+                                            <path
+                                                d="M-54.987,56.259c-.569.405-4.222-2.165-4.921-2.17s-4.393,2.505-4.956,2.091.76-4.673.549-5.338-3.747-3.392-3.526-4.054,4.691-.723,5.261-1.129,2.077-4.6,2.777-4.6,2.139,4.226,2.7,4.64,5.031.548,5.242,1.213-3.369,3.335-3.591,4S-54.418,55.854-54.987,56.259Z"
+                                                transform="translate(67.851 -41.064)" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="foodComment" class="form-label">Comment</label>
+                                    <textarea class="form-control" id="foodComment"
+                                        aria-describedby="foodCommentHelp"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column mt-5">
+                            <h5 class="fw-bold">How was your delivery?</h5>
+                            <hr>
+                            <div class="d-flex flex-column row-gap-4">
+                                <div class="d-flex flex-column row-gap-2">
+                                    <p>Rating</p>
+                                    <!-- Clickable stars for delivery rating -->
+                                    <div class="d-flex column-gap-2 clickable-stars delivery-rating"
+                                        aria-label="Delivery Rating">
+                                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="15.239"
+                                            viewBox="0 0 16 15.239" role="img" aria-labelledby="deliveryStar1">
+                                            <title id="deliveryStar1">Delivery Star Rating 1</title>
+                                            <path
+                                                d="M-54.987,56.259c-.569.405-4.222-2.165-4.921-2.17s-4.393,2.505-4.956,2.091.76-4.673.549-5.338-3.747-3.392-3.526-4.054,4.691-.723,5.261-1.129,2.077-4.6,2.777-4.6,2.139,4.226,2.7,4.64,5.031.548,5.242,1.213-3.369,3.335-3.591,4S-54.418,55.854-54.987,56.259Z"
+                                                transform="translate(67.851 -41.064)" />
+                                        </svg>
+                                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="15.239"
+                                            viewBox="0 0 16 15.239" role="img" aria-labelledby="deliveryStar2">
+                                            <title id="deliveryStar2">Delivery Star Rating 2</title>
+                                            <path
+                                                d="M-54.987,56.259c-.569.405-4.222-2.165-4.921-2.17s-4.393,2.505-4.956,2.091.76-4.673.549-5.338-3.747-3.392-3.526-4.054,4.691-.723,5.261-1.129,2.077-4.6,2.777-4.6,2.139,4.226,2.7,4.64,5.031.548,5.242,1.213-3.369,3.335-3.591,4S-54.418,55.854-54.987,56.259Z"
+                                                transform="translate(67.851 -41.064)" />
+                                        </svg>
+                                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="15.239"
+                                            viewBox="0 0 16 15.239" role="img" aria-labelledby="deliveryStar3">
+                                            <title id="deliveryStar3">Delivery Star Rating 3</title>
+                                            <path
+                                                d="M-54.987,56.259c-.569.405-4.222-2.165-4.921-2.17s-4.393,2.505-4.956,2.091.76-4.673.549-5.338-3.747-3.392-3.526-4.054,4.691-.723,5.261-1.129,2.077-4.6,2.777-4.6,2.139,4.226,2.7,4.64,5.031.548,5.242,1.213-3.369,3.335-3.591,4S-54.418,55.854-54.987,56.259Z"
+                                                transform="translate(67.851 -41.064)" />
+                                        </svg>
+                                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="15.239"
+                                            viewBox="0 0 16 15.239" role="img" aria-labelledby="deliveryStar4">
+                                            <title id="deliveryStar4">Delivery Star Rating 4</title>
+                                            <path
+                                                d="M-54.987,56.259c-.569.405-4.222-2.165-4.921-2.17s-4.393,2.505-4.956,2.091.76-4.673.549-5.338-3.747-3.392-3.526-4.054,4.691-.723,5.261-1.129,2.077-4.6,2.777-4.6,2.139,4.226,2.7,4.64,5.031.548,5.242,1.213-3.369,3.335-3.591,4S-54.418,55.854-54.987,56.259Z"
+                                                transform="translate(67.851 -41.064)" />
+                                        </svg>
+                                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="16" height="15.239"
+                                            viewBox="0 0 16 15.239" role="img" aria-labelledby="deliveryStar5">
+                                            <title id="deliveryStar5">Delivery Star Rating 5</title>
+                                            <path
+                                                d="M-54.987,56.259c-.569.405-4.222-2.165-4.921-2.17s-4.393,2.505-4.956,2.091.76-4.673.549-5.338-3.747-3.392-3.526-4.054,4.691-.723,5.261-1.129,2.077-4.6,2.777-4.6,2.139,4.226,2.7,4.64,5.031.548,5.242,1.213-3.369,3.335-3.591,4S-54.418,55.854-54.987,56.259Z"
+                                                transform="translate(67.851 -41.064)" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="deliveryComment" class="form-label">Comment</label>
+                                    <textarea class="form-control" id="deliveryComment"
+                                        aria-describedby="deliveryCommentHelp"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Restaurant details modal -->
+        <div class="modal fade" id="restaurantDetailsModal" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class=" modal-content border-0 rounded-4 overflow-hidden">
+                    <div class="modal-header flex-column align-items-start p-0 border-0">
+                        <button type="button" class="btn modal-close-button rounded-pill p-0 z-2"
+                            data-bs-dismiss="modal" aria-label="Close">X</button>
+
+                        <div class="position-relative w-100">
+                            <img class="w-100" src="./assets/images/pizza-3.png" alt="Pizza">
+                            <div class="overlay rounded-4"></div>
+
+                            <img class="restaurant-logo rounded-2 px-3 py-1 bg-white z-2"
+                                src="./assets/images/restaurant-logo.svg" alt="Restaurant Logo">
+                        </div>
+
+                        <div class="d-flex flex-column p-4">
+                            <h5 class="fw-bold">Oven Fresh Pizza House</h5>
+
+                            <div class="money-and-foods d-flex text-nowrap column-gap-2 mt-1">
+                                <small>$ $ $</small>
+                                <small> Pizza . Pasta . Italian Food . Lasagna . Drinks .
+                                    Desserts</small>
+                            </div>
+
+                            <div class="d-flex lh-1 mt-1 column-gap-3">
+                                <div class="d-flex column-gap-2">
+                                    <img src="./assets/images/star.svg" alt="Star">
+                                    <img src="./assets/images/star.svg" alt="Star">
+                                    <img src="./assets/images/star.svg" alt="Star">
+                                    <img src="./assets/images/star.svg" alt="Star">
+                                    <img src="./assets/images/star-gray.svg" alt="Gray star">
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class=" mt-2 w-100">
+                    </div>
+
+                    <div class="modal-body p-4 pt-0 mt-1">
+                        <div class="d-flex flex-column row-gap-2">
+                            <h5 class="fw-bold">Address</h5>
+                            <small>180 N Redington St, Hanford, CA 93230, USA</small>
+                        </div>
+
+                        <div class="d-flex flex-column row-gap-2 mt-4">
+                            <h5 class="fw-bold">Delivery Locations</h5>
+                            <small>Lambert Street, 101 PK Street, Tartha Avenue, Fanta Street, China Street</small>
+                        </div>
+
+                        <div class="d-flex flex-column row-gap-2 mt-4">
+                            <h5 class="fw-bold">Delivery hours</h5>
+
+                            <div class="delivery-hours-grid">
+                                <small>Sat 11:00 AM - 10:45 PM</small>
+                                <small>Sun 11:00 AM - 10:45 PM</small>
+                                <small>Mon 11:00 AM - 10:45 PM</small>
+                                <small>Tue 11:00 AM - 10:45 PM</small>
+                                <small>Wed 11:00 AM - 10:45 PM</small>
+                                <small>Thu 11:00 AM - 10:45 PM</small>
+                                <small>Fri 11:00 AM - 10:45 PM</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </main>
 
 
@@ -581,6 +996,9 @@
 
     <!-- Jquery for load more button -->
     <script type="module" src="./js/add-remove-food-from-cart.js"></script>
+
+    <!-- Jquery for star rating button -->
+    <script type="module" src="./js/rating-stars.js"></script>
 </body>
 
 </html>

@@ -1474,3 +1474,189 @@ aside {
         }
     }
 }
+
+#zoneSelectionModal {
+    .modal-content {
+        * {
+            scrollbar-width: thin;
+        }
+    }
+
+    .modal-close-button {
+        position: absolute;
+        top: 10px;
+        right: 7px;
+        background-color: white;
+        color: var(--ui-orange);
+
+        width: 2rem;
+        height: 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+    }
+
+
+    .select-from-map-button {
+        width: fit-content;
+        color: var(--ui-orange);
+    }
+
+}
+
+#mapModal {
+    .modal-close-button {
+        background-color: white;
+        color: var(--ui-orange);
+
+        width: 2rem;
+        height: 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+    }
+}
+
+#reviewsModal {
+    .modal-header {
+        border-bottom: 1px solid var(--ui-orange);
+    }
+
+    .modal-close-button {
+        position: absolute;
+        top: 10px;
+        right: 7px;
+        background-color: white;
+        color: var(--ui-orange);
+
+        width: 2rem;
+        height: 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+    }
+
+
+    .stars img {
+        height: 1rem;
+    }
+
+    .modal-body {
+        .stars img {
+            height: .8rem;
+        }
+
+
+    }
+
+    .see-more-anchor {
+        color: var(--ui-orange);
+    }
+}
+
+#submitReviewModal {
+    .modal-body hr {
+        border: 1px solid var(--ui-orange);
+    }
+
+    .order-no {
+        color: var(--ui-orange);
+    }
+
+    .modal-close-button {
+        position: absolute;
+        top: 10px;
+        right: 7px;
+        background-color: white;
+        color: var(--ui-orange);
+
+        width: 2rem;
+        height: 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+    }
+
+    .clickable-stars {
+        svg {
+            cursor: pointer;
+            width: 1.2rem;
+            height: 1.2rem;
+
+            path {
+                fill: transparent;
+                stroke: #f8b84e;
+                stroke-width: 1;
+                transition: fill 0.1s ease-in-out;
+            }
+        }
+    }
+
+    .clickable-stars svg.active path {
+        fill: #f8b84e;
+    }
+
+    #foodComment,
+    #deliveryComment {
+        background-color: #F5F4F2;
+    }
+}
+
+#restaurantDetailsModal {
+
+    .modal-header hr {
+        border: 1px solid var(--ui-orange);
+    }
+
+    .modal-close-button {
+        position: absolute;
+        top: 10px;
+        right: 7px;
+        background-color: white;
+        color: var(--ui-orange);
+
+        width: 2rem;
+        height: 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+    }
+
+    .restaurant-logo {
+        position: absolute;
+        left: 20px;
+        bottom: 15px;
+
+        height: 3.5rem;
+        width: 3.5rem;
+
+    }
+
+    .money-and-foods {
+        &>small:first-child {
+            color: var(--ui-orange);
+        }
+
+        &>small:last-child {
+            color: gray;
+        }
+    }
+
+
+    .delivery-hours-grid {
+        display: grid;
+        gap: 1.2rem;
+
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
