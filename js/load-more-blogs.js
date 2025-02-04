@@ -1,7 +1,8 @@
 import $ from "jquery";
-import healthyFoodImage from './assets/images/healthy-food.png';
-import steakImage from './assets/images/steak.png';
-import diningImage from './assets/images/dining.png';
+
+import healthyFoodImage from '../assets/images/healthy-food.png';
+import steakImage from '../assets/images/steak.png';
+import diningImage from '../assets/images/dining.png';
 
 const blogCards = `
         <!-- Blog card 7 -->

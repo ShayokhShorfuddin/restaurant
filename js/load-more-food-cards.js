@@ -1,9 +1,9 @@
 import $ from "jquery";
-import meetAllMeatImage from './assets/images/meet-all-meat.png';
-import kebabIshImage from './assets/images/kebab-ish.png';
-import pizzaleciousImage from './assets/images/pizzalecious.png';
-import chicksawImage from './assets/images/chicksaw.png';
-import starImage from './assets/images/star.svg';
+import meetAllMeatImage from '../assets/images/meet-all-meat.png';
+import kebabIshImage from '../assets/images/kebab-ish.png';
+import pizzaleciousImage from '../assets/images/pizzalecious.png';
+import chicksawImage from '../assets/images/chicksaw.png';
+import starImage from '../assets/images/star.svg';
 
 const foodCards = `
         <!-- Food card 5 -->
