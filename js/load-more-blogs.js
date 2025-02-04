@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 const blogCards = `
 <!-- Blog card 7 -->
             <div class="blog-card card rounded-4 elevate-on-hover highlight-on-hover">
@@ -52,7 +54,7 @@ const blogCards = `
             </div>
 `
 
-jQuery(() => {
+$(() => {
     $("#load-more-btn").on("click", () => {
         const $newBlogCards = $(blogCards);
 

@@ -1,4 +1,5 @@
-$(document).ready(() => {
+import $ from "jquery";
+$(() => {
     // Handle click events for food rating stars
     $('.food-rating .star').on('click', function () {
         // Remove the 'active' class from all stars in the food rating section

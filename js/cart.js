@@ -1,4 +1,6 @@
-jQuery(() => {
+import $ from "jquery";
+
+$(() => {
     // Setting the "selected" data of every .menu-card to false
     $('.menu-card').data('selected', false);
 

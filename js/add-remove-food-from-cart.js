@@ -1,4 +1,6 @@
-jQuery(() => {
+import $ from "jquery";
+
+$(() => {
     const quantityElement = $('.food-quantity');
     let quantity = Number.parseInt(quantityElement.text());
 

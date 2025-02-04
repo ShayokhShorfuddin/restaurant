@@ -1,4 +1,6 @@
-jQuery(() => {
+import $ from "jquery";
+
+$(() => {
     // Function to update the border based on the checked state
     function updateBorder() {
         $('.location-card').removeClass('active'); // Remove active class from all cards

@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 const foodCards = `
         <!-- Food card 5 -->
         <div class="highlight-on-hover">
@@ -64,7 +66,7 @@ const foodCards = `
         </div>
 `;
 
-jQuery(() => {
+$(() => {
     $("#load-more-btn").on("click", () => {
         const $newFoodCards = $(foodCards);
 

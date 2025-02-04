@@ -1,4 +1,6 @@
-jQuery(() => {
+import $ from "jquery";
+
+$(() => {
     $('.payment-option').click(function () {
         // Remove the 'selected' class from all payment options
         $('.payment-option').removeClass('selected');
