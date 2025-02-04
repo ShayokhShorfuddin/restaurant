@@ -1,4 +1,6 @@
 import $ from "jquery";
+import tickImage from '../assets/images/tick-white.svg';
+import plusImage from '../assets/images/plus.svg';
 
 $(() => {
     // Setting the "selected" data of every .menu-card to false
@@ -8,7 +10,6 @@ $(() => {
     let selectedCount = 0;
     // Total cost of the items in the cart
     let totalCost = 0;
-
 
     $(".menu-card").hover(
         function () {
@@ -39,7 +40,7 @@ $(() => {
         if (!isSelected) {
             $(this).data('selected', true);
 
-            overlayImg.attr('src', './assets/images/tick-white.svg');
+            overlayImg.attr('src', tickImage);
             overlayImg.attr('alt', 'Tick icon');
 
             overlay.css('opacity', '1');
@@ -49,7 +50,7 @@ $(() => {
         } else {
             $(this).data('selected', false);
 
-            overlayImg.attr('src', './assets/images/plus.svg');
+            overlayImg.attr('src', plusImage);
             overlayImg.attr('alt', 'Plus icon');
 
             selectedCount--;
