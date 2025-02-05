@@ -19631,6 +19631,34 @@ img[alt=Star]:hover {
   width: fit-content;
 }
 
+#bottom-nav {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 100%;
+  max-width: 30rem;
+  background-color: rgba(9, 9, 9, 0.8);
+}
+#bottom-nav .bottom-nav-item {
+  text-decoration: none;
+  cursor: pointer;
+}
+#bottom-nav .bottom-nav-item p {
+  color: #989CB3;
+  margin-bottom: 0;
+}
+#bottom-nav .bottom-nav-item .nav-icon {
+  fill: #989CB3;
+}
+#bottom-nav .bottom-nav-item.active p {
+  color: #feb14c;
+}
+#bottom-nav .bottom-nav-item.active .nav-icon {
+  fill: #feb14c;
+}
+
 footer {
   background-color: var(--ui-gray);
 }
