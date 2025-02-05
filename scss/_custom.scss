@@ -176,45 +176,169 @@ img[alt="Star"]:hover {
 #todays-menu-container {
     background-color: #E6E3DF;
 
+    &>div:first-of-type {
+        &>img:first-of-type {
+            @media (min-width: 1400px) {
+                width: 40rem;
+            }
+
+            @media (min-width: 1200px) and (max-width: 1399.98px) {
+                width: 25rem;
+            }
+
+            @media (min-width: 992px) and (max-width: 1199.98px) {
+                width: 20rem;
+            }
+
+            @media (max-width: 991.98px) {
+                width: 15rem;
+            }
+        }
+    }
+
     #paint {
         position: absolute;
-        left: -7rem;
-        bottom: 9rem;
+
+        @media (min-width: 1400px) {
+            left: -4rem;
+            bottom: 9rem;
+            width: 15rem;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1399.98px) {
+            left: -5rem;
+            bottom: 5rem;
+            width: 13rem;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            left: -4rem;
+            bottom: 4rem;
+            width: 11rem;
+        }
+
+        @media (max-width: 991.98px) {
+            left: -3rem;
+            bottom: 2rem;
+            width: 9rem;
+        }
     }
 
     p:last-child {
         position: absolute;
-        left: 3.7rem;
-        bottom: 11.1rem;
         line-height: 1.5rem;
-
-        font-size: 1.2rem;
         font-weight: 500;
+
+        @media (min-width: 1400px) {
+            left: 5rem;
+            bottom: 11.1rem;
+            font-size: 1.2rem;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1399.98px) {
+            left: 2.7rem;
+            bottom: 6.0rem;
+            font-size: 1rem;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            left: 2.5rem;
+            bottom: 5rem;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 991.98px) {
+            left: 2.5rem;
+            bottom: 2.3rem;
+            font-size: 0.9rem;
+        }
     }
 }
 
 #todays-menu-text {
     h1 {
         span:first-child {
-            font-size: 5rem;
             font-weight: 400;
             color: var(--ui-orange);
+
+            @media (min-width: 1400px) {
+                font-size: 5rem;
+            }
+
+            @media (min-width: 1200px) and (max-width: 1399.98px) {
+                font-size: 4rem;
+            }
+
+            @media (min-width: 992px) and (max-width: 1199.98px) {
+                font-size: 3.5rem;
+            }
+
+            @media (max-width: 991.98px) {
+                font-size: 3rem;
+            }
         }
 
         span:nth-of-type(2) {
-            font-size: 4rem;
+            @media (min-width: 1400px) {
+                font-size: 4rem;
+            }
+
+            @media (min-width: 1200px) and (max-width: 1399.98px) {
+                font-size: 3.5rem;
+            }
+
+            @media (min-width: 992px) and (max-width: 1199.98px) {
+                font-size: 3rem;
+            }
+
+            @media (max-width: 991.98px) {
+                font-size: 2.5rem;
+            }
         }
 
         span:last-child {
-            font-size: 5rem;
             font-weight: 400;
             color: var(--ui-orange);
+
+            @media (min-width: 1400px) {
+                font-size: 5rem;
+            }
+
+            @media (min-width: 1200px) and (max-width: 1399.98px) {
+                font-size: 4rem;
+            }
+
+            @media (min-width: 992px) and (max-width: 1199.98px) {
+                font-size: 3.5rem;
+            }
+
+            @media (max-width: 991.98px) {
+                font-size: 3rem;
+            }
         }
     }
 
     p {
-        margin-top: 0.6rem;
-        max-width: 25rem;
+        @media (min-width: 1400px) {
+            max-width: 25rem;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1399.98px) {
+            max-width: 22rem;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            max-width: 20rem;
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            max-width: 18rem;
+        }
+
+        @media (max-width: 767.98px) {
+            font-size: .8rem;
+            max-width: 16rem;
+        }
     }
 
     .btn {
@@ -339,8 +463,8 @@ hr {
     }
 }
 
-#quick-links {
-    small:not(:first-child) {
+.quick-links {
+    small {
         width: fit-content;
         cursor: pointer;
 
@@ -367,6 +491,28 @@ hr {
     }
 }
 
+#black-footer {
+    &>div:first-of-type {
+        @media (min-width: 1400px) {
+            max-width: 75%
+        }
+    }
+
+}
+
+#footerAccordion {
+    --bs-accordion-border-color: #333333;
+
+    .accordion-button::after {
+        background-image: url("../assets/images/plus.svg");
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        height: .1rem;
+        background-image: url("../assets/images/collapse.svg");
+    }
+}
+
 
 
 ////// Scss for page 1 //////
@@ -387,7 +533,31 @@ hr {
 
 #index-hero-section,
 #todays-menu-section {
-    min-height: 35rem;
+    max-height: fit-content
+}
+
+#index-hero-section img {
+    width: 100%;
+
+    @media (min-width: 1400px) {
+        max-width: 32rem; // xxl breakpoint
+    }
+
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+        max-width: 25rem; // xl breakpoint
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        max-width: 21rem; // lg breakpoint
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        max-width: 19rem; // md breakpoint
+    }
+
+    @media (max-width: 767.98px) {
+        max-width: 15rem; // sm breakpoint
+    }
 }
 
 #index-hero-texts-container {
@@ -395,7 +565,21 @@ hr {
 }
 
 #hero-heading {
-    font-size: 3.5rem;
+    @media (min-width: 1400px) {
+        font-size: 3.4rem;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+        font-size: 3.2rem;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        font-size: 3.1rem;
+    }
+
+    @media (max-width: 991.98px) {
+        font-size: 2.3rem;
+    }
 }
 
 #span-experience {
@@ -403,6 +587,22 @@ hr {
 }
 
 #hero-subheading {
+    @media (min-width: 1400px) {
+        font-size: 1.4rem;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+        font-size: 1.3rem;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        font-size: 1.2rem;
+    }
+
+    @media (max-width: 991.98px) {
+        font-size: 1rem;
+    }
+
     color: #9C9C9C;
 }
 
@@ -456,6 +656,11 @@ $colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
 #fastest-delivery-div,
 #budget-restaurants-div,
 #restaurants-at-x-div {
+    width: 100%;
+    max-width: 78rem;
+}
+
+.section-container {
     width: 100%;
     max-width: 78rem;
 }
@@ -520,7 +725,21 @@ $colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
     width: 100%;
     max-width: 78rem;
 
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    @media (min-width: 1100px) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    @media (max-width: 1099px) and (min-width: 870px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @media (max-width: 869px) and (min-width: 451px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (max-width: 450px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 
     row-gap: 3rem;
     column-gap: 1rem;

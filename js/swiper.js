@@ -7,9 +7,19 @@ import "swiper/css/pagination";
 
 import "../css/aiz-core.css"
 
+function getOfferSlidesPerView() {
+	return window.innerWidth >= 1100 ? 3 : window.innerWidth >= 730 ? 2 : 1;
+}
+function getFoodCardsSlidesPerView() {
+	return window.innerWidth >= 1200 ? 4 : window.innerWidth >= 850 ? 3 : window.innerWidth >= 500 ? 2 : 1;
+}
+function getCuisineSlidesPerView() {
+	return window.innerWidth >= 1230 ? 7 : window.innerWidth >= 1100 ? 6 : window.innerWidth >= 1000 ? 5 : window.innerWidth >= 700 ? 4 : window.innerWidth >= 500 ? 3 : window.innerWidth >= 350 ? 2 : 1;
+}
+
 // Swiper for offers
 const offersSwiper = new Swiper(".offers-swiper", {
-	slidesPerView: 3,
+	slidesPerView: getOfferSlidesPerView(),
 	spaceBetween: 25,
 	modules: [Navigation],
 	navigation: {
@@ -20,7 +30,7 @@ const offersSwiper = new Swiper(".offers-swiper", {
 
 // Swiper for featured restaurants
 const featuredRestaurantSwiper = new Swiper(".featured-restaurants-swiper", {
-	slidesPerView: 4,
+	slidesPerView: getFoodCardsSlidesPerView(),
 	spaceBetween: 25,
 	modules: [Navigation],
 	navigation: {
@@ -31,7 +41,7 @@ const featuredRestaurantSwiper = new Swiper(".featured-restaurants-swiper", {
 
 // Swiper for top picks
 const topPicksSwiper = new Swiper(".top-picks-swiper", {
-	slidesPerView: 4,
+	slidesPerView: getFoodCardsSlidesPerView(),
 	spaceBetween: 25,
 	modules: [Navigation],
 	navigation: {
@@ -42,7 +52,7 @@ const topPicksSwiper = new Swiper(".top-picks-swiper", {
 
 // Swiper for cuisines
 const cuisinesSwiper = new Swiper(".cuisines-swiper", {
-	slidesPerView: 7,
+	slidesPerView: getCuisineSlidesPerView(),
 	spaceBetween: 5,
 	modules: [Navigation],
 	navigation: {
@@ -55,7 +65,7 @@ const cuisinesSwiper = new Swiper(".cuisines-swiper", {
 const bestSellingRestaurantsSwiper = new Swiper(
 	".best-selling-restaurants-swiper",
 	{
-		slidesPerView: 4,
+		slidesPerView: getFoodCardsSlidesPerView(),
 		spaceBetween: 25,
 		modules: [Navigation],
 		navigation: {
@@ -67,7 +77,7 @@ const bestSellingRestaurantsSwiper = new Swiper(
 
 // Swiper for new restaurants
 const newRestaurantsSwiper = new Swiper(".new-restaurants-swiper", {
-	slidesPerView: 4,
+	slidesPerView: getFoodCardsSlidesPerView(),
 	spaceBetween: 25,
 	modules: [Navigation],
 	navigation: {
@@ -78,7 +88,7 @@ const newRestaurantsSwiper = new Swiper(".new-restaurants-swiper", {
 
 // Swiper for fastest delivery
 const fastestDeliverySwiper = new Swiper(".fastest-delivery-swiper", {
-	slidesPerView: 4,
+	slidesPerView: getFoodCardsSlidesPerView(),
 	spaceBetween: 25,
 	modules: [Navigation],
 	navigation: {
@@ -89,7 +99,7 @@ const fastestDeliverySwiper = new Swiper(".fastest-delivery-swiper", {
 
 // Swiper for budget restaurants
 const budgetRestaurantsSwiper = new Swiper(".budget-restaurants-swiper", {
-	slidesPerView: 4,
+	slidesPerView: getFoodCardsSlidesPerView(),
 	spaceBetween: 25,
 	modules: [Navigation],
 	navigation: {
@@ -150,3 +160,25 @@ const tabsSwiper = new Swiper(".tabs-section-swiper", {
 		prevEl: ".swiper-button-prev",
 	},
 })
+
+
+// Add resize event listener
+window.addEventListener('resize', () => {
+	offersSwiper.params.slidesPerView = getOfferSlidesPerView();
+	featuredRestaurantSwiper.params.slidesPerView = getFoodCardsSlidesPerView();
+	topPicksSwiper.params.slidesPerView = getFoodCardsSlidesPerView();
+	bestSellingRestaurantsSwiper.params.slidesPerView = getFoodCardsSlidesPerView();
+	newRestaurantsSwiper.params.slidesPerView = getFoodCardsSlidesPerView();
+	fastestDeliverySwiper.params.slidesPerView = getFoodCardsSlidesPerView();
+	budgetRestaurantsSwiper.params.slidesPerView = getFoodCardsSlidesPerView();
+	cuisinesSwiper.params.slidesPerView = getCuisineSlidesPerView();
+
+	offersSwiper.update();
+	featuredRestaurantSwiper.update();
+	topPicksSwiper.update();
+	bestSellingRestaurantsSwiper.update();
+	newRestaurantsSwiper.update();
+	fastestDeliverySwiper.update();
+	budgetRestaurantsSwiper.update();
+	cuisinesSwiper.update();
+});
