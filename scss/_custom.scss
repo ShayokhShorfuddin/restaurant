@@ -364,6 +364,42 @@ img[alt="Star"]:hover {
     width: fit-content;
 }
 
+#bottom-nav {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 3;
+    width: 100%;
+    max-width: 30rem;
+    background-color: rgba(9, 9, 9, 0.8);
+
+    .bottom-nav-item {
+        text-decoration: none;
+        cursor: pointer;
+
+        p {
+            color: #989CB3;
+            margin-bottom: 0;
+        }
+
+        .nav-icon {
+            fill: #989CB3;
+        }
+
+        &.active {
+            p {
+                color: #feb14c;
+            }
+
+            .nav-icon {
+                fill: #feb14c;
+            }
+        }
+    }
+}
+
 
 ///// Footer for all pages //////
 footer {
