@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <header class="container d-flex justify-content-between align-items-center gap-5">
+    <header class="d-none d-md-flex container d-flex justify-content-between align-items-center gap-5">
         <!-- Logo and opportunities container -->
         <div class="d-flex align-items-center" id="logo-and-opportunities-container">
             <!-- logo -->
@@ -34,10 +34,48 @@
         <img src="./assets/images/person.png" alt="Profile picture">
     </header>
 
+    <header class="d-block d-md-none container">
+        <!-- Mobile navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid p-0">
+                <!-- Logo section -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./assets/images/logo.svg" alt="logo" class="d-inline-block align-text-top">
+                    <h5 class="text-nowrap mb-0 ms-2" id="logo-text">
+                        <span class="fw-light">Active </span>
+                        <span class="fw-bolder">Restaurant</span>
+                    </h5>
+                </a>
+
+                <!-- Hamburger button -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img src="./assets/images/navbar-hamburger.svg" alt="navbar-icon">
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                    <div class="d-flex flex-column row-gap-2 p-2">
+                        <!-- Opportunities -->
+                        <div class="nav-item">
+                            <a class="nav-link" href="#">Open your Restaurant</a>
+                        </div>
+
+                        <div class="nav-item">
+                            <a class="nav-link" href="#">Be a Delivery Boy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main>
         <!-- The hero section -->
         <section class="container mt-4" id="page2-hero-section">
-            <div class="d-flex justify-content-evenly align-items-center bg-black rounded-4">
+            <div
+                class="d-flex flex-column flex-lg-row justify-content-evenly align-items-center bg-black rounded-4 p-4 text-start text-sm-center text-lg-start">
                 <!-- Hero texts -->
                 <div id="page2-hero-texts-container">
                     <h1 class="text-white fw-bold" id="hero-heading">
@@ -65,56 +103,59 @@
         </section>
 
         <!-- Zones we deliver to -->
-        <section class="d-flex justify-content-center flex-column align-items-center mt-5">
+        <section class="d-flex justify-content-center flex-column align-items-center mt-5 px-3">
             <div class="d-flex justify-content-start" id="zones-we-deliver-to-div">
                 <h3 class="fw-bold text-black">Zones We Deliver To</h3>
             </div>
 
-            <div class="swiper zones-swiper mt-4">
-                <div class="swiper-wrapper">
-                    <!-- Zone 1 -->
-                    <div class="swiper-slide rounded-4 position-relative">
-                        <img src="./assets/images/pizza-zone.png" alt="Pizza Zone">
-                        <p class="text-black position-absolute fw-bold">New York</p>
+            <div class="section-container">
+                <div class="swiper zones-swiper mt-4">
+                    <div class="swiper-wrapper">
+                        <!-- Zone 1 -->
+                        <div class="swiper-slide rounded-4 position-relative">
+                            <img src="./assets/images/pizza-zone.png" alt="Pizza Zone" class="img-fluid">
+                            <p class="text-black position-absolute fw-bold">New York</p>
+                        </div>
+
+                        <!-- Zone 2 -->
+                        <div class="swiper-slide rounded-4 position-relative">
+                            <img src="./assets/images/burger-zone.png" alt="Burger Zone" class="img-fluid">
+                            <p class="text-black position-absolute fw-bold">Los Angeles</p>
+                        </div>
+
+                        <!-- Zone 3 -->
+                        <div class="swiper-slide rounded-4 position-relative">
+                            <img src="./assets/images/bbq-zone.png" alt="BBQ Zone" class="img-fluid">
+                            <p class="text-black position-absolute fw-bold">New Jersey</p>
+                        </div>
+
+                        <!-- Zone 4 -->
+                        <div class="swiper-slide rounded-4 position-relative">
+                            <img src="./assets/images/beef-zone.png" alt="Beef Zone" class="img-fluid">
+                            <p class="text-white position-absolute fw-bold">North Carolina</p>
+                        </div>
+
+                        <!-- Zone 5 -->
+                        <div class="swiper-slide rounded-4 position-relative">
+                            <img src="./assets/images/pizza-zone.png" alt="Pizza Zone" class="img-fluid">
+                            <p class="text-black position-absolute fw-bold">New York</p>
+                        </div>
+
+                        <!-- Zone 6 -->
+                        <div class="swiper-slide rounded-4 position-relative">
+                            <img src="./assets/images/burger-zone.png" alt="Burger Zone" class="img-fluid">
+                            <p class="text-black position-absolute fw-bold">Los Angeles</p>
+                        </div>
                     </div>
 
-                    <!-- Zone 2 -->
-                    <div class="swiper-slide rounded-4 position-relative">
-                        <img src="./assets/images/burger-zone.png" alt="Burger Zone">
-                        <p class="text-black position-absolute fw-bold">Los Angeles</p>
-                    </div>
-
-                    <!-- Zone 3 -->
-                    <div class="swiper-slide rounded-4 position-relative">
-                        <img src="./assets/images/bbq-zone.png" alt="BBQ Zone">
-                        <p class="text-black position-absolute fw-bold">New Jersey</p>
-                    </div>
-
-                    <!-- Zone 4 -->
-                    <div class="swiper-slide rounded-4 position-relative">
-                        <img src="./assets/images/beef-zone.png" alt="Beef Zone">
-                        <p class="text-white position-absolute fw-bold">North Carolina</p>
-                    </div>
-
-                    <!-- Zone 5 -->
-                    <div class="swiper-slide rounded-4 position-relative">
-                        <img src="./assets/images/pizza-zone.png" alt="Pizza Zone">
-                        <p class="text-black position-absolute fw-bold">New York</p>
-                    </div>
-
-                    <!-- Zone 6 -->
-                    <div class="swiper-slide rounded-4 position-relative">
-                        <img src="./assets/images/burger-zone.png" alt="Burger Zone">
-                        <p class="text-black position-absolute fw-bold">Los Angeles</p>
-                    </div>
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-prev zone-swiper-button"></div>
+                    <div class="swiper-button-next zone-swiper-button"></div>
                 </div>
-
-                <!-- Navigation buttons -->
-                <div class="swiper-button-prev zone-swiper-button"></div>
-                <div class="swiper-button-next zone-swiper-button"></div>
             </div>
         </section>
 
+        <!-- TODO: Fix this one -->
         <!-- Hero section 2 (from Page 5) -->
         <section class="container mt-5">
             <div class="chef-hero-container mt-4 rounded-4">
@@ -140,13 +181,13 @@
 
         <!-- Why active restaurant section -->
         <section class="mt-5">
-            <div class="mx-auto" id="why-active-restaurant-container">
-                <h2 class="fw-bold">Why Active Restaurant?</h2>
+            <div class="mx-auto px-4" id="why-active-restaurant-container">
+                <h2 class="fw-bold text-center text-xl-start">Why Active Restaurant?</h2>
 
                 <!-- Cards -->
-                <div class="d-flex justify-content-center mt-5 column-gap-4">
+                <div class="d-flex flex-wrap flex-xl-nowrap justify-content-center mt-5 gap-4">
                     <!-- Card 1 -->
-                    <div class="active-restaurant-card d-flex flex-column justify-content-between">
+                    <div class="active-restaurant-card d-flex flex-column justify-content-between row-gap-3">
                         <div class="d-flex flex-column">
                             <h6 class="fw-bold">Best Restaurant in the Town</h6>
                             <small class="mt-1">Active Restaurant always choose the best. No compromise in quality of
@@ -154,11 +195,11 @@
                                 handpicked by us & we give the best ones the opportunity.</small>
                         </div>
 
-                        <img class="mt-4" src="./assets/images/food-on-table.png" alt="Food on table">
+                        <img class="img-fluid" src="./assets/images/food-on-table.png" alt="Food on table">
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="active-restaurant-card d-flex flex-column justify-content-between">
+                    <div class="active-restaurant-card d-flex flex-column justify-content-between row-gap-3">
                         <div class="d-flex flex-column">
                             <h6 class="fw-bold">Best Price</h6>
                             <small class="mt-1">Most of our restaurant provides exclusive prices for our customers. It's
@@ -166,11 +207,11 @@
                                 are many coupons & offers for you to grab.</small>
                         </div>
 
-                        <img class="mt-4" src="./assets/images/two-women-eating.png" alt="Two women eating">
+                        <img class="img-fluid" src="./assets/images/two-women-eating.png" alt="Two women eating">
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="active-restaurant-card d-flex flex-column">
+                    <div class="active-restaurant-card d-flex flex-column justify-content-between row-gap-3">
                         <div class="d-flex flex-column">
                             <h6 class="fw-bold">Fastest Delivery</h6>
                             <small class="mt-1">Our Delivery Boys are super fast when it comes to deliver your foods to
@@ -178,7 +219,7 @@
                                 sanitized each time before taking your food.</small>
                         </div>
 
-                        <img class="mt-5" src="./assets/images/delivery-girl-on-bicycle.png"
+                        <img class="img-fluid" src="./assets/images/delivery-girl-on-bicycle.png"
                             alt="Delivery girl on bicycle">
                     </div>
                 </div>
@@ -186,167 +227,154 @@
         </section>
 
         <!-- Today's special menu section -->
-        <section class="container mt-5" id="todays-menu-section">
-            <div class="d-flex justify-content-center align-items-center rounded-4 position-relative"
-                id="todays-menu-container">
-                <div class="position-relative">
-                    <img src="./assets/images/food-plate.png" alt="Food plate">
-                    <img id="paint" src="./assets/images/paint.svg" alt="Paint">
-                    <p>30%<br>Off</p>
-                </div>
-
-                <div class="d-flex flex-column align-items-start" id="todays-menu-text">
-                    <h1><span>Today's</span><br><span>SPECIAL</span><br><span>MENU</span></h1>
-
-                    <p>Most of our restaurant provides exclusive prices for our customers. It's their business and we
-                        try to enrich them. There
-                        are many coupons & offers for you to grab.</p>
-
-                    <button class="btn px-4 py-2 mt-5 fw-bold">Order Now</button>
-                </div>
-            </div>
+        <section class="container d-flex justify-content-center mt-5">
+            <img class="img-fluid" src="./assets/images/todays-special-menu.png" alt="Todays special menu">
         </section>
 
         <!-- Blogs section -->
-        <section class="d-flex justify-content-center flex-column align-items-center mt-5">
+        <section class="d-flex justify-content-center flex-column align-items-center mt-5 px-3">
             <div class="d-flex align-items-center justify-content-between" id="blogs-div">
                 <h3 class="fw-bold text-black">Blogs</h3>
                 <a href="#" class="view-all-text-button">View all</a>
             </div>
 
-            <div class="swiper blogs-swiper mt-4">
-                <div class="swiper-wrapper">
-                    <!-- Blog card 1 -->
-                    <div class="swiper-slide blog-card card rounded-4 elevate-on-hover highlight-on-hover">
-                        <img src="./assets/images/healthy-food.png" class="card-img-top" alt="Healthy Food">
+            <div class="section-container">
+                <div class="swiper blogs-swiper mt-4">
+                    <div class="swiper-wrapper">
+                        <!-- Blog card 1 -->
+                        <div class="swiper-slide blog-card card rounded-4 elevate-on-hover highlight-on-hover">
+                            <img src="./assets/images/healthy-food.png" class="card-img-top" alt="Healthy Food">
 
-                        <div class="blog-card-body">
-                            <!-- Title -->
-                            <h6 class="card-text">Food is an important part of balanced diet.</h6>
+                            <div class="blog-card-body">
+                                <!-- Title -->
+                                <h6 class="card-text">Food is an important part of balanced diet.</h6>
 
-                            <div class="d-flex flex-column mt-3">
-                                <!-- Hashtags -->
-                                <small class="hashtag">Health, Medicine</small>
-                                <!-- Date -->
-                                <small class="fw-medium">12 June, 2021</small>
+                                <div class="d-flex flex-column mt-3">
+                                    <!-- Hashtags -->
+                                    <small class="hashtag">Health, Medicine</small>
+                                    <!-- Date -->
+                                    <small class="fw-medium">12 June, 2021</small>
+                                </div>
+
+                                <small class="read-full-blog fw-medium">
+                                    Read Full Blog
+                                </small>
                             </div>
+                        </div>
 
-                            <small class="read-full-blog fw-medium">
-                                Read Full Blog
-                            </small>
+                        <!-- Blog card 2 -->
+                        <div class="swiper-slide blog-card card rounded-4 elevate-on-hover highlight-on-hover">
+                            <img src="./assets/images/steak.png" class="card-img-top" alt="Steak">
+
+                            <div class="blog-card-body">
+                                <!-- Title -->
+                                <h6 class="card-text">Sous Vide Beef Tenderloin with Port Wine and Garlic.</h6>
+
+                                <div class="d-flex flex-column mt-3">
+                                    <!-- Hashtags -->
+                                    <small class="hashtag">Foods, Recipe</small>
+                                    <!-- Date -->
+                                    <small class="fw-medium">15 July, 2021</small>
+                                </div>
+
+                                <small class="read-full-blog fw-medium">
+                                    Read Full Blog
+                                </small>
+                            </div>
+                        </div>
+
+                        <!-- Blog card 3 -->
+                        <div class="swiper-slide blog-card card rounded-4 elevate-on-hover highlight-on-hover">
+                            <img src="./assets/images/dining.png" class="card-img-top" alt="Dining">
+
+                            <div class="blog-card-body">
+                                <!-- Title -->
+                                <h6 class="card-text">17 Hottest Restaurants in Los Angeles. Where to eat right now.
+                                </h6>
+
+                                <div class="d-flex flex-column mt-3">
+                                    <!-- Hashtags -->
+                                    <small class="hashtag">News, Restaurants</small>
+                                    <!-- Date -->
+                                    <small class="fw-medium">21 July, 2021</small>
+                                </div>
+
+                                <small class="read-full-blog fw-medium">
+                                    Read Full Blog
+                                </small>
+                            </div>
+                        </div>
+
+                        <!-- Blog card 4 -->
+                        <div class="swiper-slide blog-card card rounded-4 elevate-on-hover highlight-on-hover">
+                            <img src="./assets/images/woman-with-computer.png" class="card-img-top"
+                                alt="Woman with computer">
+
+                            <div class="blog-card-body">
+                                <!-- Title -->
+                                <h6 class="card-text">Here's how to clean your kitchen.</h6>
+
+                                <div class="d-flex flex-column mt-3">
+                                    <!-- Hashtags -->
+                                    <small class="hashtag">Foods, Recipe</small>
+                                    <!-- Date -->
+                                    <small class="fw-medium">12 June, 2021</small>
+                                </div>
+
+                                <small class="read-full-blog fw-medium">
+                                    Read Full Blog
+                                </small>
+                            </div>
+                        </div>
+
+                        <!-- Blog card 5 -->
+                        <div class="swiper-slide blog-card card rounded-4 elevate-on-hover highlight-on-hover">
+                            <img src="./assets/images/healthy-food.png" class="card-img-top" alt="Healthy Food">
+
+                            <div class="blog-card-body">
+                                <!-- Title -->
+                                <h6 class="card-text">Food is an important part of balanced diet.</h6>
+
+                                <div class="d-flex flex-column mt-3">
+                                    <!-- Hashtags -->
+                                    <small class="hashtag">Health, Medicine</small>
+                                    <!-- Date -->
+                                    <small class="fw-medium">12 June, 2021</small>
+                                </div>
+
+                                <small class="read-full-blog fw-medium">
+                                    Read Full Blog
+                                </small>
+                            </div>
+                        </div>
+
+                        <!-- Blog card 6 -->
+                        <div class="swiper-slide blog-card card rounded-4 elevate-on-hover highlight-on-hover">
+                            <img src="./assets/images/steak.png" class="card-img-top" alt="Steak">
+
+                            <div class="blog-card-body">
+                                <!-- Title -->
+                                <h6 class="card-text">Sous Vide Beef Tenderloin with Port Wine and Garlic.</h6>
+
+                                <div class="d-flex flex-column mt-3">
+                                    <!-- Hashtags -->
+                                    <small class="hashtag">Foods, Recipe</small>
+                                    <!-- Date -->
+                                    <small class="fw-medium">15 July, 2021</small>
+                                </div>
+
+                                <small class="read-full-blog fw-medium">
+                                    Read Full Blog
+                                </small>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Blog card 2 -->
-                    <div class="swiper-slide blog-card card rounded-4 elevate-on-hover highlight-on-hover">
-                        <img src="./assets/images/steak.png" class="card-img-top" alt="Steak">
-
-                        <div class="blog-card-body">
-                            <!-- Title -->
-                            <h6 class="card-text">Sous Vide Beef Tenderloin with Port Wine and Garlic.</h6>
-
-                            <div class="d-flex flex-column mt-3">
-                                <!-- Hashtags -->
-                                <small class="hashtag">Foods, Recipe</small>
-                                <!-- Date -->
-                                <small class="fw-medium">15 July, 2021</small>
-                            </div>
-
-                            <small class="read-full-blog fw-medium">
-                                Read Full Blog
-                            </small>
-                        </div>
-                    </div>
-
-                    <!-- Blog card 3 -->
-                    <div class="swiper-slide blog-card card rounded-4 elevate-on-hover highlight-on-hover">
-                        <img src="./assets/images/dining.png" class="card-img-top" alt="Dining">
-
-                        <div class="blog-card-body">
-                            <!-- Title -->
-                            <h6 class="card-text">17 Hottest Restaurants in Los Angeles. Where to eat right now.</h6>
-
-                            <div class="d-flex flex-column mt-3">
-                                <!-- Hashtags -->
-                                <small class="hashtag">News, Restaurants</small>
-                                <!-- Date -->
-                                <small class="fw-medium">21 July, 2021</small>
-                            </div>
-
-                            <small class="read-full-blog fw-medium">
-                                Read Full Blog
-                            </small>
-                        </div>
-                    </div>
-
-                    <!-- Blog card 4 -->
-                    <div class="swiper-slide blog-card card rounded-4 elevate-on-hover highlight-on-hover">
-                        <img src="./assets/images/woman-with-computer.png" class="card-img-top"
-                            alt="Woman with computer">
-
-                        <div class="blog-card-body">
-                            <!-- Title -->
-                            <h6 class="card-text">Here's how to clean your kitchen.</h6>
-
-                            <div class="d-flex flex-column mt-3">
-                                <!-- Hashtags -->
-                                <small class="hashtag">Foods, Recipe</small>
-                                <!-- Date -->
-                                <small class="fw-medium">12 June, 2021</small>
-                            </div>
-
-                            <small class="read-full-blog fw-medium">
-                                Read Full Blog
-                            </small>
-                        </div>
-                    </div>
-
-                    <!-- Blog card 5 -->
-                    <div class="swiper-slide blog-card card rounded-4 elevate-on-hover highlight-on-hover">
-                        <img src="./assets/images/healthy-food.png" class="card-img-top" alt="Healthy Food">
-
-                        <div class="blog-card-body">
-                            <!-- Title -->
-                            <h6 class="card-text">Food is an important part of balanced diet.</h6>
-
-                            <div class="d-flex flex-column mt-3">
-                                <!-- Hashtags -->
-                                <small class="hashtag">Health, Medicine</small>
-                                <!-- Date -->
-                                <small class="fw-medium">12 June, 2021</small>
-                            </div>
-
-                            <small class="read-full-blog fw-medium">
-                                Read Full Blog
-                            </small>
-                        </div>
-                    </div>
-
-                    <!-- Blog card 6 -->
-                    <div class="swiper-slide blog-card card rounded-4 elevate-on-hover highlight-on-hover">
-                        <img src="./assets/images/steak.png" class="card-img-top" alt="Steak">
-
-                        <div class="blog-card-body">
-                            <!-- Title -->
-                            <h6 class="card-text">Sous Vide Beef Tenderloin with Port Wine and Garlic.</h6>
-
-                            <div class="d-flex flex-column mt-3">
-                                <!-- Hashtags -->
-                                <small class="hashtag">Foods, Recipe</small>
-                                <!-- Date -->
-                                <small class="fw-medium">15 July, 2021</small>
-                            </div>
-
-                            <small class="read-full-blog fw-medium">
-                                Read Full Blog
-                            </small>
-                        </div>
-                    </div>
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-prev blogs-swiper-button"></div>
+                    <div class="swiper-button-next blogs-swiper-button"></div>
                 </div>
-
-                <!-- Navigation buttons -->
-                <div class="swiper-button-prev blogs-swiper-button"></div>
-                <div class="swiper-button-next blogs-swiper-button"></div>
+            </div>
         </section>
 
         <!-- Shaded placeholders section -->
@@ -361,61 +389,27 @@
         </section>
 
         <!-- Testimonial section -->
-        <section class="d-flex flex-column justify-content-center align-items-center mt-5">
+        <section class="d-flex flex-column justify-content-center align-items-center mt-5 px-3">
             <!-- Texts -->
             <div class="text-center" id="testimonial-section-texts">
                 <h1 class="fw-bold">Testimonial</h1>
                 <p class="mt-2">Why Our Diners Keep Coming Back for More Across All Our Restaurants!</p>
             </div>
 
-            <div class="swiper testimonial-swiper mt-5">
-                <div class="swiper-wrapper">
-                    <!-- Testimonial 1 -->
-                    <div
-                        class="swiper-slide d-flex position-relative testimonial-card p-4 rounded-4 column-gap-4 elevate-on-hover">
-                        <!-- Image of girl -->
-                        <img class="size-80px" src="./assets/images/girl-in-white-dress.png" alt="Girl In White Dress">
-
-                        <div class="d-flex flex-column">
-                            <!-- Name-->
-                            <h6>Rebecca J Morton</h6>
-
-                            <!-- Rating -->
-                            <div class="d-flex mt-2 column-gap-2">
-                                <img src="./assets/images/star.svg" alt="Star">
-                                <img src="./assets/images/star.svg" alt="Star">
-                                <img src="./assets/images/star.svg" alt="Star">
-                                <img src="./assets/images/star.svg" alt="Star">
-                                <img src="./assets/images/star.svg" alt="Star">
-                            </div>
-
-                            <!-- Customer's testimonial -->
-                            <small class="mt-3 fst-italic">But I must explain to you how all this mistaken idea of
-                                denouncing pleasure
-                                and praising
-                                pain was born and I will give
-                                you a complete account of the system. No one rejects, dislikes, or avoids pleasure
-                                itself,
-                                because it is pleasure, but
-                                because those who do not.
-                            </small>
-                        </div>
-
-                        <!-- Quote image -->
-                        <img class="position-absolute quote-symbol" src="./assets/images/quote.svg" alt="Quote">
-                    </div>
-
-                    <!-- Testimonial 2 -->
-                    <div
-                        class="swiper-slide d-flex position-relative testimonial-card p-4 rounded-4 column-gap-4 elevate-on-hover">
-                        <div class="d-flex column-gap-4 flex-grow-1">
+            <div class="section-container">
+                <div class="swiper testimonial-swiper mt-5">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div
+                            class="swiper-slide d-flex position-relative testimonial-card p-4 rounded-4 column-gap-4 elevate-on-hover">
                             <!-- Image of girl -->
-                            <img class="size-80px" src="./assets/images/girl-in-black-dress.png"
-                                alt="Girl In Black Dress">
+                            <img class="size-80px" src="./assets/images/girl-in-white-dress.png"
+                                alt="Girl In White Dress">
 
                             <div class="d-flex flex-column">
                                 <!-- Name-->
                                 <h6>Rebecca J Morton</h6>
+
                                 <!-- Rating -->
                                 <div class="d-flex mt-2 column-gap-2">
                                     <img src="./assets/images/star.svg" alt="Star">
@@ -425,67 +419,69 @@
                                     <img src="./assets/images/star.svg" alt="Star">
                                 </div>
 
-
                                 <!-- Customer's testimonial -->
-                                <small class="mt-3 fst-italic">I will give you a complete account of the system. No one
-                                    rejects,
-                                    dislikes, or avoids pleasure itself, because it is
-                                    pleasure, but because those who do not.
+                                <small class="mt-3 fst-italic">But I must explain to you how all this mistaken idea of
+                                    denouncing pleasure
+                                    and praising
+                                    pain was born and I will give
+                                    you a complete account of the system. No one rejects, dislikes, or avoids pleasure
+                                    itself,
+                                    because it is pleasure, but
+                                    because those who do not.
                                 </small>
                             </div>
 
+                            <!-- Quote image -->
+                            <img class="position-absolute quote-symbol" src="./assets/images/quote.svg" alt="Quote">
                         </div>
 
-                        <!-- Quote image -->
-                        <img class="position-absolute quote-symbol" src="./assets/images/quote.svg" alt="Quote">
-                    </div>
+                        <!-- Testimonial 2 -->
+                        <div
+                            class="swiper-slide d-flex position-relative testimonial-card p-4 rounded-4 column-gap-4 elevate-on-hover">
+                            <div class="d-flex column-gap-4 flex-grow-1">
+                                <!-- Image of girl -->
+                                <img class="size-80px" src="./assets/images/girl-in-black-dress.png"
+                                    alt="Girl In Black Dress">
 
-                    <!-- Testimonial 3 -->
-                    <div
-                        class="swiper-slide d-flex position-relative testimonial-card p-4 rounded-4 column-gap-4 elevate-on-hover">
-                        <!-- Image of girl -->
-                        <img class="size-80px" src="./assets/images/girl-in-white-dress.png" alt="Girl In White Dress">
+                                <div class="d-flex flex-column">
+                                    <!-- Name-->
+                                    <h6>Rebecca J Morton</h6>
+                                    <!-- Rating -->
+                                    <div class="d-flex mt-2 column-gap-2">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                    </div>
 
-                        <div class="d-flex flex-column">
-                            <!-- Name-->
-                            <h6>Rebecca J Morton</h6>
 
-                            <!-- Rating -->
-                            <div class="d-flex mt-2 column-gap-2">
-                                <img src="./assets/images/star.svg" alt="Star">
-                                <img src="./assets/images/star.svg" alt="Star">
-                                <img src="./assets/images/star.svg" alt="Star">
-                                <img src="./assets/images/star.svg" alt="Star">
-                                <img src="./assets/images/star.svg" alt="Star">
+                                    <!-- Customer's testimonial -->
+                                    <small class="mt-3 fst-italic">I will give you a complete account of the system. No
+                                        one
+                                        rejects,
+                                        dislikes, or avoids pleasure itself, because it is
+                                        pleasure, but because those who do not.
+                                    </small>
+                                </div>
+
                             </div>
 
-                            <!-- Customer's testimonial -->
-                            <small class="mt-3 fst-italic">But I must explain to you how all this mistaken idea of
-                                denouncing pleasure
-                                and praising
-                                pain was born and I will give
-                                you a complete account of the system. No one rejects, dislikes, or avoids pleasure
-                                itself,
-                                because it is pleasure, but
-                                because those who do not.
-                            </small>
+                            <!-- Quote image -->
+                            <img class="position-absolute quote-symbol" src="./assets/images/quote.svg" alt="Quote">
                         </div>
 
-                        <!-- Quote image -->
-                        <img class="position-absolute quote-symbol" src="./assets/images/quote.svg" alt="Quote">
-                    </div>
-
-                    <!-- Testimonial 4 -->
-                    <div
-                        class="swiper-slide d-flex position-relative testimonial-card p-4 rounded-4 column-gap-4 elevate-on-hover">
-                        <div class="d-flex column-gap-4 flex-grow-1">
+                        <!-- Testimonial 3 -->
+                        <div
+                            class="swiper-slide d-flex position-relative testimonial-card p-4 rounded-4 column-gap-4 elevate-on-hover">
                             <!-- Image of girl -->
-                            <img class="size-80px" src="./assets/images/girl-in-black-dress.png"
-                                alt="Girl In Black Dress">
+                            <img class="size-80px" src="./assets/images/girl-in-white-dress.png"
+                                alt="Girl In White Dress">
 
                             <div class="d-flex flex-column">
                                 <!-- Name-->
                                 <h6>Rebecca J Morton</h6>
+
                                 <!-- Rating -->
                                 <div class="d-flex mt-2 column-gap-2">
                                     <img src="./assets/images/star.svg" alt="Star">
@@ -495,24 +491,62 @@
                                     <img src="./assets/images/star.svg" alt="Star">
                                 </div>
 
-
                                 <!-- Customer's testimonial -->
-                                <small class="mt-3 fst-italic">I will give you a complete account of the system. No one
-                                    rejects,
-                                    dislikes, or avoids pleasure itself, because it is
-                                    pleasure, but because those who do not.
+                                <small class="mt-3 fst-italic">But I must explain to you how all this mistaken idea of
+                                    denouncing pleasure
+                                    and praising
+                                    pain was born and I will give
+                                    you a complete account of the system. No one rejects, dislikes, or avoids pleasure
+                                    itself,
+                                    because it is pleasure, but
+                                    because those who do not.
                                 </small>
                             </div>
 
+                            <!-- Quote image -->
+                            <img class="position-absolute quote-symbol" src="./assets/images/quote.svg" alt="Quote">
                         </div>
 
-                        <!-- Quote image -->
-                        <img class="position-absolute quote-symbol" src="./assets/images/quote.svg" alt="Quote">
+                        <!-- Testimonial 4 -->
+                        <div
+                            class="swiper-slide d-flex position-relative testimonial-card p-4 rounded-4 column-gap-4 elevate-on-hover">
+                            <div class="d-flex column-gap-4 flex-grow-1">
+                                <!-- Image of girl -->
+                                <img class="size-80px" src="./assets/images/girl-in-black-dress.png"
+                                    alt="Girl In Black Dress">
+
+                                <div class="d-flex flex-column">
+                                    <!-- Name-->
+                                    <h6>Rebecca J Morton</h6>
+                                    <!-- Rating -->
+                                    <div class="d-flex mt-2 column-gap-2">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                        <img src="./assets/images/star.svg" alt="Star">
+                                    </div>
+
+
+                                    <!-- Customer's testimonial -->
+                                    <small class="mt-3 fst-italic">I will give you a complete account of the system. No
+                                        one
+                                        rejects,
+                                        dislikes, or avoids pleasure itself, because it is
+                                        pleasure, but because those who do not.
+                                    </small>
+                                </div>
+
+                            </div>
+
+                            <!-- Quote image -->
+                            <img class="position-absolute quote-symbol" src="./assets/images/quote.svg" alt="Quote">
+                        </div>
                     </div>
+
+                    <div class="mt-5"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-
-                <div class="mt-5"></div>
-                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -540,6 +574,8 @@
             </div>
         </section>
     </main>
+
+    <!-- TODO: This page is mostly responsive -->
 
     <!-- Footer section -->
     <footer class="container mt-5">
@@ -669,9 +705,10 @@
 
         <!-- Black footer -->
         <div class="bg-black rounded-4 mt-5" id="black-footer">
-            <div class="mx-auto w-75">
+            <div class="mx-auto p-5">
                 <!-- Logo and social media icons -->
-                <div class="d-flex justify-content-between align-items-center pt-5">
+                <div
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center row-gap-3">
                     <!-- logo -->
                     <div class="d-flex column-gap-2">
                         <img id="logo" src="./assets/images/logo.svg" alt="logo">
@@ -682,7 +719,8 @@
                         </h5>
                     </div>
 
-                    <div class="d-flex justify-content-between align-items-center column-gap-3">
+                    <div
+                        class="d-flex flex-wrap justify-content-start justify-content-sm-center align-items-center column-gap-3 row-gap-2">
                         <img src="./assets/images/facebook.svg" alt="facebook">
                         <img src="./assets/images/twitter.svg" alt="twitter">
                         <img src="./assets/images/instagram.svg" alt="instagram">
@@ -694,29 +732,29 @@
 
                 <hr class="mt-4">
 
-                <div class="d-flex justify-content-between column-gap-5">
-                    <!-- Offers, Contacts, Quick links -->
-                    <div class="d-flex column-gap-5">
-                        <!-- Offers -->
-                        <div>
-                            <small class=" d-block fw-bold text-light">Get your special offers, Coupons &
-                                More...</small>
+                <div class="d-flex flex-column flex-xl-row row-gap-4 column-gap-5">
+                    <!-- Offers -->
+                    <div>
+                        <small class=" d-block fw-bold text-light">Get your special offers, Coupons &
+                            More...</small>
 
-                            <form id="email-form">
-                                <div class="mt-3">
-                                    <input type="email" class="form-control" id="email-input"
-                                        placeholder="Enter your email.">
-                                </div>
+                        <form id="email-form">
+                            <div class="mt-3">
+                                <input type="email" class="form-control" id="email-input"
+                                    placeholder="Enter your email.">
+                            </div>
 
-                                <button type="submit" class="btn mt-3 px-4">
-                                    <p class="fw-bold">Subscribe</p>
-                                </button>
-                            </form>
-                        </div>
+                            <button type="submit" class="btn mt-3 px-4">
+                                <p class="fw-bold">Subscribe</p>
+                            </button>
+                        </form>
+                    </div>
 
+                    <!-- For larger screens -->
+                    <div class="d-none d-md-flex flex-grow-1 column-gap-3">
                         <!-- Contacts -->
                         <div id="contacts">
-                            <small class="d-block fw-bold text-light">Contacts</small>
+                            <h6 class="d-block text-light">Contacts</h6>
 
                             <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
                                 <img class="footer-icon" src="./assets/images/globe.svg" alt="Globe">
@@ -753,8 +791,8 @@
                         </div>
 
                         <!-- Quick links -->
-                        <div id="quick-links">
-                            <small class="d-block fw-bold text-light">Quick Links</small>
+                        <div class="quick-links flex-grow-1">
+                            <h6 class="d-block text-light">Quick Links</h6>
 
                             <small class="d-block text-white mt-4">Home</small>
                             <small class="d-block text-white mt-2">All Restaurants</small>
@@ -765,16 +803,124 @@
                             <small class="d-block text-white mt-2">Dinner</small>
                             <small class="d-block text-white mt-2">Fastfood</small>
                         </div>
+
+                        <!-- Mobile apps -->
+                        <div class="d-flex flex-column align-items-start" id="mobile-apps-div">
+                            <h6 class="d-block text-light">Mobile Apps</h6>
+
+                            <img src="./assets/images/google-play.png" alt="Google Play" class="mt-4">
+                            <img src="./assets/images/app-store.png" alt="App Store" class="mt-2">
+
+                            <hr class="d-block w-100 mt-4">
+
+                            <div class="d-flex column-gap-3">
+                                <img src="./assets/images/fork-knife.svg" alt="Fork">
+                                <small class="d-block text-white">Want to join your kitchen with our
+                                    service?</small>
+                            </div>
+
+                            <hr class="d-block w-100 mt-3">
+
+                            <div class="d-flex column-gap-3">
+                                <img src="./assets/images/delivery-man.svg" alt="Fork">
+                                <small class="d-block text-white">Want to work with us as a
+                                    delivery boy!</small>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- For mobile screens -->
+                    <div class="d-md-none accordion" id="footerAccordion">
+                        <!-- Contacts Accordion -->
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-transparent text-light" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#contactsCollapse">
+                                    Contacts
+                                </button>
+                            </h2>
+                            <div id="contactsCollapse" class="accordion-collapse collapse show"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <div class="contact-box d-flex align-items-start column-gap-2 mt-2">
+                                        <img class="footer-icon" src="./assets/images/globe.svg" alt="Globe">
+                                        <div>
+                                            <p>Website</p>
+                                            <small class="d-block text-white">www.foodzone.com</small>
+                                        </div>
+                                    </div>
 
-                    <!-- Mobile apps -->
-                    <div class="d-flex flex-column align-items-start" id="mobile-apps-div">
-                        <small class="d-block fw-bold text-light">Mobile Apps</small>
+                                    <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
+                                        <img class="footer-icon" src="./assets/images/pin-white.svg" alt="Pin">
+                                        <div>
+                                            <p>Address</p>
+                                            <small class="d-block text-white mt-1">4604 Canis Heights Drive, Los
+                                                Angeles,
+                                                California, 90007</small>
+                                        </div>
+                                    </div>
 
-                        <img src="./assets/images/google-play.png" alt="Google Play" class="mt-4">
-                        <img src="./assets/images/app-store.png" alt="App Store" class="mt-2">
+                                    <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
+                                        <img class="footer-icon" src="./assets/images/call.svg" alt="Call">
+                                        <div>
+                                            <p>Phone</p>
+                                            <small class="d-block text-white mt-1">213-747-6463</small>
+                                        </div>
+                                    </div>
 
+                                    <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
+                                        <img class="footer-icon" src="./assets/images/mail.svg" alt="Mail">
+                                        <div>
+                                            <p>Mail</p>
+                                            <small class="d-block text-white mt-1">info@foodland.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Links Accordion -->
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-transparent text-light collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#quickLinksCollapse">
+                                    Quick Links
+                                </button>
+                            </h2>
+                            <div id="quickLinksCollapse" class="accordion-collapse collapse"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body quick-links">
+                                    <small class="d-block text-white">Home</small>
+                                    <small class="d-block text-white mt-2">All Restaurants</small>
+                                    <small class="d-block text-white mt-2">Featured Restaurants</small>
+                                    <small class="d-block text-white mt-2">Blogs</small>
+                                    <small class="d-block text-white mt-2">Breakfast</small>
+                                    <small class="d-block text-white mt-2">Lunch</small>
+                                    <small class="d-block text-white mt-2">Dinner</small>
+                                    <small class="d-block text-white mt-2">Fastfood</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Apps Accordion -->
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-transparent text-light collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#mobileAppsCollapse">
+                                    Mobile Apps
+                                </button>
+                            </h2>
+                            <div id="mobileAppsCollapse" class="accordion-collapse collapse"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <img src="./assets/images/google-play.png" alt="Google Play" class="mt-2">
+                                    <img src="./assets/images/app-store.png" alt="App Store" class="mt-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex d-md-none flex-column">
                         <hr class="d-block w-100 mt-4">
 
                         <div class="d-flex column-gap-3">
@@ -793,12 +939,13 @@
                     </div>
                 </div>
 
-                <hr class="mt-4">
+                <hr>
 
-                <div class="d-flex justify-content-between align-items-center mt-4">
+                <div
+                    class="d-flex flex-column flex-xl-row justify-content-between align-items-start align-items-xl-center mt-4 row-gap-4">
                     <!-- Terms & Conditions | Privacy Policy | Refund Policy -->
                     <div>
-                        <div class="d-flex column-gap-3">
+                        <div class=" d-flex column-gap-3">
                             <small class="d-block text-white">Terms & Conditions</small>
                             <div class="vr"></div>
                             <small class="d-block text-white">Privacy Policy</small>
@@ -814,7 +961,7 @@
                             their respective owners.</small>
                     </div>
 
-                    <div class="d-flex column-gap-3" id="payment-methods-icons">
+                    <div class="d-flex flex-wrap row-gap-2 column-gap-3" id="payment-methods-icons">
                         <img src="./assets/images/visa.svg" alt="Visa">
                         <img src="./assets/images/mastercard.svg" alt="Mastercard">
                         <img src="./assets/images/paypal.svg" alt="Paypal">
@@ -824,7 +971,6 @@
                         <img src="./assets/images/discover-network.svg" alt="Discover Network">
                     </div>
                 </div>
-                <div class="pt-5"></div>
             </div>
         </div>
 
@@ -836,5 +982,5 @@
     <script type="module" src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Swiper.js script -->
-    <script type="module" src="./js/swiper.js"></script>
+    <script type="module" src="./js/swiper-page2.js"></script>
 </body>
