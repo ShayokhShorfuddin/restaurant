@@ -3,7 +3,6 @@ import $ from "jquery";
 $(() => {
     // Set active state based on current page
     const currentPage = window.location.pathname.split('/').pop() || "index.html";;
-    console.log(currentPage);
 
     $('#bottom-nav .bottom-nav-item').each(function () {
         const href = $(this).attr('href');

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="container d-flex justify-content-between align-items-center gap-5">
+    <header class="d-none d-md-flex container d-flex justify-content-between align-items-center gap-5">
         <!-- Logo and opportunities container -->
         <div class="d-flex align-items-center" id="logo-and-opportunities-container">
             <!-- logo -->
@@ -37,40 +37,61 @@
         <img src="./assets/images/person.png" alt="Profile picture">
     </header>
 
+    <header class="d-block d-md-none container">
+        <!-- Mobile navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid p-0">
+                <!-- Logo section -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./assets/images/logo.svg" alt="logo" class="d-inline-block align-text-top">
+                    <h5 class="text-nowrap mb-0 ms-2" id="logo-text">
+                        <span class="fw-light">Active </span>
+                        <span class="fw-bolder">Restaurant</span>
+                    </h5>
+                </a>
+
+                <!-- Hamburger button -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img src="./assets/images/navbar-hamburger.svg" alt="navbar-icon">
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                    <div class="d-flex flex-column row-gap-2 p-2">
+                        <!-- Opportunities -->
+                        <div class="nav-item">
+                            <a class="nav-link" href="#">Open your Restaurant</a>
+                        </div>
+
+                        <div class="nav-item">
+                            <a class="nav-link" href="#">Be a Delivery Boy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main>
         <!-- Hero section -->
-        <section class="container">
-            <div class="chef-hero-container mt-4 rounded-4">
-                <div id="overlay"></div>
-
-                <!-- Hero texts -->
-                <div class="text-white chef-hero-texts-container">
-                    <h1 class="fw-bold">Make Money Even When
-                        You are Not Serving Meals</h1>
-
-                    <div class="d-flex flex-column mt-4 w-75">
-                        <p>All you need is to give your best in your Kitchen,</p>
-                        <p>The rest is on our hand.</p>
-                    </div>
-
-                    <button class="btn mt-4 rounded-pill">
-                        <small class="fw-semibold text-black px-3">
-                            Get Started
-                        </small>
-                    </button>
-                </div>
+        <section class="container d-flex justify-content-center mt-3 px-3">
+            <div class="hero-img-container rounded-4 overflow-hidden">
+                <img src="./assets/images/make-money-even-when-you-are-not-serving-meals.png"
+                    alt="Make money even when you are not serving meals">
             </div>
         </section>
 
         <!-- Why active restaurant section -->
         <section class="mt-5">
-            <div class="mx-auto" id="why-active-restaurant-container">
-                <h2 class="fw-bold">Why Active Restaurant?</h2>
+            <div class="mx-auto px-4" id="why-active-restaurant-container">
+                <h2 class="fw-bold text-center text-xl-start">Why Active Restaurant?</h2>
 
                 <!-- Cards -->
-                <div class="d-flex justify-content-center mt-5 column-gap-4">
+                <div class="d-flex flex-wrap flex-xl-nowrap justify-content-center mt-5 gap-4">
                     <!-- Card 1 -->
-                    <div class="active-restaurant-card d-flex flex-column justify-content-between">
+                    <div class="active-restaurant-card d-flex flex-column justify-content-between row-gap-3">
                         <div class="d-flex flex-column">
                             <h6 class="fw-bold">Best Restaurant in the Town</h6>
                             <small class="mt-1">Active Restaurant always choose the best. No compromise in quality of
@@ -78,11 +99,11 @@
                                 handpicked by us & we give the best ones the opportunity.</small>
                         </div>
 
-                        <img class="mt-4" src="./assets/images/food-on-table.png" alt="Food on table">
+                        <img class="img-fluid" src="./assets/images/food-on-table.png" alt="Food on table">
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="active-restaurant-card d-flex flex-column justify-content-between">
+                    <div class="active-restaurant-card d-flex flex-column justify-content-between row-gap-3">
                         <div class="d-flex flex-column">
                             <h6 class="fw-bold">Best Price</h6>
                             <small class="mt-1">Most of our restaurant provides exclusive prices for our customers. It's
@@ -90,11 +111,11 @@
                                 are many coupons & offers for you to grab.</small>
                         </div>
 
-                        <img class="mt-4" src="./assets/images/two-women-eating.png" alt="Two women eating">
+                        <img class="img-fluid" src="./assets/images/two-women-eating.png" alt="Two women eating">
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="active-restaurant-card d-flex flex-column">
+                    <div class="active-restaurant-card d-flex flex-column justify-content-between row-gap-3">
                         <div class="d-flex flex-column">
                             <h6 class="fw-bold">Fastest Delivery</h6>
                             <small class="mt-1">Our Delivery Boys are super fast when it comes to deliver your foods to
@@ -102,7 +123,7 @@
                                 sanitized each time before taking your food.</small>
                         </div>
 
-                        <img class="mt-5" src="./assets/images/delivery-girl-on-bicycle.png"
+                        <img class="img-fluid" src="./assets/images/delivery-girl-on-bicycle.png"
                             alt="Delivery girl on bicycle">
                     </div>
                 </div>
@@ -110,27 +131,21 @@
         </section>
 
         <!-- Your business is on section -->
-        <section class="container mt-5">
-            <div class="mt-4 rounded-4 w-100 mx-auto position-relative" id="your-business-is-on-container">
-                <img class="w-100" src="assets/images/chef-in-kitchen.png" alt="chef-in-kitchen">
-
-                <div class="text-white position-absolute" id="your-business-is-on-texts">
-                    <h1 class="fw-bold fst-italic lh-base">Whether Your Restaurant is Open or Not,<br>
-                        Your Business is On.</h1>
-                </div>
-            </div>
+        <section class="d-flex justify-content-center mt-5 px-3">
+            <img class="img-fluid" src="./assets/images/whether-your-restaurant-is-open-or-not-your-business-is-on.png"
+                alt="Whether your restaurant is open or not, your business is on">
         </section>
 
         <!-- How Foodland Works for Restaurant Partners section -->
         <section class="mt-5">
-            <div class="mx-auto" id="how-foodland-works-for-restaurant-container">
-                <h2 class="fw-bold">How Foodland Works for Restaurant Partners</h2>
+            <div class="mx-auto px-4" id="how-foodland-works-for-restaurant-container">
+                <h2 class="fw-bold text-center text-xl-start">How Foodland Works for Restaurant Partners</h2>
 
                 <!-- Cards -->
-                <div class="d-flex justify-content-center mt-5 column-gap-4">
+                <div class="d-flex flex-wrap flex-xl-nowrap justify-content-center mt-5 gap-4">
                     <!-- Card 1 -->
                     <div
-                        class="how-foodland-works-for-restaurant-card d-flex flex-column align-items-center p-5 rounded-4">
+                        class="how-foodland-works-for-restaurant-card d-flex flex-column align-items-center p-4 p-xl-5 rounded-4">
                         <!-- Number -->
                         <div class="how-foodland-works-for-restaurant-card-number rounded-circle">
                             <p class="text-white">1</p>
@@ -139,16 +154,16 @@
                         <img class="mt-3" src="./assets/images/devices.svg" alt="Devices">
 
                         <small>With Active Restaurant, restaurant owners can efficiently manage customer orders through
-                            a
-                            unified platform. Once a
-                            customer places an order via the website or mobile app, restaurant owners are instantly
+                            a unified platform. Once a customer places an order via the website or mobile app,
+                            restaurant owners
+                            are instantly
                             notified.
                         </small>
                     </div>
 
                     <!-- Card 2 -->
                     <div
-                        class="how-foodland-works-for-restaurant-card d-flex flex-column align-items-center p-5 rounded-4">
+                        class="how-foodland-works-for-restaurant-card d-flex flex-column align-items-center p-4 p-xl-5 rounded-4">
                         <!-- Number -->
                         <div class="how-foodland-works-for-restaurant-card-number rounded-circle">
                             <p class="text-white">2</p>
@@ -157,14 +172,15 @@
                         <img class="mt-3" src="./assets/images/cooking-pan.svg" alt="Cooking Pan">
 
                         <small>In the kitchen, staff can prepare food accurately according to customer specifications.
-                            The system is designed to ensure
-                            seamless communication between the order and the preparation process.
+                            The system is designed to ensure seamless communication between the order and the
+                            preparation
+                            process.
                         </small>
                     </div>
 
                     <!-- Card 3 -->
                     <div
-                        class="how-foodland-works-for-restaurant-card d-flex flex-column align-items-center p-5 rounded-4">
+                        class="how-foodland-works-for-restaurant-card d-flex flex-column align-items-center p-4 p-xl-5 rounded-4">
                         <!-- Number -->
                         <div class="how-foodland-works-for-restaurant-card-number rounded-circle">
                             <p class="text-white">3</p>
@@ -173,8 +189,9 @@
                         <img class="mt-3" src="./assets/images/delivery-group.svg" alt="Delivery Group">
 
                         <small>The platform alerts you when the delivery personnel are on their way to pick up the
-                            order, making it easy to pack and
-                            hand over meals quickly with streamlined coordination between the restaurant and the
+                            order, making it easy to pack and hand over meals quickly with streamlined coordination
+                            between the
+                            restaurant and the
                             delivery boy.
                         </small>
                     </div>
@@ -183,26 +200,26 @@
         </section>
 
         <!-- CTA -->
-        <section class=" mt-5">
-            <div class="mx-auto d-flex column-gap-5 rounded-4" id="cta-container">
-                <div class="d-flex flex-column justify-content-center ps-4">
+        <section class="mt-5 px-3">
+            <div class="mx-auto d-flex flex-column flex-md-row column-gap-3 row-gap-4 rounded-4" id="cta-container">
+                <div class="d-flex flex-column justify-content-center p-4">
                     <h2 class="fw-bold">Join Today & <br>
-                        Grow Your Business</h2>
+                        Start Earning Right Away</h2>
 
                     <div class="d-flex flex-column row-gap-2 mt-4">
                         <div class="d-flex align-items-center column-gap-3">
                             <img src="./assets/images/tick.svg" alt="Tick mark">
-                            <small class="fw-semibold">Tell us about your restaurant</small>
+                            <small class="fw-semibold">Apply and Fill up the form</small>
                         </div>
 
                         <div class="d-flex align-items-center column-gap-3">
                             <img src="./assets/images/tick.svg" alt="Tick mark">
-                            <small class="fw-semibold">Upload your menu</small>
+                            <small class="fw-semibold">Get registered as a Delivery Boy</small>
                         </div>
 
                         <div class="d-flex align-items-center column-gap-3">
                             <img src="./assets/images/tick.svg" alt="Tick mark">
-                            <small class="fw-semibold">Access Restaurant Panel & Go live</small>
+                            <small class="fw-semibold">Start earning</small>
                         </div>
                     </div>
 
@@ -211,10 +228,12 @@
                     </button>
                 </div>
 
-                <img src="./assets/images/woman-with-computer2.png" alt="Woman with computer">
+                <img class="img-fluid" src="./assets/images/woman-with-computer2.png" alt="Woman with computer">
             </div>
         </section>
     </main>
+
+    <!-- TODO: Fix banner -->
 
     <!-- Footer section -->
     <footer class="container mt-5">
@@ -344,9 +363,10 @@
 
         <!-- Black footer -->
         <div class="bg-black rounded-4 mt-5" id="black-footer">
-            <div class="mx-auto w-75">
+            <div class="mx-auto p-5">
                 <!-- Logo and social media icons -->
-                <div class="d-flex justify-content-between align-items-center pt-5">
+                <div
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center row-gap-3">
                     <!-- logo -->
                     <div class="d-flex column-gap-2">
                         <img id="logo" src="./assets/images/logo.svg" alt="logo">
@@ -357,7 +377,8 @@
                         </h5>
                     </div>
 
-                    <div class="d-flex justify-content-between align-items-center column-gap-3">
+                    <div
+                        class="d-flex flex-wrap justify-content-start justify-content-sm-center align-items-center column-gap-3 row-gap-2">
                         <img src="./assets/images/facebook.svg" alt="facebook">
                         <img src="./assets/images/twitter.svg" alt="twitter">
                         <img src="./assets/images/instagram.svg" alt="instagram">
@@ -369,29 +390,29 @@
 
                 <hr class="mt-4">
 
-                <div class="d-flex justify-content-between column-gap-5">
-                    <!-- Offers, Contacts, Quick links -->
-                    <div class="d-flex column-gap-5">
-                        <!-- Offers -->
-                        <div>
-                            <small class=" d-block fw-bold text-light">Get your special offers, Coupons &
-                                More...</small>
+                <div class="d-flex flex-column flex-xl-row row-gap-4 column-gap-5">
+                    <!-- Offers -->
+                    <div>
+                        <small class=" d-block fw-bold text-light">Get your special offers, Coupons &
+                            More...</small>
 
-                            <form id="email-form">
-                                <div class="mt-3">
-                                    <input type="email" class="form-control" id="email-input"
-                                        placeholder="Enter your email.">
-                                </div>
+                        <form id="email-form">
+                            <div class="mt-3">
+                                <input type="email" class="form-control" id="email-input"
+                                    placeholder="Enter your email.">
+                            </div>
 
-                                <button type="submit" class="btn mt-3 px-4">
-                                    <p class="fw-bold">Subscribe</p>
-                                </button>
-                            </form>
-                        </div>
+                            <button type="submit" class="btn mt-3 px-4">
+                                <p class="fw-bold">Subscribe</p>
+                            </button>
+                        </form>
+                    </div>
 
+                    <!-- For larger screens -->
+                    <div class="d-none d-md-flex flex-grow-1 column-gap-3">
                         <!-- Contacts -->
                         <div id="contacts">
-                            <small class="d-block fw-bold text-light">Contacts</small>
+                            <h6 class="d-block text-light">Contacts</h6>
 
                             <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
                                 <img class="footer-icon" src="./assets/images/globe.svg" alt="Globe">
@@ -428,8 +449,8 @@
                         </div>
 
                         <!-- Quick links -->
-                        <div id="quick-links">
-                            <small class="d-block fw-bold text-light">Quick Links</small>
+                        <div class="quick-links flex-grow-1">
+                            <h6 class="d-block text-light">Quick Links</h6>
 
                             <small class="d-block text-white mt-4">Home</small>
                             <small class="d-block text-white mt-2">All Restaurants</small>
@@ -440,16 +461,124 @@
                             <small class="d-block text-white mt-2">Dinner</small>
                             <small class="d-block text-white mt-2">Fastfood</small>
                         </div>
+
+                        <!-- Mobile apps -->
+                        <div class="d-flex flex-column align-items-start" id="mobile-apps-div">
+                            <h6 class="d-block text-light">Mobile Apps</h6>
+
+                            <img src="./assets/images/google-play.png" alt="Google Play" class="mt-4">
+                            <img src="./assets/images/app-store.png" alt="App Store" class="mt-2">
+
+                            <hr class="d-block w-100 mt-4">
+
+                            <div class="d-flex column-gap-3">
+                                <img src="./assets/images/fork-knife.svg" alt="Fork">
+                                <small class="d-block text-white">Want to join your kitchen with our
+                                    service?</small>
+                            </div>
+
+                            <hr class="d-block w-100 mt-3">
+
+                            <div class="d-flex column-gap-3">
+                                <img src="./assets/images/delivery-man.svg" alt="Fork">
+                                <small class="d-block text-white">Want to work with us as a
+                                    delivery boy!</small>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- For mobile screens -->
+                    <div class="d-md-none accordion" id="footerAccordion">
+                        <!-- Contacts Accordion -->
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-transparent text-light" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#contactsCollapse">
+                                    Contacts
+                                </button>
+                            </h2>
+                            <div id="contactsCollapse" class="accordion-collapse collapse show"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <div class="contact-box d-flex align-items-start column-gap-2 mt-2">
+                                        <img class="footer-icon" src="./assets/images/globe.svg" alt="Globe">
+                                        <div>
+                                            <p>Website</p>
+                                            <small class="d-block text-white">www.foodzone.com</small>
+                                        </div>
+                                    </div>
 
-                    <!-- Mobile apps -->
-                    <div class="d-flex flex-column align-items-start" id="mobile-apps-div">
-                        <small class="d-block fw-bold text-light">Mobile Apps</small>
+                                    <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
+                                        <img class="footer-icon" src="./assets/images/pin-white.svg" alt="Pin">
+                                        <div>
+                                            <p>Address</p>
+                                            <small class="d-block text-white mt-1">4604 Canis Heights Drive, Los
+                                                Angeles,
+                                                California, 90007</small>
+                                        </div>
+                                    </div>
 
-                        <img src="./assets/images/google-play.png" alt="Google Play" class="mt-4">
-                        <img src="./assets/images/app-store.png" alt="App Store" class="mt-2">
+                                    <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
+                                        <img class="footer-icon" src="./assets/images/call.svg" alt="Call">
+                                        <div>
+                                            <p>Phone</p>
+                                            <small class="d-block text-white mt-1">213-747-6463</small>
+                                        </div>
+                                    </div>
 
+                                    <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
+                                        <img class="footer-icon" src="./assets/images/mail.svg" alt="Mail">
+                                        <div>
+                                            <p>Mail</p>
+                                            <small class="d-block text-white mt-1">info@foodland.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Links Accordion -->
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-transparent text-light collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#quickLinksCollapse">
+                                    Quick Links
+                                </button>
+                            </h2>
+                            <div id="quickLinksCollapse" class="accordion-collapse collapse"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body quick-links">
+                                    <small class="d-block text-white">Home</small>
+                                    <small class="d-block text-white mt-2">All Restaurants</small>
+                                    <small class="d-block text-white mt-2">Featured Restaurants</small>
+                                    <small class="d-block text-white mt-2">Blogs</small>
+                                    <small class="d-block text-white mt-2">Breakfast</small>
+                                    <small class="d-block text-white mt-2">Lunch</small>
+                                    <small class="d-block text-white mt-2">Dinner</small>
+                                    <small class="d-block text-white mt-2">Fastfood</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Apps Accordion -->
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-transparent text-light collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#mobileAppsCollapse">
+                                    Mobile Apps
+                                </button>
+                            </h2>
+                            <div id="mobileAppsCollapse" class="accordion-collapse collapse"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <img src="./assets/images/google-play.png" alt="Google Play" class="mt-2">
+                                    <img src="./assets/images/app-store.png" alt="App Store" class="mt-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex d-md-none flex-column">
                         <hr class="d-block w-100 mt-4">
 
                         <div class="d-flex column-gap-3">
@@ -468,12 +597,13 @@
                     </div>
                 </div>
 
-                <hr class="mt-4">
+                <hr>
 
-                <div class="d-flex justify-content-between align-items-center mt-4">
+                <div
+                    class="d-flex flex-column flex-xl-row justify-content-between align-items-start align-items-xl-center mt-4 row-gap-4">
                     <!-- Terms & Conditions | Privacy Policy | Refund Policy -->
                     <div>
-                        <div class="d-flex column-gap-3">
+                        <div class=" d-flex column-gap-3">
                             <small class="d-block text-white">Terms & Conditions</small>
                             <div class="vr"></div>
                             <small class="d-block text-white">Privacy Policy</small>
@@ -489,7 +619,7 @@
                             their respective owners.</small>
                     </div>
 
-                    <div class="d-flex column-gap-3" id="payment-methods-icons">
+                    <div class="d-flex flex-wrap row-gap-2 column-gap-3" id="payment-methods-icons">
                         <img src="./assets/images/visa.svg" alt="Visa">
                         <img src="./assets/images/mastercard.svg" alt="Mastercard">
                         <img src="./assets/images/paypal.svg" alt="Paypal">
@@ -499,14 +629,15 @@
                         <img src="./assets/images/discover-network.svg" alt="Discover Network">
                     </div>
                 </div>
-
-                <div class="pt-5"></div>
             </div>
         </div>
 
         <!-- Extra whitespace -->
         <section class="mt-5"></section>
     </footer>
+
+    <!-- Loading mini bootstrap javascript bundle -->
+    <script type="module" src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

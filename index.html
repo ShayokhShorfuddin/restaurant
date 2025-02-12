@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
@@ -59,6 +58,7 @@
                     <!-- Profile picture -->
                     <img src="./assets/images/person.png" alt="Profile picture" class="d-none d-lg-block" />
                 </div>
+            </div>
         </nav>
     </header>
 
@@ -465,25 +465,8 @@
         </section>
 
         <!-- Today's special menu section -->
-        <section class="container mt-5" id="todays-menu-section">
-            <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center rounded-4 position-relative p-4"
-                id="todays-menu-container">
-                <div class="position-relative">
-                    <img src="./assets/images/food-plate.png" alt="Food plate">
-                    <img id="paint" src="./assets/images/paint.svg" alt="Paint">
-                    <p>30%<br>Off</p>
-                </div>
-
-                <div class="d-flex flex-column align-items-center align-items-sm-start row-gap-4" id="todays-menu-text">
-                    <h1><span>Today's</span><br><span>SPECIAL</span><br><span>MENU</span></h1>
-
-                    <p>Most of our restaurant provides exclusive prices for our customers. It's their business and we
-                        try to enrich them. There
-                        are many coupons & offers for you to grab.</p>
-
-                    <button class="btn px-4 py-2 fw-bold">Order Now</button>
-                </div>
-            </div>
+        <section class="container d-flex justify-content-center mt-5">
+            <img class="img-fluid" src="./assets/images/todays-special-menu.png" alt="Todays special menu">
         </section>
 
         <!-- Cuisines section -->
@@ -1540,7 +1523,7 @@
                         </div>
                     </div>
 
-                    <div class="d-flex flex-column">
+                    <div class="d-flex d-md-none flex-column">
                         <hr class="d-block w-100 mt-4">
 
                         <div class="d-flex column-gap-3">
@@ -1664,7 +1647,7 @@
     <script type="module" src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Swiper.js script -->
-    <script type="module" src="./js/swiper.js"></script>
+    <script type="module" src="./js/swiper-page1.js"></script>
 
     <!-- Average color script -->
     <script type="module" src="./js/average-color.js"></script>

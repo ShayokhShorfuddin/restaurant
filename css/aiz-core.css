@@ -19298,7 +19298,6 @@ img[alt=Star]:hover {
 .budget-restaurants-swiper-img-holder,
 .restaurants-at-woodland-hills-swiper-img-holder {
   overflow: hidden;
-  height: 10rem;
 }
 .featured-restaurants-swiper-img-holder img,
 .top-picks-swiper-img-holder img,
@@ -19337,30 +19336,6 @@ img[alt=Star]:hover {
 }
 .cuisines-swiper-img-holder img {
   object-fit: contain;
-}
-
-.chef-hero-container {
-  height: 38rem;
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-image: url("../assets/images/chef.png");
-}
-.chef-hero-container .chef-hero-texts-container {
-  top: 50%;
-  left: 30%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  max-width: 43rem;
-  z-index: 2;
-}
-.chef-hero-container .chef-hero-texts-container h1, .chef-hero-container .chef-hero-texts-container .h1 {
-  font-size: 3.5rem;
-  font-family: Lato, sans-serif;
-}
-.chef-hero-container .chef-hero-texts-container button {
-  background-color: var(--ui-orange);
 }
 
 .delivery-girl-hero-container {
@@ -19424,193 +19399,8 @@ img[alt=Star]:hover {
 .blog-card {
   border: 0;
   width: 17rem;
+  cursor: pointer;
   background-color: #F5F4F2;
-}
-
-#todays-menu-container {
-  background-color: #E6E3DF;
-}
-@media (min-width: 1400px) {
-  #todays-menu-container > div:first-of-type > img:first-of-type {
-    width: 40rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  #todays-menu-container > div:first-of-type > img:first-of-type {
-    width: 25rem;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  #todays-menu-container > div:first-of-type > img:first-of-type {
-    width: 20rem;
-  }
-}
-@media (max-width: 991.98px) {
-  #todays-menu-container > div:first-of-type > img:first-of-type {
-    width: 15rem;
-  }
-}
-#todays-menu-container #paint {
-  position: absolute;
-}
-@media (min-width: 1400px) {
-  #todays-menu-container #paint {
-    left: -4rem;
-    bottom: 9rem;
-    width: 15rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  #todays-menu-container #paint {
-    left: -5rem;
-    bottom: 5rem;
-    width: 13rem;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  #todays-menu-container #paint {
-    left: -4rem;
-    bottom: 4rem;
-    width: 11rem;
-  }
-}
-@media (max-width: 991.98px) {
-  #todays-menu-container #paint {
-    left: -3rem;
-    bottom: 2rem;
-    width: 9rem;
-  }
-}
-#todays-menu-container p:last-child {
-  position: absolute;
-  line-height: 1.5rem;
-  font-weight: 500;
-}
-@media (min-width: 1400px) {
-  #todays-menu-container p:last-child {
-    left: 5rem;
-    bottom: 11.1rem;
-    font-size: 1.2rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  #todays-menu-container p:last-child {
-    left: 2.7rem;
-    bottom: 6rem;
-    font-size: 1rem;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  #todays-menu-container p:last-child {
-    left: 2.5rem;
-    bottom: 5rem;
-    font-size: 1rem;
-  }
-}
-@media (max-width: 991.98px) {
-  #todays-menu-container p:last-child {
-    left: 2.5rem;
-    bottom: 2.3rem;
-    font-size: 0.9rem;
-  }
-}
-
-#todays-menu-text h1 span:first-child, #todays-menu-text .h1 span:first-child {
-  font-weight: 400;
-  color: var(--ui-orange);
-}
-@media (min-width: 1400px) {
-  #todays-menu-text h1 span:first-child, #todays-menu-text .h1 span:first-child {
-    font-size: 5rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  #todays-menu-text h1 span:first-child, #todays-menu-text .h1 span:first-child {
-    font-size: 4rem;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  #todays-menu-text h1 span:first-child, #todays-menu-text .h1 span:first-child {
-    font-size: 3.5rem;
-  }
-}
-@media (max-width: 991.98px) {
-  #todays-menu-text h1 span:first-child, #todays-menu-text .h1 span:first-child {
-    font-size: 3rem;
-  }
-}
-@media (min-width: 1400px) {
-  #todays-menu-text h1 span:nth-of-type(2), #todays-menu-text .h1 span:nth-of-type(2) {
-    font-size: 4rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  #todays-menu-text h1 span:nth-of-type(2), #todays-menu-text .h1 span:nth-of-type(2) {
-    font-size: 3.5rem;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  #todays-menu-text h1 span:nth-of-type(2), #todays-menu-text .h1 span:nth-of-type(2) {
-    font-size: 3rem;
-  }
-}
-@media (max-width: 991.98px) {
-  #todays-menu-text h1 span:nth-of-type(2), #todays-menu-text .h1 span:nth-of-type(2) {
-    font-size: 2.5rem;
-  }
-}
-#todays-menu-text h1 span:last-child, #todays-menu-text .h1 span:last-child {
-  font-weight: 400;
-  color: var(--ui-orange);
-}
-@media (min-width: 1400px) {
-  #todays-menu-text h1 span:last-child, #todays-menu-text .h1 span:last-child {
-    font-size: 5rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  #todays-menu-text h1 span:last-child, #todays-menu-text .h1 span:last-child {
-    font-size: 4rem;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  #todays-menu-text h1 span:last-child, #todays-menu-text .h1 span:last-child {
-    font-size: 3.5rem;
-  }
-}
-@media (max-width: 991.98px) {
-  #todays-menu-text h1 span:last-child, #todays-menu-text .h1 span:last-child {
-    font-size: 3rem;
-  }
-}
-@media (min-width: 1400px) {
-  #todays-menu-text p {
-    max-width: 25rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  #todays-menu-text p {
-    max-width: 22rem;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  #todays-menu-text p {
-    max-width: 20rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  #todays-menu-text p {
-    max-width: 18rem;
-  }
-}
-@media (max-width: 767.98px) {
-  #todays-menu-text p {
-    font-size: 0.8rem;
-    max-width: 16rem;
-  }
-}
-#todays-menu-text .btn {
-  background-color: var(--ui-orange);
 }
 
 #load-more-btn {
@@ -19621,9 +19411,11 @@ img[alt=Star]:hover {
 }
 
 #cta-container {
-  height: 25rem;
   max-width: fit-content;
   background-color: #FBF5EC;
+}
+#cta-container img {
+  max-height: 25rem;
 }
 
 #cta-btn {
@@ -20073,6 +19865,34 @@ hr {
 #page2-hero-section {
   min-height: 30rem;
 }
+#page2-hero-section > div > img:last-child {
+  width: 100%;
+}
+@media (min-width: 1400px) {
+  #page2-hero-section > div > img:last-child {
+    max-width: 32rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  #page2-hero-section > div > img:last-child {
+    max-width: 25rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #page2-hero-section > div > img:last-child {
+    max-width: 21rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #page2-hero-section > div > img:last-child {
+    max-width: 19rem;
+  }
+}
+@media (max-width: 767.98px) {
+  #page2-hero-section > div > img:last-child {
+    max-width: 15rem;
+  }
+}
 
 #page2-hero-texts-container {
   max-width: 30rem;
@@ -20148,6 +19968,20 @@ header hr {
   grid-gap: 1rem;
   margin-top: 1rem;
 }
+@media (max-width: 1000px) {
+  #blogs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 650px) {
+  #blogs-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#blogs-grid .blog-card {
+  width: 100%;
+  max-width: 15rem;
+}
 
 .hashtag {
   color: #939AA3;
@@ -20162,11 +19996,6 @@ header hr {
 }
 .read-full-blog:hover {
   text-decoration: underline;
-}
-
-aside {
-  width: 100%;
-  max-width: 16rem;
 }
 
 #category-buttons button:first-of-type {
@@ -20191,6 +20020,7 @@ aside {
   object-fit: cover;
 }
 .recent-post div small:first-child, .recent-post div .small:first-child {
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 .recent-post div small:first-child:hover, .recent-post div .small:first-child:hover {
@@ -20206,19 +20036,17 @@ aside {
   text-decoration: underline;
 }
 
+#page3-aside {
+  max-width: 14rem;
+}
+
 #page4-blog-container {
-  width: min-content;
-}
-
-#page4-aside {
-  width: fit-content;
-}
-
-#comments {
-  width: fit-content;
+  width: 100%;
+  max-width: 35rem;
 }
 
 .other-post div small:first-of-type, .other-post div .small:first-of-type {
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 .other-post div small:first-of-type:hover, .other-post div .small:first-of-type:hover {
@@ -20270,6 +20098,35 @@ aside {
 }
 .how-foodland-works-for-restaurant-card-number p {
   font-size: 1rem;
+}
+
+.hero-img-container {
+  width: 100%;
+}
+@media (min-width: 1400px) {
+  .hero-img-container {
+    height: 35rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .hero-img-container {
+    height: 28rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero-img-container {
+    height: 22rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .hero-img-container {
+    height: 13rem;
+  }
+}
+.hero-img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 #logo-and-opportunities-container {
@@ -20351,7 +20208,7 @@ aside {
   color: var(--ui-orange);
 }
 #restaurant-info-banner .swiper.restaurant-info-swiper {
-  height: 10rem;
+  height: 9rem;
   position: absolute;
   z-index: 1;
   bottom: 20px;
@@ -20367,6 +20224,82 @@ aside {
 }
 #restaurant-info-banner .swiper.restaurant-info-swiper .swiper-wrapper {
   max-width: 60rem;
+}
+@media (max-width: 1200px) {
+  #restaurant-info-banner .swiper.restaurant-info-swiper .swiper-wrapper {
+    max-width: 40rem;
+  }
+}
+@media (max-width: 1200px) {
+  #restaurant-info-banner .swiper.restaurant-info-swiper {
+    height: 7rem;
+    border-radius: 1rem;
+  }
+}
+
+.info .restaurant-logo {
+  border: 1px solid #D1D1D1;
+}
+
+.money-and-foods > small:first-child, .money-and-foods > .small:first-child {
+  color: var(--ui-orange);
+}
+.money-and-foods > small:last-child, .money-and-foods > .small:last-child {
+  color: gray;
+}
+
+img[alt=Star] {
+  transform: none;
+  max-height: 1rem;
+}
+
+.reviews-and-about-restaurant a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: var(--ui-orange);
+}
+.reviews-and-about-restaurant .vr {
+  width: 2px;
+  background-color: orangered;
+}
+
+.divider {
+  height: 4rem;
+  width: 1px;
+  background-color: gray;
+}
+
+.right-side {
+  column-gap: 8rem;
+}
+.right-side img[alt=Clipboard] {
+  height: 1.1rem;
+  cursor: pointer;
+}
+.right-side h3, .right-side .h3 {
+  color: var(--ui-orange);
+}
+
+.restaurant-info-swiper-mobile .swiper-button-next,
+.restaurant-info-swiper-mobile .swiper-button-prev {
+  --swiper-navigation-size: 15px;
+  --swiper-navigation-sides-offset: 8px;
+  --swiper-navigation-top-offset: 45%;
+  color: var(--ui-orange);
+}
+.restaurant-info-swiper-mobile .swiper-wrapper {
+  max-width: 60rem;
+}
+@media (max-width: 1200px) {
+  .restaurant-info-swiper-mobile .swiper-wrapper {
+    max-width: 40rem;
+  }
+}
+@media (max-width: 1200px) {
+  .restaurant-info-swiper-mobile {
+    height: 12rem;
+    border-radius: 1rem;
+  }
 }
 
 .tabs-container {
@@ -20401,6 +20334,16 @@ aside {
   gap: 1.2rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+@media (min-width: 900px) and (max-width: 1399.98px) {
+  .tab-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 899.98px) {
+  .tab-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 
 .menu-card {
@@ -20443,6 +20386,7 @@ aside {
 
 #fixed-card {
   position: fixed;
+  z-index: 2;
   right: 0;
   background-color: var(--ui-orange);
 }
@@ -20452,14 +20396,26 @@ aside {
 
 #login-form-1 {
   width: 100%;
-  max-width: 50rem;
+  max-width: 51rem;
 }
 #login-form-1 .left-side {
   width: 50%;
   background-color: var(--ui-orange);
 }
+@media (max-width: 576px) {
+  #login-form-1 .left-side {
+    width: 100%;
+    border-radius: 1rem;
+  }
+}
 #login-form-1 .right-side {
   border: 1px solid var(--ui-orange);
+}
+@media (max-width: 576px) {
+  #login-form-1 .right-side {
+    width: 100%;
+    border-radius: 1rem;
+  }
 }
 #login-form-1 .right-side a:hover {
   color: var(--ui-orange);
@@ -20494,9 +20450,21 @@ aside {
   width: 50%;
   background-color: var(--ui-orange);
 }
+@media (max-width: 576px) {
+  #login-form-2 .left-side {
+    width: 100%;
+    border-radius: 1rem;
+  }
+}
 #login-form-2 .right-side {
   width: 50%;
   border: 1px solid var(--ui-orange);
+}
+@media (max-width: 576px) {
+  #login-form-2 .right-side {
+    width: 100%;
+    border-radius: 1rem;
+  }
 }
 #login-form-2 .right-side a:hover {
   color: var(--ui-orange);
@@ -20531,9 +20499,21 @@ aside {
   width: 50%;
   background-color: #00B7EB;
 }
+@media (max-width: 576px) {
+  #login-form-3 .left-side {
+    width: 100%;
+    border-radius: 1rem;
+  }
+}
 #login-form-3 .right-side {
   width: 50%;
   border: 1px solid #00B7EB;
+}
+@media (max-width: 576px) {
+  #login-form-3 .right-side {
+    width: 100%;
+    border-radius: 1rem;
+  }
 }
 #login-form-3 .right-side a:hover {
   color: var(--ui-orange);
@@ -20578,6 +20558,8 @@ aside {
   background-color: #F5F4F2;
 }
 #contact-container .update-btn {
+  width: 100%;
+  max-width: fit-content;
   background-color: var(--ui-orange);
 }
 
@@ -20593,6 +20575,8 @@ aside {
 }
 #profile-picture-container .update-btn,
 #reset-password-container .update-btn {
+  width: 100%;
+  max-width: fit-content;
   background-color: var(--ui-orange);
 }
 
@@ -20690,6 +20674,11 @@ aside {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (max-width: 800px) {
+  .checkout-container .payment-options {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 .checkout-container .payment-option {
   background-color: #F7F7F7;
@@ -20918,8 +20907,18 @@ aside {
   position: absolute;
   left: 20px;
   bottom: 15px;
-  height: 3.5rem;
-  width: 3.5rem;
+}
+@media (min-width: 892px) {
+  #restaurantDetailsModal .restaurant-logo {
+    max-height: 3.5rem;
+    max-width: 3.5rem;
+  }
+}
+@media (max-width: 891.98px) {
+  #restaurantDetailsModal .restaurant-logo {
+    max-height: 3rem;
+    max-width: 3rem;
+  }
 }
 #restaurantDetailsModal .money-and-foods > small:first-child, #restaurantDetailsModal .money-and-foods > .small:first-child {
   color: var(--ui-orange);
@@ -20931,6 +20930,21 @@ aside {
   display: grid;
   gap: 1.2rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+#restaurantDetailsModal .delivery-hours-grid small, #restaurantDetailsModal .delivery-hours-grid .small {
+  padding: 0.4rem;
+  transition: all 0.15s ease-in-out;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+#restaurantDetailsModal .delivery-hours-grid small:hover, #restaurantDetailsModal .delivery-hours-grid .small:hover {
+  border-color: #dee2e6;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+@media (max-width: 991.98px) {
+  #restaurantDetailsModal .delivery-hours-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 /*# sourceMappingURL=aiz-core.css.map */

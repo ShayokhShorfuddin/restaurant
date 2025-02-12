@@ -63,7 +63,6 @@ img[alt="Star"]:hover {
 .budget-restaurants-swiper-img-holder,
 .restaurants-at-woodland-hills-swiper-img-holder {
     @include swiper-img-holder;
-    height: 10rem;
 }
 
 .cuisines-swiper-img-holder {
@@ -84,28 +83,51 @@ img[alt="Star"]:hover {
     background-position: top right;
 }
 
-.chef-hero-container {
-    @include hero-container;
-    background-image: url("../assets/images/chef.png");
+// .chef-hero-container-section {
+//     .chef-hero-texts-container {
+//         position: absolute;
+//         z-index: 2;
+//         max-width: 43rem;
 
-    .chef-hero-texts-container {
-        top: 50%;
-        left: 30%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        max-width: 43rem;
-        z-index: 2;
+//         top: 50%;
+//         left: 37%;
+//         transform: translate(-50%, -50%);
 
-        h1 {
-            font-size: 3.5rem;
-            font-family: Lato, sans-serif;
-        }
+//         h1 {
+//             font-size: 3.5rem;
+//             font-family: Lato, sans-serif;
+//         }
 
-        button {
-            background-color: var(--ui-orange);
-        }
-    }
-}
+//         button {
+//             background-color: var(--ui-orange);
+//         }
+
+//         @media (min-width: 1200px) and (max-width: 1399.98px) {
+//             max-width: 35rem;
+
+//             h1 {
+//                 font-size: 2.5rem;
+//             }
+//         }
+
+//         @media (min-width: 992px) and (max-width: 1199.98px) {
+//             max-width: 25rem;
+
+//             h1 {
+//                 font-size: 2rem;
+//             }
+//         }
+
+//         @media (max-width: 991.98px) {
+//             max-width: 15rem;
+
+//             h1 {
+//                 font-size: 1rem;
+//             }
+//         }
+
+//     }
+// }
 
 
 .delivery-girl-hero-container {
@@ -170,181 +192,10 @@ img[alt="Star"]:hover {
 .blog-card {
     border: 0;
     width: 17rem;
+    cursor: pointer;
     background-color: #F5F4F2;
 }
 
-#todays-menu-container {
-    background-color: #E6E3DF;
-
-    &>div:first-of-type {
-        &>img:first-of-type {
-            @media (min-width: 1400px) {
-                width: 40rem;
-            }
-
-            @media (min-width: 1200px) and (max-width: 1399.98px) {
-                width: 25rem;
-            }
-
-            @media (min-width: 992px) and (max-width: 1199.98px) {
-                width: 20rem;
-            }
-
-            @media (max-width: 991.98px) {
-                width: 15rem;
-            }
-        }
-    }
-
-    #paint {
-        position: absolute;
-
-        @media (min-width: 1400px) {
-            left: -4rem;
-            bottom: 9rem;
-            width: 15rem;
-        }
-
-        @media (min-width: 1200px) and (max-width: 1399.98px) {
-            left: -5rem;
-            bottom: 5rem;
-            width: 13rem;
-        }
-
-        @media (min-width: 992px) and (max-width: 1199.98px) {
-            left: -4rem;
-            bottom: 4rem;
-            width: 11rem;
-        }
-
-        @media (max-width: 991.98px) {
-            left: -3rem;
-            bottom: 2rem;
-            width: 9rem;
-        }
-    }
-
-    p:last-child {
-        position: absolute;
-        line-height: 1.5rem;
-        font-weight: 500;
-
-        @media (min-width: 1400px) {
-            left: 5rem;
-            bottom: 11.1rem;
-            font-size: 1.2rem;
-        }
-
-        @media (min-width: 1200px) and (max-width: 1399.98px) {
-            left: 2.7rem;
-            bottom: 6.0rem;
-            font-size: 1rem;
-        }
-
-        @media (min-width: 992px) and (max-width: 1199.98px) {
-            left: 2.5rem;
-            bottom: 5rem;
-            font-size: 1rem;
-        }
-
-        @media (max-width: 991.98px) {
-            left: 2.5rem;
-            bottom: 2.3rem;
-            font-size: 0.9rem;
-        }
-    }
-}
-
-#todays-menu-text {
-    h1 {
-        span:first-child {
-            font-weight: 400;
-            color: var(--ui-orange);
-
-            @media (min-width: 1400px) {
-                font-size: 5rem;
-            }
-
-            @media (min-width: 1200px) and (max-width: 1399.98px) {
-                font-size: 4rem;
-            }
-
-            @media (min-width: 992px) and (max-width: 1199.98px) {
-                font-size: 3.5rem;
-            }
-
-            @media (max-width: 991.98px) {
-                font-size: 3rem;
-            }
-        }
-
-        span:nth-of-type(2) {
-            @media (min-width: 1400px) {
-                font-size: 4rem;
-            }
-
-            @media (min-width: 1200px) and (max-width: 1399.98px) {
-                font-size: 3.5rem;
-            }
-
-            @media (min-width: 992px) and (max-width: 1199.98px) {
-                font-size: 3rem;
-            }
-
-            @media (max-width: 991.98px) {
-                font-size: 2.5rem;
-            }
-        }
-
-        span:last-child {
-            font-weight: 400;
-            color: var(--ui-orange);
-
-            @media (min-width: 1400px) {
-                font-size: 5rem;
-            }
-
-            @media (min-width: 1200px) and (max-width: 1399.98px) {
-                font-size: 4rem;
-            }
-
-            @media (min-width: 992px) and (max-width: 1199.98px) {
-                font-size: 3.5rem;
-            }
-
-            @media (max-width: 991.98px) {
-                font-size: 3rem;
-            }
-        }
-    }
-
-    p {
-        @media (min-width: 1400px) {
-            max-width: 25rem;
-        }
-
-        @media (min-width: 1200px) and (max-width: 1399.98px) {
-            max-width: 22rem;
-        }
-
-        @media (min-width: 992px) and (max-width: 1199.98px) {
-            max-width: 20rem;
-        }
-
-        @media (min-width: 768px) and (max-width: 991.98px) {
-            max-width: 18rem;
-        }
-
-        @media (max-width: 767.98px) {
-            font-size: .8rem;
-            max-width: 16rem;
-        }
-    }
-
-    .btn {
-        background-color: var(--ui-orange);
-    }
-}
 
 #load-more-btn {
     display: block;
@@ -354,9 +205,12 @@ img[alt="Star"]:hover {
 }
 
 #cta-container {
-    height: 25rem;
     max-width: fit-content;
     background-color: #FBF5EC;
+
+    img {
+        max-height: 25rem;
+    }
 }
 
 #cta-btn {
@@ -572,27 +426,29 @@ hr {
     max-height: fit-content
 }
 
-#index-hero-section img {
-    width: 100%;
+#index-hero-section {
+    img {
+        width: 100%;
 
-    @media (min-width: 1400px) {
-        max-width: 32rem; // xxl breakpoint
-    }
+        @media (min-width: 1400px) {
+            max-width: 32rem; // xxl breakpoint
+        }
 
-    @media (min-width: 1200px) and (max-width: 1399.98px) {
-        max-width: 25rem; // xl breakpoint
-    }
+        @media (min-width: 1200px) and (max-width: 1399.98px) {
+            max-width: 25rem; // xl breakpoint
+        }
 
-    @media (min-width: 992px) and (max-width: 1199.98px) {
-        max-width: 21rem; // lg breakpoint
-    }
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            max-width: 21rem; // lg breakpoint
+        }
 
-    @media (min-width: 768px) and (max-width: 991.98px) {
-        max-width: 19rem; // md breakpoint
-    }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            max-width: 19rem; // md breakpoint
+        }
 
-    @media (max-width: 767.98px) {
-        max-width: 15rem; // sm breakpoint
+        @media (max-width: 767.98px) {
+            max-width: 15rem; // sm breakpoint
+        }
     }
 }
 
@@ -787,6 +643,30 @@ $colors: #D3736F, #CBD6D1, #FEEB9D, #CBD6D1, #D3736F, #FEEB9D;
 
 #page2-hero-section {
     min-height: 30rem;
+
+    &>div>img:last-child {
+        width: 100%;
+
+        @media (min-width: 1400px) {
+            max-width: 32rem;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1399.98px) {
+            max-width: 25rem;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            max-width: 21rem;
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            max-width: 19rem;
+        }
+
+        @media (max-width: 767.98px) {
+            max-width: 15rem;
+        }
+    }
 }
 
 #page2-hero-texts-container {
@@ -879,6 +759,19 @@ header hr {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     margin-top: 1rem;
+
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 650px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog-card {
+        width: 100%;
+        max-width: 15rem;
+    }
 }
 
 
@@ -899,10 +792,6 @@ header hr {
     }
 }
 
-aside {
-    width: 100%;
-    max-width: 16rem;
-}
 
 #category-buttons {
     button:first-of-type {
@@ -934,6 +823,7 @@ aside {
 
     div {
         small:first-child {
+            cursor: pointer;
             transition: all 0.3s ease;
 
             &:hover {
@@ -954,23 +844,21 @@ aside {
     }
 }
 
+#page3-aside {
+    max-width: 14rem;
+}
 
 ///// Scss for page 4 /////
 
 #page4-blog-container {
-    width: min-content;
+    width: 100%;
+    max-width: 35rem;
 }
 
-#page4-aside {
-    width: fit-content;
-}
-
-#comments {
-    width: fit-content;
-}
 
 .other-post div {
     small:first-of-type {
+        cursor: pointer;
         transition: all 0.3s ease;
 
         &:hover {
@@ -1032,6 +920,33 @@ aside {
         font-size: 1rem;
     }
 
+}
+
+.hero-img-container {
+    width: 100%;
+
+    @media (min-width: 1400px) {
+        height: 35rem;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+        height: 28rem;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        height: 22rem;
+    }
+
+    @media (max-width: 991.98px) {
+        height: 13rem;
+    }
+
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 
@@ -1141,7 +1056,7 @@ aside {
     }
 
     .swiper.restaurant-info-swiper {
-        height: 10rem;
+        height: 9rem;
 
         position: absolute;
         z-index: 1;
@@ -1159,10 +1074,99 @@ aside {
 
         .swiper-wrapper {
             max-width: 60rem;
+
+            @media (max-width: 1200px) {
+                max-width: 40rem;
+            }
+
+        }
+
+        @media (max-width: 1200px) {
+            height: 7rem;
+            border-radius: 1rem;
         }
     }
-
 }
+
+.info {
+    .restaurant-logo {
+        border: 1px solid #D1D1D1;
+    }
+}
+
+.money-and-foods {
+    &>small:first-child {
+        color: var(--ui-orange);
+    }
+
+    &>small:last-child {
+        color: gray;
+    }
+}
+
+img[alt="Star"] {
+    transform: none;
+    max-height: 1rem;
+}
+
+.reviews-and-about-restaurant {
+    a {
+        text-decoration: none;
+        font-size: .8rem;
+        color: var(--ui-orange);
+    }
+
+    .vr {
+        width: 2px;
+        background-color: orangered;
+    }
+}
+
+
+.divider {
+    height: 4rem;
+    width: 1px;
+    background-color: gray;
+}
+
+.right-side {
+    column-gap: 8rem;
+
+    img[alt="Clipboard"] {
+        height: 1.1rem;
+        cursor: pointer;
+    }
+
+    h3 {
+        color: var(--ui-orange);
+    }
+}
+
+.restaurant-info-swiper-mobile {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        --swiper-navigation-size: 15px;
+        --swiper-navigation-sides-offset: 8px;
+        --swiper-navigation-top-offset: 45%;
+        color: var(--ui-orange);
+    }
+
+    .swiper-wrapper {
+        max-width: 60rem;
+
+        @media (max-width: 1200px) {
+            max-width: 40rem;
+        }
+
+    }
+
+    @media (max-width: 1200px) {
+        height: 12rem;
+        border-radius: 1rem;
+    }
+}
+
 
 .tabs-container {
     background-color: var(--ui-orange);
@@ -1201,6 +1205,14 @@ aside {
 
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-template-rows: repeat(2, minmax(0, 1fr));
+
+    @media (min-width: 900px) and (max-width: 1399.98px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (max-width: 899.98px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }
 
 .menu-card {
@@ -1248,6 +1260,7 @@ aside {
 
 #fixed-card {
     position: fixed;
+    z-index: 2;
     right: 0;
 
     background-color: var(--ui-orange);
@@ -1260,15 +1273,25 @@ aside {
 ///// Scss for page 10 //////
 #login-form-1 {
     width: 100%;
-    max-width: 50rem;
+    max-width: 51rem;
 
     .left-side {
         width: 50%;
         background-color: var(--ui-orange);
+
+        @media (max-width: 576px) {
+            width: 100%;
+            border-radius: 1rem;
+        }
     }
 
     .right-side {
         border: 1px solid var(--ui-orange);
+
+        @media (max-width: 576px) {
+            width: 100%;
+            border-radius: 1rem;
+        }
 
         a:hover {
             color: var(--ui-orange);
@@ -1313,11 +1336,21 @@ aside {
     .left-side {
         width: 50%;
         background-color: var(--ui-orange);
+
+        @media (max-width: 576px) {
+            width: 100%;
+            border-radius: 1rem;
+        }
     }
 
     .right-side {
         width: 50%;
         border: 1px solid var(--ui-orange);
+
+        @media (max-width: 576px) {
+            width: 100%;
+            border-radius: 1rem;
+        }
 
         a:hover {
             color: var(--ui-orange);
@@ -1361,11 +1394,21 @@ aside {
     .left-side {
         width: 50%;
         background-color: #00B7EB;
+
+        @media (max-width: 576px) {
+            width: 100%;
+            border-radius: 1rem;
+        }
     }
 
     .right-side {
         width: 50%;
         border: 1px solid #00B7EB;
+
+        @media (max-width: 576px) {
+            width: 100%;
+            border-radius: 1rem;
+        }
 
         a:hover {
             color: var(--ui-orange);
@@ -1426,6 +1469,8 @@ aside {
     }
 
     .update-btn {
+        width: 100%;
+        max-width: fit-content;
         background-color: var(--ui-orange);
     }
 }
@@ -1443,6 +1488,8 @@ aside {
     }
 
     .update-btn {
+        width: 100%;
+        max-width: fit-content;
         background-color: var(--ui-orange);
     }
 }
@@ -1581,6 +1628,10 @@ aside {
         display: grid;
         gap: 1rem;
         grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        @media (max-width: 800px) {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
     }
 
     .payment-option {
@@ -1872,7 +1923,6 @@ aside {
 }
 
 #restaurantDetailsModal {
-
     .modal-header hr {
         border: 1px solid var(--ui-orange);
     }
@@ -1898,9 +1948,16 @@ aside {
         left: 20px;
         bottom: 15px;
 
-        height: 3.5rem;
-        width: 3.5rem;
 
+        @media (min-width: 892px) {
+            max-height: 3.5rem;
+            max-width: 3.5rem;
+        }
+
+        @media (max-width: 891.98px) {
+            max-height: 3rem;
+            max-width: 3rem;
+        }
     }
 
     .money-and-foods {
@@ -1919,5 +1976,22 @@ aside {
         gap: 1.2rem;
 
         grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        small {
+            padding: 0.4rem;
+            transition: all 0.15s ease-in-out;
+            border: 1px solid transparent;
+            border-radius: 0.25rem;
+
+            &:hover {
+                border-color: #dee2e6;
+                background-color: rgba(0, 0, 0, 0.02);
+            }
+        }
+
+
+        @media (max-width: 991.98px) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
     }
 }

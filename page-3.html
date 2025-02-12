@@ -12,55 +12,65 @@
 
 <body>
     <header>
-        <div class="container d-flex justify-content-between align-items-center gap-5">
-            <!-- logo -->
-            <div class="aiz-topbar-logo-wrap d-flex column-gap-2">
-                <img src="./assets/images/logo.svg" alt="logo">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./assets/images/logo.svg" alt="logo" class="d-inline-block align-text-top">
+                    <h5 class="text-nowrap mb-0 ms-2" id="logo-text">
+                        <span class="fw-light">Active </span>
+                        <span class="fw-bolder">Restaurant</span>
+                    </h5>
+                </a>
 
-                <h5 class="text-nowrap" id="logo-text">
-                    <span class="fw-light">Active </span>
-                    <span class="fw-bolder">Restaurant</span>
-                </h5>
+                <!-- Toggle button for mobile -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="./assets/images/navbar-hamburger.svg" alt="navbar-icon">
+                </button>
+
+                <!-- Navbar content -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <!-- Search bar and location dropdown -->
+                    <form
+                        class="d-flex flex-grow-1 flex-column row-gap-2 flex-sm-row justify-content-center p-2 p-sm-0">
+                        <div class="input-group mx-100" style="max-width: 500px;">
+                            <img class="input-group-text rounded-start-circle border-0 bg-ui-gray"
+                                src="./assets/images/search.svg" alt="search-icon" />
+                            <input type="text" class="form-control border-0 bg-ui-gray" id="search-bar"
+                                placeholder="Search Active Restaurant" aria-label="Search Active Restaurant" />
+                            <img class="input-group-text rounded-end-circle border-0 bg-ui-gray"
+                                src="./assets/images/config.svg" alt="config-icon" />
+                        </div>
+
+                        <!-- Location dropdown -->
+                        <div class="d-flex align-items-center ms-3">
+                            <img class="size-15px me-2" src="./assets/images/pin.svg" alt="Pin">
+                            <select class="form-select w-auto" aria-label="Select location">
+                                <option selected>Select location</option>
+                                <option value="Woodland Hills">Woodland Hills</option>
+                                <option value="Uttara">Uttara</option>
+                                <option value="Gulshan">Gulshan</option>
+                                <option value="Banani">Banani</option>
+                                <option value="Mirpur">Mirpur</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <!-- Profile picture -->
+                    <img src="./assets/images/person.png" alt="Profile picture" class="d-none d-lg-block" />
+                </div>
             </div>
-
-            <!-- Search bar -->
-            <form class="d-flex w-50 column-gap-5">
-                <div class="input-group">
-                    <img class="input-group-text rounded-start-circle border-0 bg-ui-gray" id="search-icon"
-                        src="./assets/images/search.svg" alt="search-icon" />
-                    <input type="text" class="form-control border-0 bg-ui-gray" id="search-bar"
-                        placeholder="Search Active Restaurant" aria-label="Search Active Restaurant" />
-                    <img class="input-group-text rounded-end-circle border-0 bg-ui-gray" id="config-icon"
-                        src="./assets/images/config.svg" alt="config-icon" />
-                </div>
-
-                <!-- location dropdown -->
-                <div class="d-flex align-items-center">
-                    <img class="size-15px" src="./assets/images/pin.svg" alt="Pin">
-
-                    <select class="form-select w-auto" aria-label="Select location">
-                        <option selected>Select location</option>
-                        <option value="Woodland Hills">Woodland Hills</option>
-                        <option value="Uttara">Uttara</option>
-                        <option value="Gulshan">Gulshan</option>
-                        <option value="Banani">Banani</option>
-                        <option value="Mirpur">Mirpur</option>
-                    </select>
-                </div>
-            </form>
-
-            <!-- profile picture -->
-            <img src="./assets/images/person.png" alt="profile picture">
-        </div>
-        <hr>
+        </nav>
     </header>
 
     <!-- Main content. Contains blog grid and the aside content-->
-    <main class="d-flex justify-content-center align-items-start column-gap-5 mt-4">
+    <main
+        class="d-flex flex-column flex-sm-row align-items-center align-items-sm-start justify-content-center column-gap-5 row-gap-4 mt-4 p-3">
         <!-- Blog -->
         <div>
-            <h3 class="fw-bold text-black">All Blogs</h3>
-
+            <h3 class="fw-bold text-black text-center text-md-start">All Blogs</h3>
             <!-- Blogs grid -->
             <div id="blogs-grid">
                 <!-- Blog card 1 -->
@@ -184,10 +194,13 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Load more button -->
+            <button class="btn mt-5" id="load-more-btn">Load More</button>
         </div>
 
         <!-- Sidebar -->
-        <aside>
+        <aside id="page3-aside">
             <!-- Search bar -->
             <div class="input-group">
                 <input type="text" class="form-control border-0 bg-ui-gray rounded-start-pill" id="search-bar"
@@ -291,8 +304,7 @@
         </aside>
     </main>
 
-    <!-- Load more button -->
-    <button class="btn mt-5" id="load-more-btn">Load More</button>
+
 
     <!-- Footer section -->
     <footer class="container mt-5">
@@ -422,9 +434,10 @@
 
         <!-- Black footer -->
         <div class="bg-black rounded-4 mt-5" id="black-footer">
-            <div class="mx-auto w-75">
+            <div class="mx-auto p-5">
                 <!-- Logo and social media icons -->
-                <div class="d-flex justify-content-between align-items-center pt-5">
+                <div
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center row-gap-3">
                     <!-- logo -->
                     <div class="d-flex column-gap-2">
                         <img id="logo" src="./assets/images/logo.svg" alt="logo">
@@ -435,7 +448,8 @@
                         </h5>
                     </div>
 
-                    <div class="d-flex justify-content-between align-items-center column-gap-3">
+                    <div
+                        class="d-flex flex-wrap justify-content-start justify-content-sm-center align-items-center column-gap-3 row-gap-2">
                         <img src="./assets/images/facebook.svg" alt="facebook">
                         <img src="./assets/images/twitter.svg" alt="twitter">
                         <img src="./assets/images/instagram.svg" alt="instagram">
@@ -447,29 +461,29 @@
 
                 <hr class="mt-4">
 
-                <div class="d-flex justify-content-between column-gap-5">
-                    <!-- Offers, Contacts, Quick links -->
-                    <div class="d-flex column-gap-5">
-                        <!-- Offers -->
-                        <div>
-                            <small class=" d-block fw-bold text-light">Get your special offers, Coupons &
-                                More...</small>
+                <div class="d-flex flex-column flex-xl-row row-gap-4 column-gap-5">
+                    <!-- Offers -->
+                    <div>
+                        <small class=" d-block fw-bold text-light">Get your special offers, Coupons &
+                            More...</small>
 
-                            <form id="email-form">
-                                <div class="mt-3">
-                                    <input type="email" class="form-control" id="email-input"
-                                        placeholder="Enter your email.">
-                                </div>
+                        <form id="email-form">
+                            <div class="mt-3">
+                                <input type="email" class="form-control" id="email-input"
+                                    placeholder="Enter your email.">
+                            </div>
 
-                                <button type="submit" class="btn mt-3 px-4">
-                                    <p class="fw-bold">Subscribe</p>
-                                </button>
-                            </form>
-                        </div>
+                            <button type="submit" class="btn mt-3 px-4">
+                                <p class="fw-bold">Subscribe</p>
+                            </button>
+                        </form>
+                    </div>
 
+                    <!-- For larger screens -->
+                    <div class="d-none d-md-flex flex-grow-1 column-gap-3">
                         <!-- Contacts -->
                         <div id="contacts">
-                            <small class="d-block fw-bold text-light">Contacts</small>
+                            <h6 class="d-block text-light">Contacts</h6>
 
                             <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
                                 <img class="footer-icon" src="./assets/images/globe.svg" alt="Globe">
@@ -506,8 +520,8 @@
                         </div>
 
                         <!-- Quick links -->
-                        <div id="quick-links">
-                            <small class="d-block fw-bold text-light">Quick Links</small>
+                        <div class="quick-links flex-grow-1">
+                            <h6 class="d-block text-light">Quick Links</h6>
 
                             <small class="d-block text-white mt-4">Home</small>
                             <small class="d-block text-white mt-2">All Restaurants</small>
@@ -518,16 +532,124 @@
                             <small class="d-block text-white mt-2">Dinner</small>
                             <small class="d-block text-white mt-2">Fastfood</small>
                         </div>
+
+                        <!-- Mobile apps -->
+                        <div class="d-flex flex-column align-items-start" id="mobile-apps-div">
+                            <h6 class="d-block text-light">Mobile Apps</h6>
+
+                            <img src="./assets/images/google-play.png" alt="Google Play" class="mt-4">
+                            <img src="./assets/images/app-store.png" alt="App Store" class="mt-2">
+
+                            <hr class="d-block w-100 mt-4">
+
+                            <div class="d-flex column-gap-3">
+                                <img src="./assets/images/fork-knife.svg" alt="Fork">
+                                <small class="d-block text-white">Want to join your kitchen with our
+                                    service?</small>
+                            </div>
+
+                            <hr class="d-block w-100 mt-3">
+
+                            <div class="d-flex column-gap-3">
+                                <img src="./assets/images/delivery-man.svg" alt="Fork">
+                                <small class="d-block text-white">Want to work with us as a
+                                    delivery boy!</small>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- For mobile screens -->
+                    <div class="d-md-none accordion" id="footerAccordion">
+                        <!-- Contacts Accordion -->
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-transparent text-light" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#contactsCollapse">
+                                    Contacts
+                                </button>
+                            </h2>
+                            <div id="contactsCollapse" class="accordion-collapse collapse show"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <div class="contact-box d-flex align-items-start column-gap-2 mt-2">
+                                        <img class="footer-icon" src="./assets/images/globe.svg" alt="Globe">
+                                        <div>
+                                            <p>Website</p>
+                                            <small class="d-block text-white">www.foodzone.com</small>
+                                        </div>
+                                    </div>
 
-                    <!-- Mobile apps -->
-                    <div class="d-flex flex-column align-items-start" id="mobile-apps-div">
-                        <small class="d-block fw-bold text-light">Mobile Apps</small>
+                                    <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
+                                        <img class="footer-icon" src="./assets/images/pin-white.svg" alt="Pin">
+                                        <div>
+                                            <p>Address</p>
+                                            <small class="d-block text-white mt-1">4604 Canis Heights Drive, Los
+                                                Angeles,
+                                                California, 90007</small>
+                                        </div>
+                                    </div>
 
-                        <img src="./assets/images/google-play.png" alt="Google Play" class="mt-4">
-                        <img src="./assets/images/app-store.png" alt="App Store" class="mt-2">
+                                    <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
+                                        <img class="footer-icon" src="./assets/images/call.svg" alt="Call">
+                                        <div>
+                                            <p>Phone</p>
+                                            <small class="d-block text-white mt-1">213-747-6463</small>
+                                        </div>
+                                    </div>
 
+                                    <div class="contact-box d-flex align-items-start column-gap-2 mt-4">
+                                        <img class="footer-icon" src="./assets/images/mail.svg" alt="Mail">
+                                        <div>
+                                            <p>Mail</p>
+                                            <small class="d-block text-white mt-1">info@foodland.com</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Links Accordion -->
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-transparent text-light collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#quickLinksCollapse">
+                                    Quick Links
+                                </button>
+                            </h2>
+                            <div id="quickLinksCollapse" class="accordion-collapse collapse"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body quick-links">
+                                    <small class="d-block text-white">Home</small>
+                                    <small class="d-block text-white mt-2">All Restaurants</small>
+                                    <small class="d-block text-white mt-2">Featured Restaurants</small>
+                                    <small class="d-block text-white mt-2">Blogs</small>
+                                    <small class="d-block text-white mt-2">Breakfast</small>
+                                    <small class="d-block text-white mt-2">Lunch</small>
+                                    <small class="d-block text-white mt-2">Dinner</small>
+                                    <small class="d-block text-white mt-2">Fastfood</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Apps Accordion -->
+                        <div class="accordion-item bg-transparent">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-transparent text-light collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#mobileAppsCollapse">
+                                    Mobile Apps
+                                </button>
+                            </h2>
+                            <div id="mobileAppsCollapse" class="accordion-collapse collapse"
+                                data-bs-parent="#footerAccordion">
+                                <div class="accordion-body">
+                                    <img src="./assets/images/google-play.png" alt="Google Play" class="mt-2">
+                                    <img src="./assets/images/app-store.png" alt="App Store" class="mt-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex d-md-none flex-column">
                         <hr class="d-block w-100 mt-4">
 
                         <div class="d-flex column-gap-3">
@@ -546,12 +668,13 @@
                     </div>
                 </div>
 
-                <hr class="mt-4">
+                <hr>
 
-                <div class="d-flex justify-content-between align-items-center mt-4">
+                <div
+                    class="d-flex flex-column flex-xl-row justify-content-between align-items-start align-items-xl-center mt-4 row-gap-4">
                     <!-- Terms & Conditions | Privacy Policy | Refund Policy -->
                     <div>
-                        <div class="d-flex column-gap-3">
+                        <div class=" d-flex column-gap-3">
                             <small class="d-block text-white">Terms & Conditions</small>
                             <div class="vr"></div>
                             <small class="d-block text-white">Privacy Policy</small>
@@ -567,7 +690,7 @@
                             their respective owners.</small>
                     </div>
 
-                    <div class="d-flex column-gap-3" id="payment-methods-icons">
+                    <div class="d-flex flex-wrap row-gap-2 column-gap-3" id="payment-methods-icons">
                         <img src="./assets/images/visa.svg" alt="Visa">
                         <img src="./assets/images/mastercard.svg" alt="Mastercard">
                         <img src="./assets/images/paypal.svg" alt="Paypal">
@@ -577,14 +700,15 @@
                         <img src="./assets/images/discover-network.svg" alt="Discover Network">
                     </div>
                 </div>
-
-                <div class="pt-5"></div>
             </div>
         </div>
 
         <!-- Extra whitespace -->
         <section class="mt-5"></section>
     </footer>
+
+    <!-- Loading mini bootstrap javascript bundle -->
+    <script type="module" src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Load more button -->
     <script type="module" src="./js/load-more-blogs.js"></script>
